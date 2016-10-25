@@ -1,0 +1,278 @@
+#cover
+  position: relative
+  height: 100vh
+  background-image: url('/img/cover-image.jpg')
+  background-position: top center
+  background-size: cover
+  background-repeat: no-repeat
+  .section-container
+    height: inherit
+    .section-content
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      .intro-top
+        color: white
+        text-align: center
+        margin-bottom: 30px
+        .intro-header
+          font-size: 42px
+          font-family: "Lato-Heavy"
+          letter-spacing: 2px
+        .intro-text
+          font-size: 24px
+          font-family: "Lato-Heavy"
+          margin-top: 15px
+          margin-bottom: 15px
+          letter-spacing: 2px
+      .intro-middle
+        color: white
+        text-align: center
+        .intro-text
+          font-size: 20px
+          font-family: "Lato-LightItalic"
+          max-width: 65%
+          min-width: 65%
+          margin-left: auto
+          margin-right: auto
+          line-height: 30px
+      .intro-bottom
+        display: table
+        margin-left: auto
+        margin-right: auto
+        margin-top: 50px
+        .intro-link
+          color: white
+          display: block
+          font-size: 20px
+          font-family: "Lato-Light"
+          background-color: #0E6BA2
+          text-decoration: none
+          padding: 20px 70px
+          border-radius: 40px
+
+#about
+  position: relative
+  .section-container
+    padding-top: 50px
+    padding-bottom: 50px
+    color: #0E6BA2
+    .section-header
+      .header
+        font-size: 40px
+        text-align: center
+        margin: 15px 0 30px
+    .section-content-1
+      margin-top: 30px
+      margin-bottom: 50px
+      float: left
+      .left-section
+        .image-container
+          .image
+            display: block
+        .content-container
+          margin-top: 15px
+          margin-bottom: 15px
+          font-size: 20px
+      .right-section
+        .content-container
+          margin-bottom: 30px
+          font-size: 20px
+          .section-title
+            font-family: "Lato-Bold"
+          .section-text
+            margin-top: 10px
+            margin-bottom: 10px
+            line-height: 30px
+            font-family: "Lato-Light"
+          .section-description
+            font-size: 20px
+            font-family: "Lato-Light"
+            line-height: 30px
+    .section-content-2
+      float: left
+      margin-top: 30px
+      margin-bottom: 50px
+      .left-section
+        .content-container
+          margin-bottom: 30px
+          font-size: 20px
+          .section-title
+            font-family: "Lato-Bold"
+          .section-text
+            margin-top: 10px
+            margin-bottom: 10px
+            line-height: 30px
+            font-family: "Lato-Light"
+          .list-container
+            .list-item
+              margin-top: 10px
+              margin-bottom: 10px
+              .item
+                display: block
+                font-family: "Lato-Light"
+      .right-section.image-container
+        .image
+          display: block
+
+#other-site
+  position: relative
+  background-image: url('/img/bottom-image.jpg')
+  background-size: cover
+  background-position: center center
+  background-repeat: no-repeat
+  .section-container
+    .section-content
+      color: white
+      padding-top: 150px
+      padding-bottom: 150px
+      .site-top
+        .section-header
+          font-size: 34px
+          font-family: "Lato-Heavy"
+          letter-spacing: 2px
+      .site-middle
+        margin: 40px 0 30px
+        .section-text
+          font-size: 16px
+          font-family: "Lato-LightItalic"
+          line-height: 30px
+          margin-top: 15px
+          margin-bottom: 15px
+          max-width: 45%
+          min-width: 45%
+      .site-bottom
+        .intro-link
+          color: white
+          font-size: 18px
+          text-decoration: none
+          font-family: "Lato-Heavy"
+          text-transform: uppercase
+
+@media (max-width: 1366px)
+  #about
+    .section-container
+      .section-content-1
+        .left-section
+          .image-container
+            .image
+              max-width: 100%
+      .section-content-2
+        .right-section
+          .image-container
+            .image
+              max-width: 100%
+
+@media (max-width: $screen-sm-max)
+  #about
+    .section-container
+      .section-content-1
+        margin-bottom: 0px
+        .left-section
+          .image-container
+            margin-bottom: 50px
+        .right-section
+          .content-container
+            max-width: 90%
+            margin-left: auto
+            margin-right: auto
+      .section-content-2
+        .left-section
+          .content-container
+            max-width: 90%
+            margin-left: auto
+            margin-right: auto
+            text-align: center
+            margin-bottom: 50px
+            .image-container
+              .image
+                max-width: 100%
+  #other-site
+    .section-container
+      .section-content
+        .site-middle
+          .section-text
+            max-width: 75%
+            min-width: 75%
+
+@media (max-width: 800px) and (orientation: landscape)
+  body
+    margin-top: 120px
+  #cover
+    height: auto
+    .section-container
+      .section-content
+        padding-top: 200px
+        padding-bottom: 200px
+        top: 0
+        transform: none
+        -webkit-transform: none
+        -moz-transform: none
+        -o-transform: none
+        -ms-transform: none
+
+@media (max-width: $screen-xs-max)
+  body
+    margin-top: 120px
+  #cover
+    height: auto
+    .section-container
+      .section-content
+        padding-top: 200px
+        padding-bottom: 200px
+        top: 0
+        transform: none
+        -webkit-transform: none
+        -moz-transform: none
+        -o-transform: none
+        -ms-transform: none
+        .intro-top
+          .intro-header
+            font-size: 32px
+          .intro-text
+            font-size: 20px
+            max-width: 90%
+            margin-left: auto
+            margin-right: auto
+
+@media (max-width: 568px)
+  body
+    margin-top: 96px
+  #cover
+    .section-container
+      .section-content
+        padding-top: 100px
+        padding-bottom: 100px
+        .intro-top
+          .intro-text
+            max-width: 100%
+        .intro-middle
+          .intro-text
+            max-width: 100%
+            min-width: 100%
+
+  #about
+    .section-container
+      .section-header
+        .header
+          font-size: 34px
+      .section-content-1
+        .left-section
+          .image-container
+            .image
+              max-width: 90%
+              margin-left: auto
+              margin-right: auto
+
+
+
+
+
+
+
+
+
