@@ -30,10 +30,28 @@ highlight: rouge
 paginate: 5
 paginate_path: /page:num/
 
+jekyll_timeago:
+  today: 'today'
+  yesterday: 'yesterday'
+  tomorrow: 'tomorrow'
+  and: 'and'
+  suffix: 'ago'
+  prefix: ''
+  suffix_future: 'in'
+  prefix_future: ''
+  years: 'years'
+  year: 'year'
+  months: 'months'
+  month: 'month'
+  weeks: 'weeks'
+  week: 'week'
+  days: 'days'
+  day: 'day'
+
 sass:
   style: compressed
 
-gems: [jekyll-paginate]
+gems: [jekyll-paginate,jekyll-timeago]
 
 navbar-menu:
   - title: "About Us"

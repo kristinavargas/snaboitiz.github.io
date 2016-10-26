@@ -24,6 +24,21 @@
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 
+<script type="text/javascript">
+  //On intro link click
+  $(function () {
+    var introLink = $('#cover .intro-link ');
+    introLink.on('click', function(e){
+      e.preventDefault();
+      $('html, body').stop().animate({
+        scrollTop: $(introLink.attr('href')).offset().top - 100
+      }, 1500, 'easeInOutExpo');
+    });
+  });
+
+//  $('#carousel').carousel();
+</script>
+
 </body>
 
 </html>

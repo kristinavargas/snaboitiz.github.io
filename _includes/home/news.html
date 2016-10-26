@@ -4,14 +4,48 @@
     </div>
     <div class="col-lg-3 left-section">
         <ul class="news-container">
-            {% for news in site.posts %}
+            {% for news in site.posts limit:7 %}
             <li class="news-list">
                 <a class="news-link" href="#">{{ news.title }}</a>
                 <span class="news-date">Posted on {{ news.date | date: '%B %d, %Y' }}</span>
             </li>
+            {% if forloop.last %}
+            <hr class="list-divider hidden"/>
+            {% else %}
             <hr class="list-divider"/>
+            {% endif %}
             {% endfor %}
         </ul>
     </div>
-    <div class="col-lg-9 right-section"></div>
+    <div class="col-lg-9 right-section">
+        <div class="carousel-container">
+            <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    {% assign counter = 0 %}
+                    {% for news-list in site.posts limit:7 %}
+                    {% assign counter = counter | plus:1 %}
+                    <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {% endif %}></li>
+                    {% endfor %}
+                </ol>
+                <!-- Carousel items -->
+                <div class="carousel-inner">
+                    {% for news in site.posts limit:7 %}
+                    <div {% if forloop.first %} class="active item" {% else %} class="item" {% endif %}>
+                        <div class="image-section">
+                            <img class="image center-block" src="/img/home/{{ news.cover }}"/>
+                        </div>
+                        <div class="description-section">
+                            <h2 class="title-section">{{ news.title }}</h2>
+                            <p class="content-section">{{ news.content | remove:'<p>' '</p>' }}</p>
+                            <span class="date-section">{{ news.date | timeago }}</span>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+                <!-- Carousel nav -->
+                <a class="carousel-control left" href="#carousel" data-slide="prev">&lsaquo;</a>
+                <a class="carousel-control right" href="#carousel" data-slide="next">&rsaquo;</a>
+            </div>
+        </div>
+    </div>
 </div>

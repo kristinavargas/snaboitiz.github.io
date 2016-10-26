@@ -24,14 +24,3 @@ $(function () {
     }
 });
 
-//On intro link click
-$(function () {
-    $('.intro-link ').on('click', function(e){
-        e.preventDefault();
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top - 100
-        }, 1500, 'easeInOutExpo');
-    });
-
-});
