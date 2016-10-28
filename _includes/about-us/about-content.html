@@ -1,43 +1,38 @@
-<div class="container">
+<div class="container container-section">
     <div class="col-lg-9 left-section">
-        <ul class="tabs">
-            <li class="active" rel="tab1">Snap Group</li>
-            <li rel="tab2">Strategic Foundation</li>
-            <li rel="tab3">Shareholders</li>
-            <li rel="tab4">Leadership</li>
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs" role="tablist">
+            <li role="presentation" class="tabs-list active">
+                <a class="tabs-link" href="#snap-group" aria-controls="home" role="tab" data-toggle="tab">Snap Group</a>
+            </li>
+            <li class="tabs-list" role="presentation">
+                <a class="tabs-link" href="#strategic-foundation" aria-controls="profile" role="tab" data-toggle="tab">StrategicFoundation</a>
+            </li>
+            <li class="tabs-list" role="presentation">
+                <a class="tabs-link" href="#shareholder" aria-controls="messages" role="tab" data-toggle="tab">Shareholders</a>
+            </li>
+            <li class="tabs-list" role="presentation">
+                <a class="tabs-link" href="#leadership" aria-controls="settings" role="tab" data-toggle="tab">Leadership</a>
+            </li>
         </ul>
-        <div class="tab_container">
-            <h3 class="d_active tab_drawer_heading" rel="tab1">Tab 1</h3>
-            <div id="tab1" class="tab_content">
-                <h2>Tab 1 content</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac metus augue.</p>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div role="tabpanel" class="content-list tab-pane fade in active" id="snap-group">
+                {% include about-us/snap-group.html %}
             </div>
-            <!-- #tab1 -->
-            <h3 class="tab_drawer_heading" rel="tab2">Tab 2</h3>
-            <div id="tab2" class="tab_content">
-                <h2>Tab 2 content</h2>
-                <p>Nunc dui velit, scelerisque eu placerat volutpat, dapibus eu nisi. Vivamus eleifend vestibulum odio
-                    non vulputate.</p>
+            <div role="tabpanel" class="content-list tab-pane fade" id="strategic-foundation">
+                {% include about-us/strategic-foundation.html %}
             </div>
-            <!-- #tab2 -->
-            <h3 class="tab_drawer_heading" rel="tab3">Tab 3</h3>
-            <div id="tab3" class="tab_content">
-                <h2>Tab 3 content</h2>
-                <p>Nulla eleifend felis vitae velit tristique imperdiet. Etiam nec imperdiet elit. Pellentesque sem
-                    lorem, scelerisque sed facilisis sed, vestibulum sit amet eros.</p>
+            <div role="tabpanel" class="content-list tab-pane fade" id="shareholder">
+                {% include about-us/shareholder.html %}
             </div>
-            <!-- #tab3 -->
-            <h3 class="tab_drawer_heading" rel="tab4">Tab 4</h3>
-            <div id="tab4" class="tab_content">
-                <h2>Tab 4 content</h2>
-                <p>Integer ultrices lacus sit amet lorem viverra consequat. Vivamus lacinia interdum sapien non
-                    faucibus. Maecenas bibendum, lectus at ultrices viverra, elit magna egestas magna, a adipiscing
-                    mauris justo nec eros.</p>
+            <div role="tabpanel" class="content-list tab-pane fade" id="leadership">
+                {% include about-us/leadership.html %}
             </div>
-            <!-- #tab4 -->
         </div>
-
-
     </div>
-    <div class="col-lg-3 right-section"></div>
+
+    <div class="col-lg-3 right-section">
+    </div>
 </div>
