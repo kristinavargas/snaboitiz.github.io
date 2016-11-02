@@ -55,7 +55,7 @@ gems: [jekyll-paginate,jekyll-timeago]
 
 navbar-menu:
   - title: "About Us"
-    slugID:
+    slugID: "/about-us/"
 
   - title: "Our Businesses"
     slugID:
