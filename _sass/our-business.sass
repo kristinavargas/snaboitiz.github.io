@@ -4,49 +4,92 @@
   padding: 50px 15px
   font-family: "Lato-Regular"
   .container-section
-    .left-section
-      .nav-tabs
-        display: table
-        border: none
-        .tabs-list
+    .nav-tabs
+      display: table
+      border: none
+      .tabs-list
+        .tabs-link
+          margin: 0
+          border: none
+          color: #585858
+          border-radius: 0
+          font-family: "Lato-Heavy"
+          text-transform: uppercase
+          padding-left: 30px
+          padding-right: 30px
+        &.active, &:hover
           .tabs-link
-            margin: 0
-            border: none
-            color: #585858
-            border-radius: 0
-            font-family: "Lato-Heavy"
-            text-transform: uppercase
-            padding-left: 30px
-            padding-right: 30px
-          &.active, &:hover
-            .tabs-link
-              color: white
-              background-color: #0E6BA2
-      .tab-content
-        min-height: 50vh
-        .content-list
-          .content-section
-            .content-text
-              margin-top: 15px
-              margin-bottom: 15px
-              line-height: 25px
-              font-size: 16px
-          .nav-tabs
-            display: table
-            border: none
-            .tabs-list
-              .tabs-link
+            color: white
+            background-color: #0E6BA2
+    .tab-content
+      min-height: 60vh
+      .content-list
+        &#we-offer
+          padding-top: 30px
+          padding-bottom: 30px
+        &#faqs
+          padding-top: 30px
+          padding-bottom: 30px
+          #accordion
+            .faq-item
+              border: none
+              border-radius: 0
+              margin-bottom: 0
+              transition: all 100ms ease
+              .faq-link
+                display: block
+                color: #222
+                text-decoration: none
+                padding: 30px 0
+                border-bottom: 1px solid #bbbbbb
+                .faq-header
+                  font-weight: bold
+                  color: #000000
+                .faq-button
+                  float: right
+                  height: 14px
+              .panel-heading
                 margin: 0
-                border: none
-                color: white
-                font-size: 14px
-                border-radius: 0
-                padding-left: 30px
-                padding-right: 30px
-                font-family: "Lato-Regular"
-                text-transform: capitalize
-                background-color: #3498db
-              &.active, &:hover
-                .tabs-link
+              .panel-body
+                padding: 0 0 15px
+                .faq-description
+                  color: #333333
+                  line-height: 30px
+                  font-size: 15px
+
+              &.active-item
+                background-color: #f7f7f7
+                .faq-link
                   color: white
-                  background-color: #0E6BA2
+                  border: none
+                  .faq-header
+                    color: #5f081a
+        .content-section
+          .content-text
+            margin-top: 15px
+            margin-bottom: 15px
+            line-height: 25px
+            font-size: 16px
+        .nav-tabs
+          display: table
+          border: none
+          .tabs-list
+            .tabs-link
+              margin: 0
+              border: none
+              color: white
+              font-size: 14px
+              border-radius: 0
+              padding-left: 30px
+              padding-right: 30px
+              font-family: "Lato-Regular"
+              text-transform: capitalize
+              background-color: #3498db
+            &.active, &:hover
+              .tabs-link
+                color: white
+                background-color: #0E6BA2
+        .tab-content
+          padding-top: 30px
+          padding-botoom: 30px
+

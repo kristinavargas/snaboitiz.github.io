@@ -1,0 +1,22 @@
+<div class="content-section col-lg-8 col-md-8">
+    <div class="accordion" id="accordion">
+        {% for faq in site.data.faqs %}
+        {% assign faqID = faqID | plus: 1 %}
+        <div class="panel faq-item">
+            <a class="faq-link" data-toggle="collapse" data-parent="#accordion" href="#collapse{{ faqID }}">
+                <div class="panel-heading">
+                    <h5>
+                        <span class="faq-header">{{ faq.question | upcase }}</span>
+                        <img class="faq-button" src="/img/icon-button/arrow_down.png"/>
+                    </h5>
+                </div>
+            </a>
+            <div id="collapse{{ faqID }}" class="panel-collapse collapse package-content">
+                <div class="panel-body">
+                    <p class="faq-description">{{ faq.answer }}</p>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>

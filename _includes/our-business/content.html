@@ -1,56 +1,51 @@
 <div class="container container-section">
-    <div class="col-lg-9 left-section">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="tabs-list active">
-                <a class="tabs-link" href="#power-plant" role="tab" data-toggle="tab">Our PowerPlants</a>
-            </li>
-            <li class="tabs-list" role="presentation">
-                <a class="tabs-link" href="#we-offer" role="tab" data-toggle="tab">What We Offer</a>
-            </li>
-            <li class="tabs-list" role="presentation">
-                <a class="tabs-link" href="#faqs" role="tab" data-toggle="tab">FAQs</a>
-            </li>
-        </ul>
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" role="tablist">
+        <li role="presentation" class="tabs-list active">
+            <a class="tabs-link" href="#power-plant" role="tab" data-toggle="tab">Our Power Plants</a>
+        </li>
+        <li class="tabs-list" role="presentation">
+            <a class="tabs-link" href="#we-offer" role="tab" data-toggle="tab">What We Offer</a>
+        </li>
+        <li class="tabs-list" role="presentation">
+            <a class="tabs-link" href="#faqs" role="tab" data-toggle="tab">FAQs</a>
+        </li>
+    </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="content-list tab-pane fade in active" id="power-plant">
-                <ul class="nav nav-tabs" role="tablist">
-                    <li role="presentation" class="tabs-list active">
-                        <a class="tabs-link" href="#magat-plant" role="tab" data-toggle="tab">Magat Hydroelectric Power Plant</a>
-                    </li>
-                    <li role="presentation" class="tabs-list">
-                        <a class="tabs-link" href="#ambuklao-plant" role="tab" data-toggle="tab">Ambuklao Hydroelectric Power Plant</a>
-                    </li>
-                    <li role="presentation" class="tabs-list">
-                        <a class="tabs-link" href="#binga-plant" role="tab" data-toggle="tab">Binga Hydroelectric Power Plant</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div role="tabpanel" class="content-list tab-pane fade in active" id="magat-plant">
-                        {% include our-business/magat.html %}
-                    </div>
+    <!-- Tab panes -->
+    <div class="tab-content">
+        <div role="tabpanel" class="content-list tab-pane fade in active" id="power-plant">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="tabs-list active">
+                    <a class="tabs-link" href="#magat-plant" role="tab" data-toggle="tab">Magat Power Plant</a>
+                </li>
+                <li role="presentation" class="tabs-list">
+                    <a class="tabs-link" href="#ambuklao-plant" role="tab" data-toggle="tab">Ambuklao Power Plant</a>
+                </li>
+                <li role="presentation" class="tabs-list">
+                    <a class="tabs-link" href="#binga-plant" role="tab" data-toggle="tab">Binga Power Plant</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="content-list tab-pane fade in active" id="magat-plant">
+                    {% include our-business/power-plant/magat.html %}
+                </div>
 
-                    <div role="tabpanel" class="content-list tab-pane fade" id="ambuklao-plant">
-                        {% include our-business/ambuklao.html %}
-                    </div>
+                <div role="tabpanel" class="content-list tab-pane fade" id="ambuklao-plant">
+                    {% include our-business/power-plant/ambuklao.html %}
+                </div>
 
-                    <div role="tabpanel" class="content-list tab-pane fade" id="binga-plant">
-                        {% include our-business/binga.html %}
-                    </div>
+                <div role="tabpanel" class="content-list tab-pane fade" id="binga-plant">
+                    {% include our-business/power-plant/binga.html %}
                 </div>
             </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="we-offer">
-                {% include about-us/strategic-foundation.html %}
-            </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="faqs">
-                {% include about-us/shareholder.html %}
-            </div>
         </div>
-    </div>
-
-    <div class="col-lg-3 right-section">
+        <div role="tabpanel" class="content-list tab-pane fade" id="we-offer">
+            {% include our-business/we-offer.html %}
+        </div>
+        <div role="tabpanel" class="content-list tab-pane fade" id="faqs">
+            {% include our-business/faqs.html %}
+        </div>
     </div>
 </div>
 
