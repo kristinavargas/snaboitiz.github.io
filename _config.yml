@@ -61,10 +61,10 @@ navbar-menu:
     slugID: "/our-business/"
 
   - title: "Csr & Sustainability"
-    slugID:
+    slugID: "/csr-sustainability/"
 
   - title: "Newsroom"
-    slugID:
+    slugID: "/newsroom/"
 
   - title: "Careers"
     slugID:
