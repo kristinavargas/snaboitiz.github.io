@@ -1,13 +1,17 @@
 <div class="content-section">
-    <h2 class="header-section">Vision</h2>
-    <p class="description-section">To be the leading provider and developer of renewable energy preferred by
-        stakeholders, achieving sustained profitable growth for shareholders through a diversified portfolio of assets,
-        products and services delivered by talented and engaged team members.</p>
-</div>
-<div class="content-section">
-
-</div>
-<div class="content-section">
-    <h2 class="header-section">Values</h2>
-
+    <h2 class="header-section">PROJECTS</h2>
+    <p class="description-section">SNAP believes that to be the leading renewable energy provider in the country, we
+        must pursue excellence in our environmental performance and innovation in our operations. But sustainability is
+        not only about business continuity; it is also about efficient management of resources, especially our natural
+        resources.
+        We have pioneered a number of environmental projects in partnership with our stakeholders, and we continue to
+        work with the Aboitiz Group in their environmental initiatives.</p>
+    <div class="project-section">
+        {% for sustainability in site.data.project %}
+        <div class="project-list">
+            <h4 class="project-title">{{ sustainability.title }}</h4>
+            <p class="project-description">{{ sustainability.description }}</p>
+        </div>
+        {% endfor %}
+    </div>
 </div>
