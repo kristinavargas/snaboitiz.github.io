@@ -58,7 +58,7 @@ navbar-menu:
     slugID: "/about-us/"
 
   - title: "Our Businesses"
-    slugID:
+    slugID: "/our-business/"
 
   - title: "Csr & Sustainability"
     slugID:
