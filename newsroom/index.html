@@ -1,0 +1,37 @@
+---
+layout: page-layout/newsroom
+---
+<div id="newsroom">
+    <div class="container">
+        <div class="left-section col-lg-8 col-md-8">
+            <div class="header-section">
+                <h2 class="header">Newsroom</h2>
+            </div>
+            {% for post in paginator.posts %}
+            <div class="content-section">
+                <h2 class="news-title">{{ post.title }}</h2>
+                <p class="news-description">{{ post.content | remove:'<p>' | remove:'</p>' }}</p>
+                <span class="news-date-posted">Posted on {{ post.date | date: '%B %d, %Y' }}</span>
+            </div>
+            {% endfor %}
+
+            <div class="pagination">
+                {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+                {% else %}
+                <span class="previous">Previous</span>
+                {% endif %}
+                <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+                {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+                {% else %}
+                <span class="next ">Next</span>
+                {% endif %}
+            </div>
+
+        </div>
+        <div class="right-section col-lg-4 col-md-4">
+            {% include side-gallery.html %}
+        </div>
+    </div>
+</div>
