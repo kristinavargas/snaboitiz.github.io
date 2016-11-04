@@ -25,45 +25,55 @@
       min-height: 60vh
       .content-list
         &#we-offer
-          padding-top: 30px
-          padding-bottom: 30px
+          .with-gallery
+            padding-top: 30px
+            padding-bottom: 30px
+          .right-section
+            margin-top: -38px
         &#faqs
-          padding-top: 30px
-          padding-bottom: 30px
-          #accordion
-            .faq-item
-              border: none
-              border-radius: 0
-              margin-bottom: 0
-              transition: all 100ms ease
-              .faq-link
-                display: block
-                color: #222
-                text-decoration: none
-                padding: 30px 0
-                border-bottom: 1px solid #bbbbbb
-                .faq-header
-                  font-weight: bold
-                  color: #000000
-                .faq-button
-                  float: right
-                  height: 14px
-              .panel-heading
-                margin: 0
-              .panel-body
-                padding: 0 0 15px
-                .faq-description
-                  color: #333333
-                  line-height: 30px
-                  font-size: 15px
-
-              &.active-item
-                background-color: #f7f7f7
+          .with-gallery
+            padding-top: 30px
+            padding-bottom: 30px
+            #accordion
+              padding-left: 15px
+              padding-right: 15px
+              .faq-item
+                border: none
+                border-radius: 0
+                margin-bottom: 0
+                transition: all 100ms ease
                 .faq-link
-                  color: white
-                  border: none
+                  display: block
+                  color: #222
+                  text-decoration: none
+                  padding: 30px 0
+                  border-bottom: 1px solid #bbbbbb
                   .faq-header
-                    color: #5f081a
+                    font-weight: bold
+                    color: #000000
+                  .faq-button
+                    float: right
+                    height: 14px
+                .panel-heading
+                  margin: 0
+                  padding-left: 0
+                  padding-right: 0
+                .panel-body
+                  padding: 0 0 15px
+                  .faq-description
+                    color: #333333
+                    line-height: 30px
+                    font-size: 15px
+
+                &.active-item
+                  background-color: #f7f7f7
+                  .faq-link
+                    color: white
+                    border: none
+                    .faq-header
+                      color: #5f081a
+          .right-section
+            margin-top: -38px
         .content-section
           .content-text
             margin-top: 15px

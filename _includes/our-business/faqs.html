@@ -1,4 +1,4 @@
-<div class="content-section col-lg-8 col-md-8">
+<div class="with-gallery content-section col-lg-8 col-md-8">
     <div class="accordion" id="accordion">
         {% for faq in site.data.faqs %}
         {% assign faqID = faqID | plus: 1 %}
@@ -19,4 +19,7 @@
         </div>
         {% endfor %}
     </div>
+</div>
+<div class="col-lg-4 col-lg-4 right-section">
+    {% include side-gallery.html %}
 </div>
