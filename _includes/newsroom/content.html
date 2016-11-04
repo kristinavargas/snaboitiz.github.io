@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="left-section col-lg-8 col-md-8">
+        <div class="header-section">
+            <h2 class="header">Newsroom</h2>
+        </div>
+        {% for news in site.posts %}
+        <div class="content-section">
+            <h2 class="news-title">{{ news.title }}</h2>
+            <p class="news-description">{{ news.content | remove:'<p>' '</p>' }}</p>
+            <span class="news-date-posted">Posted on {{ news.date | date: '%B %d, %Y' }}</span>
+        </div>
+        {% endfor %}
+    </div>
+    <div class="right-section col-lg-4 col-md-4">
+        {% include side-gallery.html %}
+    </div>
+</div>
