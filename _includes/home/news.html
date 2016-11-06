@@ -6,7 +6,7 @@
         <ul class="news-container">
             {% for news in site.posts limit:7 %}
             <li class="news-list">
-                <a class="news-link" href="#">{{ news.title }}</a>
+                <a class="news-link" href="{{ news.url }}">{{ news.title }}</a>
                 <span class="news-date">Posted on {{ news.date | date: '%B %d, %Y' }}</span>
             </li>
             {% if forloop.last %}
@@ -35,7 +35,9 @@
                             <img class="image center-block" src="/img/home/{{ news.cover }}"/>
                         </div>
                         <div class="description-section">
-                            <h2 class="title-section">{{ news.title }}</h2>
+                            <a class="title-link" href="{{ news.url }}">
+                                <h2 class="title-section">{{ news.title }}</h2>
+                            </a>
                             <p class="content-section">{{ news.content | remove:'<p>' '</p>' }}</p>
                             <span class="date-section">{{ news.date | timeago }}</span>
                         </div>
