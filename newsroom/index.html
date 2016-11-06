@@ -9,7 +9,9 @@ layout: page-layout/newsroom
             </div>
             {% for post in paginator.posts %}
             <div class="content-section">
-                <h2 class="news-title">{{ post.title }}</h2>
+                <a class="news-link" href="{{ post.url }}">
+                    <h2 class="news-title">{{ post.title }}</h2>
+                </a>
                 <p class="news-description">{{ post.content | remove:'<p>' | remove:'</p>' }}</p>
                 <span class="news-date-posted">Posted on {{ post.date | date: '%B %d, %Y' }}</span>
             </div>
