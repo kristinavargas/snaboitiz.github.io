@@ -38,8 +38,3 @@ Governor Pacalso expressed his appreciation for SNAP-Benguet for making the agre
 
 RPT is the tax on real property imposed by the LGU. SNAP-Benguet owns and operates the 105-megawatt (MW) Ambuklao hydroelectric power plant (HEPP) in Bokod and the 140-MW Binga (HEPP) in Itogon. It is a joint venture of SN Power of Norway and AboitizPower.
 
-
-For inquiries, please contact:
-Rhoda Santos, Corpcom Manager
-C: 0908-872-7286
-E: rhoda.santos@snaboitiz.com
