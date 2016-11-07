@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="col-lg-8 col-md-8 left-section">
+        <div class="header-section">
+            <h2 class="header">{{ page.title }}</h2>
+            <span class="date">Posted on {{ page.date | date: '%B %d, %Y' }}</span>
+        </div>
+        {% if page.cover != null %}
+        <div class="image-section">
+            <img src="{{ page.cover }}"/>
+        </div>
+        {% endif %}
+
+        <div class="content-section">
+            {{ page.content }}
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 right-section">
+        {% include side-gallery.html %}
+    </div>
+</div>

@@ -4,7 +4,7 @@
     </div>
     <div class="col-lg-4 col-md-4 left-section">
         <ul class="news-container">
-            {% for news in site.posts limit:7 %}
+            {% for news in site.posts limit:7 reverse %}
             <li class="news-list">
                 <a class="news-link" href="{{ news.url }}">{{ news.title }}</a>
                 <span class="news-date">Posted on {{ news.date | date: '%B %d, %Y' }}</span>
@@ -22,23 +22,23 @@
             <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     {% assign counter = 0 %}
-                    {% for news-list in site.posts limit:7 %}
+                    {% for news-list in site.posts reverse limit : 5  %}
                     {% assign counter = counter | plus:1 %}
                     <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {% endif %}></li>
                     {% endfor %}
                 </ol>
                 <!-- Carousel items -->
                 <div class="carousel-inner">
-                    {% for news in site.posts limit:7 %}
+                    {% for news in site.posts reverse limit: 5 %}
                     <div {% if forloop.first %} class="active item" {% else %} class="item" {% endif %}>
                         <div class="image-section">
-                            <img class="image center-block" src="/img/home/{{ news.cover }}"/>
+                            <img class="image center-block" src="{{ news.cover }}"/>
                         </div>
                         <div class="description-section">
                             <a class="title-link" href="{{ news.url }}">
                                 <h2 class="title-section">{{ news.title }}</h2>
                             </a>
-                            <p class="content-section">{{ news.content | remove:'<p>' '</p>' }}</p>
+                            {{ news.content | truncatewords: 15 }}
                             <span class="date-section">{{ news.date | timeago }}</span>
                         </div>
                     </div>
