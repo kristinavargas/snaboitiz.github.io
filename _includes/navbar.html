@@ -17,7 +17,7 @@
             <ul class="nav navbar-nav navbar-right">
                 {% for menu in site.navbar-menu %}
                 <li class="navbar-list">
-                    <a class="navbar-link" href="{{ menu.slugID }}">{{ menu.title }}</a>
+                    <a {% if page.url == menu.slugID %} class="navbar-link active" {% else %} class="navbar-link" {% endif %} href="{{ menu.slugID }}">{{ menu.title }}</a>
                 </li>
                 {% endfor %}
             </ul>
