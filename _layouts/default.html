@@ -9,9 +9,10 @@
   <meta name="author" content="">
   <title>{{ site.title}} </title>
   <!--<link rel="shorcut icon" href="/favicon.ico" type="image/x-icon">-->
-  <link rel="stylesheet" href="/css/{{ layout.css }}">
   {% if page.url == "/" %}
   <link rel="stylesheet" href="/css/home.css">
+  {% else %}
+  <link rel="stylesheet" href="/css/{{ layout.css }}">
   {% endif %}
 </head>
 <body>

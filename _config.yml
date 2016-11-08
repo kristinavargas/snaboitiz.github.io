@@ -61,7 +61,7 @@ navbar-menu:
     slugID: "/careers/"
 
   - title: "Contact"
-    slugID:
+    slugID: "/contact/"
 
 company:
   - link:
