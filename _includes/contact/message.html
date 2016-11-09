@@ -1,9 +1,10 @@
 <div class="message-container">
     <script type="text/javascript">var submitted = false;</script>
-    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;)"></iframe>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"></iframe>
     <form id="form-content" action="https://formspree.io/rens.ramos@crux.design" target="hidden_iframe" method="POST" class="form-content clearfix">
         <div class="form-item clearfix">
             <span class="content-title">Type</span>
+            <span class="caret"></span>
             <select required="" id="type" name="type" class="content-input menu-select form-control" aria-required="true" aria-invalid="false">
                 <option class="menu-choice" name="type" value="">---</option>
                 <option value="Billing Issue">Billing Issue</option>
@@ -21,28 +22,28 @@
         </div>
 
         <div class="form-item clearfix">
-            <span class="content-title ">Description</span>
-            <textarea class="text-area content-input form-control" name="description"  required type="text"  value="" rows="7"></textarea>
+            <span class="content-title ">Message</span>
+            <textarea class="text-area content-input form-control" placeholder="Type in message here" name="description"  required type="text"  value="" rows="7"></textarea>
         </div>
 
         <div class="form-item clearfix">
             <span class="content-title ">Email Address</span>
-            <input class="content-input form-control input-lg" name="_replyto" autocomplete="off" required type="email" value="" size="40" aria-required="true" aria-invalid="false">
+            <input class="content-input form-control input-lg" placeholder="johndoe@gmail.com" name="_replyto" autocomplete="off" required type="email" value="" size="40" aria-required="true" aria-invalid="false">
         </div>
 
         <div class="form-item clearfix">
-            <span class="content-title ">Contact Name</span>
-            <input class="content-input form-control input-lg" name="contact-name" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+            <span class="content-title ">From</span>
+            <input class="content-input form-control input-lg" placeholder="John Doe" name="contact-name" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
         </div>
 
         <div class="form-item clearfix">
             <span class="content-title ">Company</span>
-            <input class="content-input form-control input-lg" name="company" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+            <input class="content-input form-control input-lg" placeholder="John Doe Corporation" name="company" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
         </div>
 
         <div class="form-item clearfix">
-            <span class="content-title ">Phone</span>
-            <input class="content-input form-control input-lg" name="phone" autocomplete="off" required type="number" value="" size="15" aria-required="true" aria-invalid="false">
+            <span class="content-title ">Contact Number</span>
+            <input class="content-input form-control input-lg" placeholder="09195828233" name="phone" autocomplete="off" required type="number" value="" size="15" aria-required="true" aria-invalid="false">
         </div>
 
 
@@ -51,7 +52,17 @@
         <input type="text" name="_gotcha" style="display:none" />
 
         <div class="content-button-container">
-            <button data-toggle="modal-message" type="submit" id="ss-submit" class="input-lg form-control submit-button ">SEND</button>
+            <button data-toggle="modal-message" type="submit" id="ss-submit" class="input-lg form-control submit-button ">SEND INQUIRY</button>
         </div>
     </form>
+
+    <div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <h2 class="text-alert">You successfully submitted your response.</h2>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

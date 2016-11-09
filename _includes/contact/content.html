@@ -1,23 +1,26 @@
 <div class="container-fluid no-gutter container-section">
-    <div class="col-lg-6 col-md-6 left-section">
-        <!-- Nav tabs -->
-        <ul class="nav nav-tabs" role="tablist">
-            <li role="presentation" class="tabs-list active">
-                <a class="tabs-link" href="#message" aria-controls="home" role="tab" data-toggle="tab">Message</a>
-            </li>
-            <li class="tabs-list" role="presentation">
-                <a class="tabs-link" href="#office-location" aria-controls="profile" role="tab" data-toggle="tab">Office Location</a>
-            </li>
+    <div class="col-lg-6 col-md-6 ">
+        <div class="left-section">
+            <!-- Nav tabs -->
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="tabs-list active">
+                    <a class="tabs-link" href="#message" aria-controls="home" role="tab" data-toggle="tab">Message</a>
+                </li>
+                <li class="tabs-list" role="presentation">
+                    <a class="tabs-link" href="#office-location" aria-controls="profile" role="tab" data-toggle="tab">Office
+                        Location</a>
+                </li>
 
-        </ul>
+            </ul>
 
-        <!-- Tab panes -->
-        <div class="tab-content">
-            <div role="tabpanel" class="content-list tab-pane fade in active" id="message">
-                {% include contact/message.html %}
-            </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="office-location">
-                {% include contact/location.html %}
+            <!-- Tab panes -->
+            <div class="tab-content">
+                <div role="tabpanel" class="content-list tab-pane fade in active" id="message">
+                    {% include contact/message.html %}
+                </div>
+                <div role="tabpanel" class="content-list tab-pane fade" id="office-location">
+                    {% include contact/location.html %}
+                </div>
             </div>
         </div>
     </div>
