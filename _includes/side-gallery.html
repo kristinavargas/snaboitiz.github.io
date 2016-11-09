@@ -2,9 +2,9 @@
     <div class="header-section">
         <h2 class="header">Gallery</h2>
     </div>
-    {% for gallery in site.data.gallery %}
+    {% for gallery in site.data.gallery reversed limit: 12 %}
     <div class="gallery-list col-lg-6 col-md-6">
-        <img class="gallery-image" src="/img/gallery/{{ gallery.image }}"/>
+        <img class="gallery-image" src="{{ gallery.image }}"/>
     </div>
     {% endfor %}
 </div>
