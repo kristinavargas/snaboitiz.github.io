@@ -4,19 +4,31 @@ css: our-business.css
 title: about
 javascript: >
     <script type="text/javascript">
-        $(document).ready(function(){
+        $(document).ready(function () {
+            //nav tabs
             var faqLink = $(".faq-link");
             var buttonImage = $('.faq-button');
-            faqLink.on('click',function() {
+            faqLink.on('click', function () {
                 faqLink.not(this).parent().removeClass('active-item');
-                buttonImage.not(this).attr('src','/img/icon-button/arrow_down.png');
+                buttonImage.not(this).attr('src', '/img/icon-button/arrow_down.png');
                 $(this).parent().toggleClass('active-item');
-                if($(this).parent().hasClass('active-item')){
-                    $(this).find(buttonImage).attr('src','/img/icon-button/close.png');
+                if ($(this).parent().hasClass('active-item')) {
+                    $(this).find(buttonImage).attr('src', '/img/icon-button/close.png');
                 }
-                else{
-                    $(this).find(buttonImage).attr('src','/img/icon-button/arrow_down.png');
+                else {
+                    $(this).find(buttonImage).attr('src', '/img/icon-button/arrow_down.png');
                 }
+            });
+
+            //nav-tabs
+            var tabsLink = $("#our-business .container-section>.nav-tabs .tabs-list .tabs-link");
+            var tabContainer = $("#our-business .container-section .nav-tabs");
+            tabsLink.on("click", function () {
+                tabContainer.css("border-bottom", "2px solid #b5b5b5")
+            });
+
+            $(".tabs-link:first").on("click",function () {
+                tabContainer.css("border-bottom", "0")
             });
         });
     </script>
