@@ -3,8 +3,25 @@ layout: default
 css: contact.css
 title: contact
 javascript: >
+
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAGTC35SZAcmQsRGLOnCZrvCS1oBuMNcnw&callback=initMap"></script>
     <script type="text/javascript">
+        //Form on submit
+        $("#form-content").on("submit",function(){
+            $("#ss-submit").attr("disabled", true);
+            setTimeout(function(){
+                $("#ss-submit").attr("disabled", false);
+            }, 1000);
+            $("#hidden_iframe").on('load',function () {
+                $("#modal-message").modal('show');
+                $("#form-content")[0].reset();
+                setTimeout(function(){
+                    $("#modal-message").modal('hide');
+                }, 2000);
+            });
+        });
+
+        //GMAP
         window.initMap = function() {
             var mapLocation = {lat: 14.587638, lng: 121.1766565};
             var customMapType = new google.maps.StyledMapType(
