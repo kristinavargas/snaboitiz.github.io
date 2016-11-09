@@ -13,8 +13,11 @@
   font-family: 'Gotham-Light'
   src: url('/fonts/Gotham/Gotham-Light.ttf')
 
-
 //Lato Fonts
+@font-face
+  font-family: 'Lato-Light'
+  src: url('/fonts/Lato/Lato-Light.ttf')
+
 @font-face
   font-family: 'Lato-Regular'
   src: url('/fonts/Lato/Lato-Regular.ttf')
@@ -31,13 +34,12 @@
   font-family: 'Lato-Heavy'
   src: url('/fonts/Lato/Lato-Heavy.ttf')
 
-
 //General style section
 body
   margin-top: 121px
   color: #585858
   font-size: 14px
-  font-family: "Lato-Light","SansSerif"
+  font-family: "Lato-Light", "SansSerif"
 
 .no-gutter
   padding-left: 0
@@ -67,29 +69,32 @@ nav
       .navbar-right
         margin-right: 0
         .navbar-list
+          padding: 15px 0
           .navbar-link
             transition: all 200ms ease-in-out
             color: #585858
             display: block
-            padding: 30px 15px
+            padding: 15px 20px
             text-transform: uppercase
-            font-family: "Gotham-Medium","sans-serif"
+            font-family: "Gotham-Medium", "sans-serif"
             font-weight: 400
-            &:hover
-              opacity: 0.8
+            &:hover, &.active
+              color: white
+              background-color: #0E6BA2
+
   &.navbar-shrink
     background-color: white
-    border: 1px solid #e7e7e7
+    border-bottom: 1px solid #e7e7e7
     .container-fluid
       .navbar-header
-        .navbar-brandt
+        .navbar-brand
           .brand-logo
             height: 50px
       .navbar-right
         .navbar-list
           .navbar-link
-            padding-top: 30px
-            padding-bottom: 30px
+            padding-top: 15px
+            padding-bottom: 15px
 
 .gallery-section
   .header-section

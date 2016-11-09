@@ -1,17 +1,57 @@
 <div class="message-container">
-    <div class="message-item">
-        <span class="message-header">To</span>
-        <input class="input-item"/>
-    </div>
+    <script type="text/javascript">var submitted = false;</script>
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;)"></iframe>
+    <form id="form-content" action="https://formspree.io/rens.ramos@crux.design" target="hidden_iframe" method="POST" class="form-content clearfix">
+        <div class="form-item clearfix">
+            <span class="content-title">Type</span>
+            <select required="" id="type" name="type" class="content-input menu-select form-control" aria-required="true" aria-invalid="false">
+                <option class="menu-choice" name="type" value="">---</option>
+                <option value="Billing Issue">Billing Issue</option>
+                <option value="Force Majeure Claim">Force Majeure Claim</option>
+                <option value="Rate Adjustment Request">Rate Adjustment Request</option>
+                <option value="SBLC Amount Adjustment">SBLC Amount Adjustment</option>
+                <option value="Contracted Energy Request">Contracted Energy Request</option>
+                <option value="Others">Others</option>
+            </select>
+        </div>
 
-    <div class="message-item">
-        <span class="message-header">Subject</span>
-        <input class="input-item"/>
-    </div>
+        <div class="form-item clearfix">
+            <span class="content-title">Subject</span>
+            <input class="content-input form-control input-lg" name="subject" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+        </div>
 
-    <div class="message-item">
-        <span class="message-header">Message</span>
-        <textarea class="textarea-item"></textarea>
-    </div>
+        <div class="form-item clearfix">
+            <span class="content-title ">Description</span>
+            <textarea class="text-area content-input form-control" name="description"  required type="text"  value="" rows="7"></textarea>
+        </div>
 
+        <div class="form-item clearfix">
+            <span class="content-title ">Email Address</span>
+            <input class="content-input form-control input-lg" name="_replyto" autocomplete="off" required type="email" value="" size="40" aria-required="true" aria-invalid="false">
+        </div>
+
+        <div class="form-item clearfix">
+            <span class="content-title ">Contact Name</span>
+            <input class="content-input form-control input-lg" name="contact-name" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+        </div>
+
+        <div class="form-item clearfix">
+            <span class="content-title ">Company</span>
+            <input class="content-input form-control input-lg" name="company" autocomplete="off" required type="text" value="" size="40" aria-required="true" aria-invalid="false">
+        </div>
+
+        <div class="form-item clearfix">
+            <span class="content-title ">Phone</span>
+            <input class="content-input form-control input-lg" name="phone" autocomplete="off" required type="number" value="" size="15" aria-required="true" aria-invalid="false">
+        </div>
+
+
+        <input type="hidden" name="_subject" value="New submission!" />
+        <input type="hidden" name="_next" value="/" />
+        <input type="text" name="_gotcha" style="display:none" />
+
+        <div class="content-button-container">
+            <button data-toggle="modal-message" type="submit" id="ss-submit" class="input-lg form-control submit-button ">SEND</button>
+        </div>
+    </form>
 </div>

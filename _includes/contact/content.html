@@ -1,4 +1,4 @@
-<div class="container container-section">
+<div class="container-fluid no-gutter container-section">
     <div class="col-lg-6 col-md-6 left-section">
         <!-- Nav tabs -->
         <ul class="nav nav-tabs" role="tablist">
@@ -17,11 +17,13 @@
                 {% include contact/message.html %}
             </div>
             <div role="tabpanel" class="content-list tab-pane fade" id="office-location">
-                {% include about-us/strategic-foundation.html %}
+                {% include contact/location.html %}
             </div>
         </div>
     </div>
     <div class="col-lg-6 col-md-6">
-        {% include contact/gmaps.html %}
+        <div class="map-section">
+            <div id="map" style="height: 100vh"></div>
+        </div>
     </div>
 </div>
