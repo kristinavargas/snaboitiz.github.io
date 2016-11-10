@@ -2,7 +2,7 @@
     <div class="header-section">
         <h2 class="header">Gallery</h2>
     </div>
-    {% for gallery in site.data.gallery reversed limit: 12 %}
+    {% for gallery in site.data.gallery reversed limit: 8 %}
     {% assign counter = counter | plus:1 %}
 
     <div class="gallery-list col-lg-6 col-md-6">
