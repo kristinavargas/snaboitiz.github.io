@@ -60,6 +60,10 @@ navbar-menu:
   - title: "Careers"
     slugID: "/careers/"
 
+  - title: "Gallery"
+    slugID: "/gallery/"
+
+
   - title: "Contact"
     slugID: "/contact/"
 
