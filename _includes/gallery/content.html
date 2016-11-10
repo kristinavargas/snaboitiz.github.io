@@ -1,5 +1,25 @@
 <div class="container container-section">
-    <div class="gallery-content">
-
+    <div class="header-section">
+        <h2 class="header">Gallery</h2>
     </div>
+    {% for gallery in site.data.gallery reversed limit: 8 %}
+    {% assign counter = counter | plus:1 %}
+    <div class="gallery-list col-lg-4 col-md-4 ">
+        <a class="image-link" data-toggle="modal" data-target="#{{ counter }}" target="_blank">
+            <img class="gallery-image img-responsive center-block" src="{{ gallery.image }}"/>
+        </a>
+        <div class="modal-list modal fade" id="{{ counter }}" tabindex="-1" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <button type="button"  data-dismiss="modal" aria-hidden="true">
+                        <img class="modal-close" src="/img/close.png"/>
+                    </button>
+                    <div class="modal-body">
+                        <img class="modal-image img-responsive center-block" src="{{ gallery.image }}"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
 </div>

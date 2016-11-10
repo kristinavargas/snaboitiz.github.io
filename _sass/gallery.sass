@@ -3,113 +3,28 @@
   background-color: #FBFBFB
   padding: 30px 15px
   font-family: "Lato-Regular"
+  min-height: 90vh
   .container-section
-    .left-section
-      .nav-tabs
-        display: table
-        border-bottom: 2px solid #b5b5b5
-        .tabs-list
-          .tabs-link
-            margin: 0
-            outline: none
-            border: none
-            color: #636768
-            border-radius: 0
-            font-family: "Lato-Heavy"
-            text-transform: uppercase
-            padding-left: 30px
-            padding-right: 30px
-          &.active, &:hover
-            .tabs-link
-              color: white
-              background-color: #0E6BA2
-      .tab-content
-        min-height: 50vh
-        .content-list
-          padding-top: 30px
-          padding-bottom: 30px
-          //snap-group
-          &#snap-group
-            .content-text
-              margin-top: 15px
-              margin-bottom: 15px
-              line-height: 25px
-              font-size: 14px
-              font-family: "Gotham-Light"
-              color: #636768
-          //strategic-foundation
-          &#strategic-foundation
-            .content-section
-              margin-bottom: 30px
-              .header-section
-                font-family: "Gotham-Medium"
-                font-size: 16px
-                margin-top: 15px
-                margin-bottom: 15px
-              .description-section
-                font-size: 14px
-                font-family: "Gotham-Light"
-                color: #636768
-                line-height: 25px
-              ul
-                .header
-                  margin: 15px 0
-                  font-size: 14px
-                  display: inline-block
-                  text-transform: uppercase
-                  font-family: "Gotham-Medium"
-                .description
-                  margin: 15px 0
-                  font-size: 14px
-                  display: inline-block
-          &#shareholder
-            .content-section
-              .image-section
-                .image
-                  display: block
-                  &.logo-1
-                    padding-top: 15px
-                    padding-bottom: 30px
-                  &.logo-2
-                    padding-bottom: 15px
-                  &.logo-3
-                    padding-top: 15px
-              .image-description-1
-                margin-bottom: 30px
-                .description
-                  line-height: 25px
-                  font-size: 14px
-                  font-family: "Gotham-Light"
-                  color: #636768
-              .image-description-2
-                margin-top: 30px
-                margin-bottom: 30px
-                .description
-                  line-height: 25px
-                  font-size: 14px
-                  font-family: "Gotham-Light"
-                  color: #636768
-          &#leadership
-            .content-section
-              .description-section
-                margin-bottom: 30px
-                .description
-                  line-height: 25px
-                  font-size: 14px
-                  font-family: "Gotham-Light"
-                  color: #636768
-              .officer-section
-                .officer-container
-                  .divider
-                    display: block
-                    margin-bottom: 30px
-                  .officer-list
-                    margin-bottom: 30px
-                    .officer-name
-                      font-family: "Gotham-Medium"
-                      display: block
-                      margin-bottom: 5px
-                    .officer-position
-                      font-family: "Gotham-Light"
-                      color: #636768
-                      display: block
+    .header-section
+      .header
+        padding-left: 10px
+        margin: 0
+        color: #636768
+        border-radius: 0
+        font-family: "Lato-Heavy"
+        text-transform: uppercase
+        padding-top: 15px
+        padding-bottom: 15px
+    .gallery-list
+      padding: 15px
+      .image-link
+        display: block
+        cursor: pointer
+        .gallery-image
+          object-fit: cover
+          object-position: 50% 50%
+          width: 100%
+          height: 250px
+          display: block
+          margin-left: auto
+          margin-right: auto
