@@ -20,6 +20,11 @@
                     <a {% if page.url == menu.slugID %} class="navbar-link active" {% else %} class="navbar-link" {% endif %} href="{{ menu.slugID }}">{{ menu.title }}</a>
                 </li>
                 {% endfor %}
+                <li class="navbar-list">
+                    <button href="" class="navbar-search">
+                        <img class="search-icon" src="/img/search.png"/>
+                    </button>
+                </li>
             </ul>
         </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
