@@ -1,7 +1,7 @@
 <div class="container container-section">
     <div class="col-lg-8 col-md-12 col-sm-12 col-xs-12 left-section">
         <!-- Nav tabs -->
-        <ul class="nav nav-tabs responsive" role="tablist">
+        <ul id="myTab" class="nav nav-tabs responsive" role="tablist">
             <li role="presentation" class="tabs-list active">
                 <a class="tabs-link" href="#snap-group" aria-controls="snap-group"  role="tab" data-toggle="tab">Snap Group</a>
             </li>
@@ -21,16 +21,18 @@
             <div role="tabpanel" class="content-list tab-pane fade in active" id="snap-group">
                 {% include about-us/snap-group.html %}
             </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="strategic-foundation">
+            <div class="content-list tab-pane fade" id="strategic-foundation">
                 {% include about-us/strategic-foundation.html %}
             </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="shareholder">
+            <div class="content-list tab-pane fade" id="shareholder">
                 {% include about-us/shareholder.html %}
             </div>
-            <div role="tabpanel" class="content-list tab-pane fade" id="leadership">
+            <div class="content-list tab-pane fade" id="leadership">
                 {% include about-us/leadership.html %}
             </div>
         </div>
+
+
     </div>
 
     <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 right-section">
