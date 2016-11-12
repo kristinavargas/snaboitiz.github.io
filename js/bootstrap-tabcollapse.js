@@ -32,7 +32,7 @@
 				'      <h4 class="panel-title">' +
 				'      </h4>' +
 				'   </div>' +
-				'   <div id="' + groupId + '" class="panel-collapse collapse ' + (active ? 'in' : '') + '">' +
+				'   <div id="' + groupId + '" class="panel-collapse collapse ' + '">' +
 				'       <div class="panel-body js-tabcollapse-panel-body">' +
 				'       </div>' +
 				'   </div>' +
@@ -158,7 +158,7 @@
 	};
 
 	TabCollapse.prototype._tabHeadingToPanelHeading = function($heading, groupId, parentId, active) {
-		$heading.addClass('js-tabcollapse-panel-heading ' + (active ? '' : 'collapsed'));
+		$heading.addClass('js-tabcollapse-panel-heading collapsed');
 		$heading.attr({
 			'data-toggle': 'collapse',
 			'data-parent': '#' + parentId,
