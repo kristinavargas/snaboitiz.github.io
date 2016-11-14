@@ -3,6 +3,7 @@ layout: default
 css: our-business.css
 title: about
 javascript: >
+    <script type="text/javascript" src="/js/bootstrap-tabcollapse.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             //nav tabs
@@ -30,7 +31,17 @@ javascript: >
             $(".tabs-link:first").on("click",function () {
                 tabContainer.css("border-bottom", "0")
             });
+
+
+            $('#myTab').tabCollapse({
+                tabsClass: 'hidden-sm hidden-xs',
+                accordionClass: 'visible-sm visible-xs'
+            });
+
         });
+
+
+
     </script>
 
 ---

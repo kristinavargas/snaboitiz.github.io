@@ -1,6 +1,6 @@
 <div class="container container-section">
     <!-- Nav tabs -->
-    <ul class="nav nav-tabs" role="tablist">
+    <ul id="myTab" class="nav nav-tabs" role="tablist">
         <li role="presentation" class="tabs-list active">
             <a class="tabs-link" href="#power-plant" role="tab" data-toggle="tab">Our Power Plants</a>
         </li>
@@ -47,5 +47,10 @@
             {% include our-business/faqs.html %}
         </div>
     </div>
+
+    <div class="hidden-lg hidden-md visible-sm visible-xs col-sm-12 col-xs-12 right-section">
+        {% include side-gallery.html %}
+    </div>
+
 </div>
 

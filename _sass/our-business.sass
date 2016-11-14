@@ -111,3 +111,103 @@
           padding-top: 30px
           padding-botoom: 30px
 
+
+@media (max-width: $screen-sm-max)
+  #our-business
+    padding-left: 0
+    padding-right: 0
+    .container-section
+      .panel-group
+        .panel
+          border-radius: 0
+          .panel-heading
+            padding: 0
+            .panel-title
+              .tabs-link
+                padding: 15px
+                display: block
+                color: #ffffff
+                background-color: #0E6BA2
+                font-family: "Lato-Heavy"
+                text-transform: uppercase
+                text-decoration: none
+                &.collapsed
+                  color: #636768
+                  background-color: #f5f5f5
+          .panel-collapse
+            .panel-body
+              .content-text
+                margin-top: 15px
+                margin-bottom: 15px
+                line-height: 25px
+                font-size: 14px
+                font-family: "Gotham-Light"
+                color: #636768
+              .content-section
+                margin-bottom: 30px
+                .header-section
+                  font-family: "Gotham-Medium"
+                  font-size: 16px
+                  margin-top: 15px
+                  margin-bottom: 15px
+                .description-section
+                  font-size: 14px
+                  font-family: "Gotham-Light"
+                  color: #636768
+                  line-height: 25px
+              //faq section
+              .with-gallery
+                padding-left: 0
+                padding-right: 0
+                #accordion
+                  padding-left: 0
+                  padding-right: 0
+                  .faq-item
+                    border: none
+                    margin: 30px 0
+                    border-radius: 0
+                    transition: all 100ms ease
+                    .faq-link
+                      background-color: #EAEAEA
+                      display: block
+                      color: #636768
+                      text-decoration: none
+                      padding: 15px 20px
+                      .faq-header
+                        font-family: "Lato-Regular"
+                        display: inline-block
+                        color: #636768
+                        max-width: 95%
+                      .faq-button
+                        display: inline-block
+                        float: right
+                        height: 14px
+                    .package-content
+                      background-color: #EAEAEA
+                    .panel-heading
+                      margin: 0
+                      padding-left: 0
+                      padding-right: 0
+                    .panel-body
+                      padding: 0 0 15px
+                      .faq-description
+                        color: #636768
+                        font-family: "Gotham-Light"
+                        font-size: 14px
+                        line-height: 25px
+                        padding: 15px 20px
+                    &.active-item
+                      .faq-link
+                        border-bottom: 1px solid #bbbbbb
+
+
+
+@media (max-width: 568px)
+  #our-business
+    .container-section
+      .panel-group
+        .panel
+          .panel-heading
+            .panel-title
+              .tabs-link.collapsed
+                font-size: 14px
