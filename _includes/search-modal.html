@@ -2,22 +2,20 @@
     <div class="modal-content">
         <div class="container-fluid">
             <div class="modal-header">
-                <form method="get" data-search-form>
-                    <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Search Products..." data-search-input/>
-                          <span class="input-group-btn">
-                            <button class="btn btn-default"><span class="glyphicon glyphicon-search"/></button>
-                            <button class="btn btn-default" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"/></button>
-                          </span>
-                    </div>
-                </form>
-            </div>
-            <div class="modal-body" >
-                <!-- Html Elements for Search -->
-                <div id="search-container">
-                    <input type="text" id="search-input" placeholder="search...">
-                    <ul id="results-container"></ul>
+                <div id="search-container" class="input-group">
+                    <input type="text" id="search-input" class="form-control" placeholder="What are you looking for?"/>
+                    <span class="input-group-btn input-group-btn">
+                        <button class="btn btn-default search-icon">
+                            <img src="/img/search-blue.png"/>
+                        </button>
+                        <button class="btn btn-default btn-close" data-dismiss="modal" aria-label="Close">
+                            <span class="glyphicon glyphicon-remove"/>
+                        </button>
+                    </span>
                 </div>
+            </div>
+            <div class="modal-body">
+                <div id="results-container"></div>
             </div>
         </div>
     </div>

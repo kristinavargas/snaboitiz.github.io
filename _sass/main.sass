@@ -227,6 +227,52 @@ footer
       width: 0%
       left: 50%
 
+#searchModal
+  .modal-content
+    border: none
+    box-shadow: none
+    background-color: transparent
+    .modal-header
+      padding-top: 30px
+      border-bottom: none
+      #search-container
+        max-width: 70%
+        min-width: 70%
+        margin-left: auto
+        #search-input
+          padding-left: 20px
+          padding-right: 40px
+          outline: none
+          height: 40px
+          right: -20px
+          z-index: 1
+          border-top-left-radius: 20px
+          border-bottom-left-radius: 20px
+        .input-group-btn
+          z-index: 2
+          .search-icon
+            height: 40px
+            width: 40px
+            margin-left: 0
+            padding: 0
+            border: none
+            background-color: transparent
+            outline: none
+
+          .btn-close
+            border: none
+            border-radius: 30px
+            height: 40px
+            width: 40px
+
+            outline: none
+
+
+    .modal-body
+      #results-container
+        list-style: none
+
+
 @media (max-width: 568px)
   body
     margin-top: 81px
