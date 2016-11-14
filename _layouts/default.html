@@ -46,11 +46,11 @@
     searchInput: document.getElementById('search-input'),
     resultsContainer: document.getElementById('results-container'),
     json: 'search.json',
-    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    searchResultTemplate: '<li class="result-list"><a class="result-link" href="{url}" title="{desc}">{title}</a></li>',
     noResultsText: 'No results found',
-    limit: 5,
+    limit: 7,
     fuzzy: false,
-    exclude: ['Welcome']
+    include: ['Welcome']
   })
 
 </script>
