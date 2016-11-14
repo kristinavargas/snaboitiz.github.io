@@ -16,15 +16,16 @@
   {% endif %}
 </head>
 <body>
-
 {% include navbar.html %}
 {{ content }}
+{% include search-modal.html %}
 {% include footer.html %}
 
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="/js/modernizr.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="/js/jekyll-search.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
 {{ layout.javascript }}
 
@@ -41,7 +42,17 @@
     });
   });
 
-//  $('#carousel').carousel();
+  SimpleJekyllSearch({
+    searchInput: document.getElementById('search-input'),
+    resultsContainer: document.getElementById('results-container'),
+    json: 'search.json',
+    searchResultTemplate: '<li><a href="{url}" title="{desc}">{title}</a></li>',
+    noResultsText: 'No results found',
+    limit: 10,
+    fuzzy: false,
+    exclude: ['Welcome']
+  })
+
 </script>
 {% endif %}
 

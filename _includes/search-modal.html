@@ -1,0 +1,24 @@
+<div class="modal fade" id="searchModal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-content">
+        <div class="container-fluid">
+            <div class="modal-header">
+                <form method="get" data-search-form>
+                    <div class="input-group">
+                        <input type="text" class="form-control" placeholder="Search Products..." data-search-input/>
+                          <span class="input-group-btn">
+                            <button class="btn btn-default"><span class="glyphicon glyphicon-search"/></button>
+                            <button class="btn btn-default" data-dismiss="modal" aria-label="Close"><span class="glyphicon glyphicon-remove"/></button>
+                          </span>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-body" >
+                <!-- Html Elements for Search -->
+                <div id="search-container">
+                    <input type="text" id="search-input" placeholder="search...">
+                    <ul id="results-container"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
