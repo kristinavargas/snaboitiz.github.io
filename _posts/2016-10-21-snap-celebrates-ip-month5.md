@@ -1,8 +1,22 @@
 ---
 layout: post
-title:  "SNAP CELEBRATES IP MONTH"
+title:  "SNAP-BENGUET BAGS THREE GAWAD KALIGITASAN AT KALUSUGAN AWARDS"
 date:   2016-10-21 23:47:32 
-cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/SNAP-PLGU-Benguet-RPT-CA.jpg"
+cover: "http://www.snaboitiz.com/wp-content/uploads/2016/06/SNAP-Benguet-GKK.jpg"
 
 ---
-SN Aboitiz Power-Magat, Inc. (SNAP-Magat), together with the National Commission on Indigenous Peoples (NCIP) and the local government of Aguinaldo marked Indigenous Peoples month with a tree-planting activity in Barangay Halag on October 11. Officials of SNAP, NCIP, Aguinaldo LGU, and the Department of Education planted 30 narra seedlings at the compound of Halag Elementary School and Halag National High School. Chief Operating Officer Joseph Yu led SNAP-Magat, while Provincial Officer Esther Lichnachan represented NCIP and Mayor Gaspar Chilagan represented Aguinaldo LGU. The tree-planting activity was held following the public hearing on the Alimit hydropower complex project, which was attended by different barangays and IP organizations in the municipality of Aguinaldo.
+The SNAP-Benguet SHESQ team with officers from DOLE-CAR, including regional director Nathaniel Lacambra (second from right) and OSHC Executive Director Ma. Teresita Cucueco, MD (3rd from left).
+
+SN Aboitiz Power-Benguet (SNAP-Benguet) received three awards in the Department of Labor and Employment’s 10th Gawad Kaligtasan at Kalusugan (GKK) on June 28 in the DOLE-CAR office in Baguio City.
+
+SNAP-Benguet was selected GKK Regional Winner under the industrial category by the regional selection committee for its outstanding contributions in the area of occupational safety and health (OSH), including compliance to general labor and OSH standards. SHESQ Sr. Manager Hollis Fernandez was also awarded as the 10th GKK Regional Winner under the individual category.
+
+The GKK is given by the DOLE in recognition of outstanding achievements of companies and individuals in occupational health and safety. SNAP-Benguet’s regional award qualifies them for the national category, which will be awarded later this year after the last phase of deliberation. This is the third regional GKK award for Ambuklao and Binga.
+
+Both the Ambuklao and Binga plants have secured and maintained management system certifications on Occupational health and safety (OHSAS 1800), Quality (ISO 9001), Environment (ISO 14001) respectively, under an Integrated Management System.
+
+SNAP’s power plants continually implement programs such as transport safety, practice the reporting of “unwanted occurrences” to support hazards identification and assessment of risks, and conduct safety talks (“toolbox meeting”), safety checks (“Take 5″), and a robust and effective permit to work system for the safe execution of work. This year, SNAP also began implementing the Behavior Based Safety program.
+
+They also foster a balanced work-life for its team members, through activities that encourage physical health and general well-being through health orientations, recreational activities, and volunteerism.
+
+SN Aboitiz Power-Benguet is a joint venture between SN Power of Norway and AboitizPower. It owns and operates the the Ambuklao and Binga plants in the province of Benguet.

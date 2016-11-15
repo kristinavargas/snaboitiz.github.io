@@ -1,8 +1,40 @@
 ---
 layout: post
-title:  "SNAP CELEBRATES IP MONTH"
+title:  "SNAP, IPs STEADFAST IN PARTNERSHIP ON CULTURAL HERITAGE"
 date:   2016-10-21 23:47:32 
-cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/SNAP-PLGU-Benguet-RPT-CA.jpg"
+cover: "http://www.snaboitiz.com/wp-content/uploads/2016/07/SMUP-signing.jpg"
 
 ---
-SN Aboitiz Power-Magat, Inc. (SNAP-Magat), together with the National Commission on Indigenous Peoples (NCIP) and the local government of Aguinaldo marked Indigenous Peoples month with a tree-planting activity in Barangay Halag on October 11. Officials of SNAP, NCIP, Aguinaldo LGU, and the Department of Education planted 30 narra seedlings at the compound of Halag Elementary School and Halag National High School. Chief Operating Officer Joseph Yu led SNAP-Magat, while Provincial Officer Esther Lichnachan represented NCIP and Mayor Gaspar Chilagan represented Aguinaldo LGU. The tree-planting activity was held following the public hearing on the Alimit hydropower complex project, which was attended by different barangays and IP organizations in the municipality of Aguinaldo.
+(L-R) Brgy. Tinongdan Chairman Ruben Cunanan, NCIP representative Atty. Severino Manual, NPC’s Mr. Onofre Castro, PLGU-Benguet officer Camilo Alumit, SNAP Chief Corporate Services Officer Mike Hosillos, Itogon Mayor Victorio Palangdan, and Councilor and Tinongdan IP Chieftain Norberto Pacio at the signing of the Site Management and Use Plan of the Binga Indigenous Peoples Cultural Heritage Site.
+
+When SN Aboitiz Power (SNAP) took over the Ambuklao and Binga hydroelectric power plants in Benguet on July 12, 2008, it faced two major challenges. One was re-operating Ambuklao, which was dormant for almost 12 years, and another was gaining the cooperation of the indigenous peoples (IPs) in the area, who have had long-standing land issues with the government when they put up the power plants in the 1950s.
+
+Eight years later, not only has SNAP put Ambuklao back on-line and increased capacity from 75 megawatts (MW)) to 105 MW. Just as significantly, the hydropower company has facilitated and supported several landmark agreements and community projects in coordination with local government units and the IP groups themselves.
+
+As of June 2016, SNAP has partnered with the Tinongdan People’s Organization (TINPO), Shakilan ni Ikulos Indigenous Peoples Organization (SNIPO) and local government units of Itogon and Bokod, Benguet on 100 projects promoting indigenous culture.
+
+These include donations of indigenous cultural instruments, sponsorship of activities during IP month and financial support for the formulation of Ancestral Domain for Sustainable Development Plans and Programs and administrative operation of host IP organizations.
+
+“Support for IPs and indigenous culture has always been an integral part not only of our corporate social responsibility but our operations,” said Atty. Mike Hosillos, spokesperson for SNAP Group.
+
+Just last month, SNAP-Benguet and local government officials of the municipality of Itogon launched the Site Management and Use Plan (SMUP) for the Binga Indigenous Peoples Cultural Heritage Site. This provides for the effective control of the host community over the administration and use of schools, sports facilities, a church, a recreation hall, an infirmary, and a day care center identified as residual areas in Sitio Binga, Brgy. Tinongdan.
+
+Speaking during the launching ceremony on June 23, Atty. Hosillos recalled how a breakthrough agreement in 2009 led to the SMUP.
+
+“The Binga heritage site is the realization of the Memorandum of Agreement (MOA) on the establishment of cultural heritage sites of SNAP-Benguet’s host communities in Ambuklao and Binga signed in 2009. This MOA, in turn, gave way to two implementing agreements for Binga and Ambuklao in 2010 and 2011, respectively. The SMUP provides a framework for the continual use, development, preservation, and administration of heritage sites,” he said.
+
+Itogon Mayor Victorio Palangdan lauded the Stakeholders Council, composed of multi-sectoral representatives, for its efforts to implement the SMUP. “Binga is fortunate to have a heritage site and a company that is very supportive of the community’s initiatives,” he added.
+
+Atty. Severino Lumigid, representative of the National Commission on Indigenous Peoples Regional Office, held the Binga heritage site as a “model” that can be replicated in other provinces in the Cordillera.
+
+Barangay Tinongdan Chairman Ruben Cunanan also cited the Stakeholders Council, particularly TINPO chairman Norberto Pacio, who headed the technical working group of the SMUP and also serves as Site Administrator.
+
+In October 2015, SNAP-Benguet, LGUs and IP groups commemorated IP month by launching a similar SMUP for Ambuklao. This would enable the use and administration by the host community of the Ambuklao Elementary School, Tublay School of Home Industries, basketball and tennis courts, chapel, and municipal building in Brgy. Abuklao, Bokod by the host community including the indigenous peoples’ group.
+
+The areas in the Binga and Ambuklao hydroelectric power complex covered by the SMUP and being developed as heritage sites used to be managed by National Power Corporation when the plants were still government-owned and operated. Following the privatization of the plants, the government and community stakeholders participated in a seven-month mediation process supported by SNAP and facilitated by a third party for a way forward on decades-old issues over the ownership and use of the areas.
+
+In 2011, the United Nations through the Harvard Kennedy School of Government, documented on film the dialogue as a Philippine model of non-judicial, conflict resolution. The short film was premiered at the UN headquarters in Geneva, Switzerland in the same year.
+
+“We have always believed that communication and engagement can go a long way in opening up opportunities for collaboration and resolution toward achieving shared goals, and we are committed to continue this with our IP stakeholders,” Atty Hosillos said.
+
+SN Aboitiz Power-Benguet is a joint venture between SN Power of Norway and AboitizPower.
