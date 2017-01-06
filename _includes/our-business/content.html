@@ -5,7 +5,7 @@
             <a class="tabs-link" href="#power-plant" role="tab" data-toggle="tab">Our Power Plants</a>
         </li>
         <li class="tabs-list" role="presentation">
-            <a class="tabs-link" href="#we-offer" role="tab" data-toggle="tab">What We Offer</a>
+            <a class="tabs-link" href="#our-service" role="tab" data-toggle="tab">Our Services</a>
         </li>
         <li class="tabs-list" role="presentation">
             <a class="tabs-link" href="#faqs" role="tab" data-toggle="tab">FAQs</a>
@@ -40,8 +40,31 @@
                 </div>
             </div>
         </div>
-        <div role="tabpanel" class="content-list tab-pane fade clearfix" id="we-offer">
-            {% include our-business/we-offer.html %}
+        <div role="tabpanel" class="content-list tab-pane fade clearfix" id="our-service">
+            <ul class="nav nav-tabs" role="tablist">
+                <li role="presentation" class="tabs-list active">
+                    <a class="tabs-link" href="#wholesale" role="tab" data-toggle="tab">Wholesale Services</a>
+                </li>
+                <li role="presentation" class="tabs-list">
+                    <a class="tabs-link" href="#retail" role="tab" data-toggle="tab">Retail Services</a>
+                </li>
+                <li role="presentation" class="tabs-list">
+                    <a class="tabs-link" href="#ancillary" role="tab" data-toggle="tab">Ancillary Services</a>
+                </li>
+            </ul>
+            <div class="tab-content">
+                <div role="tabpanel" class="content-list tab-pane fade in active" id="wholesale">
+                    {% include our-business/our-service/wholesale.html %}
+                </div>
+
+                <div role="tabpanel" class="content-list tab-pane fade" id="retail">
+                    {% include our-business/our-service/retail.html %}
+                </div>
+
+                <div role="tabpanel" class="content-list tab-pane fade" id="ancillary">
+                    {% include our-business/our-service/ancillary.html %}
+                </div>
+            </div>
         </div>
         <div role="tabpanel" class="content-list tab-pane fade" id="faqs">
             {% include our-business/faqs.html %}
