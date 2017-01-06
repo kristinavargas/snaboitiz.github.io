@@ -22,9 +22,10 @@
             <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     {% assign counter = 0 %}
-                    {% for news-list in site.posts reverse limit : 5  %}
+                    {% for news-list in site.posts reverse limit : 5 %}
                     {% assign counter = counter | plus:1 %}
-                    <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {% endif %}></li>
+                    <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {%
+                        endif %}></li>
                     {% endfor %}
                 </ol>
                 <!-- Carousel items -->
@@ -56,9 +57,10 @@
             <div id="carousel" class="carousel slide carousel-fade" data-ride="carousel">
                 <ol class="carousel-indicators">
                     {% assign counter = 0 %}
-                    {% for news-list in site.posts reverse limit : 5  %}
+                    {% for news-list in site.posts reverse limit : 5 %}
                     {% assign counter = counter | plus:1 %}
-                    <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {% endif %}></li>
+                    <li data-target="#carousel" data-slide-to="{{ counter }}" {% if forloop.first %} class="active" {%
+                        endif %}></li>
                     {% endfor %}
                 </ol>
                 <!-- Carousel items -->
