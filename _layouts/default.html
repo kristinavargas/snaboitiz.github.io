@@ -27,6 +27,7 @@
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jekyll-search.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript" src="/js/background.cycle.js"></script>
 {{ layout.javascript }}
 
 {% if page.url == "/" %}
@@ -52,6 +53,18 @@
     fuzzy: false,
     include: ['Welcome']
   })
+
+
+  $("#image-slider").backgroundCycle({
+      imageUrls: [
+          '/img/slider/slide-1.jpg',
+          '/img/slider/slide-2.jpg',
+          '/img/slider/slide-3.jpg'
+      ],
+      fadeSpeed: 2000,
+      duration: 6000,
+      backgroundSize: SCALING_MODE_COVER
+  });
 
 </script>
 {% endif %}
