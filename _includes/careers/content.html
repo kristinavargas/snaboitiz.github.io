@@ -1,24 +1,27 @@
-<div class="container container-section">
-    <div class="header-section">
-        <h2 class="header">Careers</h2>
-    </div>
-    <div class="career-section clearfix">
-        {% for career in site.data.careers %}
-        <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 career-list-container ">
-            <div class="career-list">
-                <h4 class="career-title">{{ career.title }}</h4>
-                <ul>
-                    <li>COMPANY:
-                        <span class="career-company">{{ career.company }}</span>
-                    </li>
-                    <li>LOCATION:
-                        <span class="career-location">{{ career.location }}</span>
-                    </li>
-                </ul>
-                <p class="career-requirement">
-                    <strong class="requirement-title">REQUIREMENTS:</strong>{{ career.requirements }}</p>
-            </div>
+<div class="container-fluid no-gutter container-section">
+    <div class="banner-section"></div>
+    <div class="container">
+        <div class="header-section">
+            <h2 class="header">Careers</h2>
         </div>
-        {% endfor %}
+        <div class="career-section clearfix">
+            {% for career in site.data.careers %}
+            <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 career-list-container ">
+                <div class="career-list">
+                    <h4 class="career-title">{{ career.title }}</h4>
+                    <ul>
+                        <li>COMPANY:
+                            <span class="career-company">{{ career.company }}</span>
+                        </li>
+                        <li>LOCATION:
+                            <span class="career-location">{{ career.location }}</span>
+                        </li>
+                    </ul>
+                    <p class="career-requirement">
+                        <strong class="requirement-title">REQUIREMENTS:</strong>{{ career.requirements }}</p>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 </div>
