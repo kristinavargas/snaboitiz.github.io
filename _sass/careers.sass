@@ -14,22 +14,25 @@
         width: 100%
         height: auto
     .header-section
-      margin-bottom: 30px
+      margin-top: 30px
       .header
+        text-align: center
+        font-size: 24px
         padding-left: 10px
         margin: 0
         color: #636768
         border-radius: 0
         font-family: "Segoeui-Bold"
-        text-transform: uppercase
+        text-transform: capitalize
         padding-top: 15px
         padding-bottom: 15px
     .career-section
+      margin-top: 30px
       .career-list
         background-color: white
         padding: 30px 30px 0 30px
         color: #636768
-        min-height: 550px
+        min-height: 350px
         margin-bottom: 50px
         .career-title
           font-family: "Segoeui-Bold"
@@ -49,6 +52,15 @@
         .career-requirement
           font-family: "Segoeui"
           line-height: 25px
+          display: block /* Fallback for non-webkit */
+          display: -webkit-box
+          max-width: 400px
+          height: calc(14px*25px*3px) /* Fallback for non-webkit */
+          margin: 0 auto
+          -webkit-line-clamp: 3
+          -webkit-box-orient: vertical
+          overflow: hidden
+          text-overflow: ellipsis
           .requirement-title
             font-family: "Segoeui"
             display: block

@@ -2,7 +2,7 @@
     <div class="banner-section"></div>
     <div class="container">
         <div class="header-section">
-            <h2 class="header">Careers</h2>
+            <h2 class="header">Open Positions</h2>
         </div>
         <div class="career-section clearfix">
             {% for career in site.data.careers %}
@@ -17,8 +17,8 @@
                             <span class="career-location">{{ career.location }}</span>
                         </li>
                     </ul>
-                    <p class="career-requirement">
-                        <strong class="requirement-title">REQUIREMENTS:</strong>{{ career.requirements }}</p>
+                    <p class="career-requirement"><strong class="requirement-title">REQUIREMENTS:</strong>{{ career.requirements }}</p>
+                    <a href="#">Learn More</a>
                 </div>
             </div>
             {% endfor %}
