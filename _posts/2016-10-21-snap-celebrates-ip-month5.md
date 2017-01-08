@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SNAP-BENGUET BAGS THREE GAWAD KALIGITASAN AT KALUSUGAN AWARDS"
+title:  "SNAP-BENGUET bags three Gawad Kaligtasan at Kalusugan Awards"
 date:   2016-10-21 23:47:32 
 cover: "http://www.snaboitiz.com/wp-content/uploads/2016/06/SNAP-Benguet-GKK.jpg"
 

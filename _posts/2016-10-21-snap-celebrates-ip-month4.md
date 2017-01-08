@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SNAP CELEBRATES IP MONTH"
+title: "Snap Celebrates IP Month"
 date:   2016-10-21 23:47:32 
 cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/SNAP-PLGU-Benguet-RPT-CA.jpg"
 

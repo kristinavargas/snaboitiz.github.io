@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "SNAP, IPs STEADFAST IN PARTNERSHIP ON CULTURAL HERITAGE"
+title:  "SNAP, IPs Steadfast in partnership on cultural heritage"
 date:   2016-10-21 23:47:32 
 cover: "http://www.snaboitiz.com/wp-content/uploads/2016/07/SMUP-signing.jpg"
 
