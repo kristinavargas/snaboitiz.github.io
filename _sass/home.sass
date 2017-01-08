@@ -81,6 +81,15 @@ nav
           width: 33.33%
           display: inline-block
           vertical-align: middle
+          .company-logo
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+            opacity: 0.5
+            transition: 300ms all ease-in-out
+            &:hover
+              opacity: 1
+              -webkit-filter: none
+              filter: none
 
 #news
   position: relative

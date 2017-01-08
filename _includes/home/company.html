@@ -1,9 +1,9 @@
 <div class="container">
     <div class="section-content">
         <ul>
-            {% for company in site.company %}
+            {% for company in site.data.company %}
             <li class="company-list">
-                <img class="company-logo center-block" src="/img/group/{{ company.image }}"/>
+                <img class="company-logo center-block" src="/img/group/colored/{{ company.image }}"/>
             </li>
             {% endfor %}
         </ul>

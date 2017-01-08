@@ -66,12 +66,3 @@ navbar-menu:
   - title: "Contact"
     slugID: "/contact/"
 
-company:
-  - link:
-    image: "logo-1.png"
-
-  - link:
-    image: "logo-2.png"
-
-  - link:
-    image: "logo-3.png"
