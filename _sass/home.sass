@@ -17,6 +17,15 @@ nav
             -ms-filter: brightness(0) invert(1)
 
       .navbar-right
+        .navbar-list-button
+          .navbar-search
+            .search-icon
+              transition: all 300ms ease-in-out
+              filter: brightness(0) invert(1)
+              -webkit-filter: brightness(0) invert(1)
+              -moz-filter: brightness(0) invert(1)
+              -o-filter: brightness(0) invert(1)
+              -ms-filter: brightness(0) invert(1)
         .navbar-list
           margin: 15px 0px
           overflow: hidden
@@ -106,6 +115,15 @@ nav
             -o-filter: none
             -ms-filter: none
       .navbar-right
+        .navbar-list-button
+          .navbar-search
+            .search-icon
+              transition: all 300ms ease-in-out
+              filter: none
+              -webkit-filter: none
+              -moz-filter: none
+              -o-filter: none
+              -ms-filter: none
         .navbar-list
           margin: 15px 0px
           overflow: hidden
@@ -193,8 +211,13 @@ nav
   #image-slider
     height: inherit
   .section-container
-    height: inherit
-    position: relative
+    position: absolute
+    top: 0%
+    left: 0
+    right: 0
+    bottom: 0%
+    width: 100%
+    height: 100%
     .section-content
       position: relative
       top: 50%
