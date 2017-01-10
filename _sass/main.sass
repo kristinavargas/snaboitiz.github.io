@@ -49,7 +49,7 @@ nav
         padding: 0
         margin-right: 0
         .navbar-list
-          margin: 15px 0px
+          margin: 19px 3px
           overflow: hidden
           position: relative
           z-index: 5
@@ -73,7 +73,7 @@ nav
             -o-transform: translate(0, 0)
             transform: translate(0, 0)
             border-top: 1px solid black
-            border-bottom: 1px solid black
+            border-bottom: 1px solid #585858
             left: -101%
 
           &:after
@@ -81,8 +81,8 @@ nav
             -ms-transform: translate(0, 0)
             -o-transform: translate(0, 0)
             transform: translate(0, 0)
-            border-left: 1px solid black
-            border-right: 1px solid black
+            border-left: 1px solid #585858
+            border-right: 1px solid #585858
             top: -101%
 
           &:hover
@@ -104,7 +104,7 @@ nav
               -o-transform: translate(0, 101%)
               transform: translate(0, 101%)
           &.active-menu
-            border: 1px solid #5f081a
+            border: 1px solid #585858
             &:hover
               &:before
                 -webkit-transform: none
@@ -118,17 +118,13 @@ nav
                 -o-transform: none
                 transform: none
             a
-              padding: 19px 29px
+              padding: 14px
           a
-            z-index: 15
-            cursor: pointer
+            z-index: 5
             color: #585858
             display: block
             padding: 15px
             text-transform: uppercase
-            &:hover, &.active
-              border-color: #0E6BA2
-
         .navbar-list-button
           margin: 15px 0px
           overflow: hidden
@@ -154,10 +150,10 @@ nav
             height: 50px
       .navbar-right
         .navbar-list
-          margin: 15px 0px
+          margin: 19px 3px
           overflow: hidden
           position: relative
-          z-index: 5
+          z-index: 2
           &:before, &:after
             content: ""
             display: block
@@ -189,7 +185,6 @@ nav
             border-left: 1px solid black
             border-right: 1px solid black
             top: -101%
-
           &:hover
             &:before
               -webkit-transform: translate(101%, 0)
@@ -209,30 +204,25 @@ nav
               -o-transform: translate(0, 101%)
               transform: translate(0, 101%)
           &.active-menu
-            border: 1px solid #5f081a
+            border: 1px solid #585858
             &:hover
               &:before
                 -webkit-transform: none
                 -ms-transform: none
                 -o-transform: none
                 transform: none
-
               &:after
                 -webkit-transform: none
                 -ms-transform: none
                 -o-transform: none
                 transform: none
-            a
-              padding: 19px 29px
           a
-            z-index: 15
+            z-index: 3
             cursor: pointer
             color: #585858
             display: block
             padding: 15px
             text-transform: uppercase
-            &:hover, &.active
-              border-color: #0E6BA2
 
 .modal-list
   .modal-dialog

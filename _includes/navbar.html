@@ -16,8 +16,8 @@
         <div class="collapse navbar-collapse" id="navbar-right-collapse">
             <ul class="nav navbar-nav navbar-right">
                 {% for menu in site.navbar-menu %}
-                <li class="navbar-list">
-                    <a {% if page.url == menu.slugID %} class="navbar-link active" {% else %} class="navbar-link" {% endif %} href="{{ menu.slugID }}">{{ menu.title }}</a>
+                <li {% if page.url == menu.slugID %} class="navbar-list active-menu" {% else %} class="navbar-list" {% endif %}>
+                    <a  class="navbar-link" href="{{ menu.slugID }}">{{ menu.title }}</a>
                 </li>
                 {% endfor %}
                 <li class="navbar-list-button">
