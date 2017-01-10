@@ -1,14 +1,22 @@
 #about-us
   position: relative
   background-color: #FBFBFB
-  padding: 30px 15px
+  padding: 30px 0
   font-family: "Segoeui"
   .container-section
-    .left-section
+    .tabs-container
+      position: relative
+      .liner
+        height: 3px
+        background: #ddd
+        position: absolute
+        width: 100%
+        margin: 0 auto
+        left: 0
+        right: 0
+        top: 50%
+        z-index: 1
       .nav-tabs
-        display: table
-        margin-left: auto
-        margin-right: auto
         border-bottom: 2px solid #b5b5b5
         .tabs-list
           .tabs-link
@@ -25,13 +33,231 @@
             .tabs-link
               color: white
               background-color: #0E6BA2
-      .tab-content
-        min-height: 50vh
-        .content-list
-          padding-top: 30px
-          padding-bottom: 30px
-          //snap-group
-          &#snap-group
+    .tab-content
+      min-height: 50vh
+      .content-list
+        padding-top: 30px
+        padding-bottom: 30px
+        //snap-group
+        &#snap-group
+          .content-text
+            margin-top: 15px
+            margin-bottom: 15px
+            line-height: 25px
+            font-size: 14px
+            font-family: "Segoeui"
+            color: #636768
+        //strategic-foundation
+        &#strategic-foundation
+          .content-section
+            margin-bottom: 30px
+            .header-section
+              font-family: "Segoeui-Bold"
+              font-size: 16px
+              margin-top: 15px
+              margin-bottom: 15px
+            .description-section
+              font-size: 14px
+              font-family: "Segoeui"
+              color: #636768
+              line-height: 25px
+            ul
+              .header
+                margin: 15px 0
+                font-size: 14px
+                display: inline-block
+                text-transform: uppercase
+                font-family: "Segoeui"
+              .description
+                margin: 15px 0
+                font-size: 14px
+                display: inline-block
+        &#shareholder
+          .content-section
+            .image-section
+              .image
+                display: block
+                &.logo-1
+                  padding-top: 15px
+                  padding-bottom: 30px
+                &.logo-2
+                  padding-bottom: 15px
+                &.logo-3
+                  padding-top: 15px
+            .image-description-1
+              margin-bottom: 30px
+              .description
+                line-height: 25px
+                font-size: 14px
+                font-family: "Segoeui"
+                color: #636768
+            .image-description-2
+              margin-top: 30px
+              margin-bottom: 30px
+              .description
+                line-height: 25px
+                font-size: 14px
+                font-family: "Segoeui"
+                color: #636768
+        &#leadership
+          .content-section
+            .description-section
+              margin-bottom: 30px
+              .description
+                line-height: 25px
+                font-size: 14px
+                font-family: "Segoeui"
+                color: #636768
+            .officer-section
+              .officer-container
+                .divider
+                  display: block
+                  margin-bottom: 30px
+                .officer-list
+                  margin-bottom: 30px
+                  .officer-name
+                    font-family: "Segoeui"
+                    display: block
+                    margin-bottom: 5px
+                  .officer-position
+                    font-family: "Segoeui"
+                    color: #636768
+                    display: block
+
+
+
+.nav-tabs
+  li
+    &.active
+      a
+        color: #555555
+        cursor: default
+        border: 0
+        border-bottom-color: transparent
+        &:hover, &:focus
+          color: #555555
+          cursor: default
+          /* background-color: #ffffff;
+          border: 0
+          border-bottom-color: transparent
+    a
+      width: 70px
+      height: 70px
+      margin: 20px auto
+      border-radius: 100%
+      padding: 0
+      &:hover
+        background: transparent
+
+span.round-tabs
+  width: 70px
+  height: 70px
+  line-height: 70px
+  display: inline-block
+  border-radius: 100px
+  background: white
+  z-index: 2
+  position: absolute
+  left: 0
+  text-align: center
+  font-size: 25px
+  &.one
+    color: rgb(34, 194, 34)
+    border: 2px solid rgb(34, 194, 34)
+
+li.active span.round-tabs.one
+  background: #fff !important
+  color: rgb(34, 194, 34)
+
+span.round-tabs.two
+  color: #febe29
+  border: 2px solid #febe29
+
+li.active span.round-tabs.two
+  background: #fff !important
+  border: 2px solid #ddd
+  color: #febe29
+
+span.round-tabs.three
+  color: #3e5e9a
+  border: 2px solid #3e5e9a
+
+li.active span.round-tabs.three
+  background: #fff !important
+  border: 2px solid #ddd
+  color: #3e5e9a
+
+span.round-tabs.four
+  color: #f1685e
+  border: 2px solid #f1685e
+
+li.active span.round-tabs.four
+  background: #fff !important
+  border: 2px solid #ddd
+  color: #f1685e
+
+span.round-tabs.five
+  color: #999
+  border: 2px solid #999
+
+li.active span.round-tabs.five
+  background: #fff !important
+  border: 2px solid #ddd
+  color: #999
+
+.nav-tabs > li
+  &.active > a span.round-tabs
+    background: #fafafa
+  width: 25%
+li
+  &:after
+    content: " "
+    position: absolute
+    left: 45%
+    opacity: 0
+    margin: 0 auto
+    bottom: 0px
+    border: 5px solid transparent
+    border-bottom-color: #ddd
+    transition: 0.1s ease-in-out
+  &.active:after
+    content: " "
+    position: absolute
+    left: 45%
+    opacity: 1
+    margin: 0 auto
+    bottom: 0px
+    border: 10px solid transparent
+    border-bottom-color: #ddd
+.btn.green
+  background-color: #5cb85c
+  color: #ffffff
+
+
+
+@media (max-width: $screen-sm-max)
+  #about-us
+    padding-left: 0
+    padding-right: 0
+    .panel-group
+      .panel
+        border-radius: 0
+        .panel-heading
+          padding: 0
+          .panel-title
+            .tabs-link
+              padding: 15px
+              display: block
+              color: #ffffff
+              background-color: #0E6BA2
+              font-family: "Segoeui-Bold"
+              text-transform: uppercase
+              text-decoration: none
+              &.collapsed
+                color: #636768
+                background-color: #f5f5f5
+        .panel-collapse
+          .panel-body
             .content-text
               margin-top: 15px
               margin-bottom: 15px
@@ -39,10 +265,9 @@
               font-size: 14px
               font-family: "Segoeui"
               color: #636768
-          //strategic-foundation
-          &#strategic-foundation
             .content-section
               margin-bottom: 30px
+              //strategic section2
               .header-section
                 font-family: "Segoeui-Bold"
                 font-size: 16px
@@ -64,8 +289,7 @@
                   margin: 15px 0
                   font-size: 14px
                   display: inline-block
-          &#shareholder
-            .content-section
+              //share-holder section
               .image-section
                 .image
                   display: block
@@ -91,8 +315,6 @@
                   font-size: 14px
                   font-family: "Segoeui"
                   color: #636768
-          &#leadership
-            .content-section
               .description-section
                 margin-bottom: 30px
                 .description
@@ -100,6 +322,7 @@
                   font-size: 14px
                   font-family: "Segoeui"
                   color: #636768
+              //leadership section
               .officer-section
                 .officer-container
                   .divider
@@ -116,124 +339,12 @@
                       color: #636768
                       display: block
 
-@media (max-width: $screen-sm-max)
-  #about-us
-    padding-left: 0
-    padding-right: 0
-    .container-section
-      .left-section
-        padding-left: 0
-        padding-right: 0
-        .panel-group
-          .panel
-            border-radius: 0
-            .panel-heading
-              padding: 0
-              .panel-title
-                .tabs-link
-                  padding: 15px
-                  display: block
-                  color: #ffffff
-                  background-color: #0E6BA2
-                  font-family: "Segoeui-Bold"
-                  text-transform: uppercase
-                  text-decoration: none
-                  &.collapsed
-                    color: #636768
-                    background-color: #f5f5f5
-            .panel-collapse
-              .panel-body
-                .content-text
-                  margin-top: 15px
-                  margin-bottom: 15px
-                  line-height: 25px
-                  font-size: 14px
-                  font-family: "Segoeui"
-                  color: #636768
-                .content-section
-                  margin-bottom: 30px
-                  //strategic section2
-                  .header-section
-                    font-family: "Segoeui-Bold"
-                    font-size: 16px
-                    margin-top: 15px
-                    margin-bottom: 15px
-                  .description-section
-                    font-size: 14px
-                    font-family: "Segoeui"
-                    color: #636768
-                    line-height: 25px
-                  ul
-                    .header
-                      margin: 15px 0
-                      font-size: 14px
-                      display: inline-block
-                      text-transform: uppercase
-                      font-family: "Segoeui"
-                    .description
-                      margin: 15px 0
-                      font-size: 14px
-                      display: inline-block
-                  //share-holder section
-                  .image-section
-                    .image
-                      display: block
-                      &.logo-1
-                        padding-top: 15px
-                        padding-bottom: 30px
-                      &.logo-2
-                        padding-bottom: 15px
-                      &.logo-3
-                        padding-top: 15px
-                  .image-description-1
-                    margin-bottom: 30px
-                    .description
-                      line-height: 25px
-                      font-size: 14px
-                      font-family: "Segoeui"
-                      color: #636768
-                  .image-description-2
-                    margin-top: 30px
-                    margin-bottom: 30px
-                    .description
-                      line-height: 25px
-                      font-size: 14px
-                      font-family: "Segoeui"
-                      color: #636768
-                  .description-section
-                    margin-bottom: 30px
-                    .description
-                      line-height: 25px
-                      font-size: 14px
-                      font-family: "Segoeui"
-                      color: #636768
-                  //leadership section
-                  .officer-section
-                    .officer-container
-                      .divider
-                        display: block
-                        margin-bottom: 30px
-                      .officer-list
-                        margin-bottom: 30px
-                        .officer-name
-                          font-family: "Segoeui"
-                          display: block
-                          margin-bottom: 5px
-                        .officer-position
-                          font-family: "Segoeui"
-                          color: #636768
-                          display: block
-      .right-section
-        padding-left: 0
-        padding-right: 0
 
 @media (max-width: 568px)
   #about-us
-    .container-section
-      .left-section
-        .panel-group
-          .panel
-            .panel-heading
-              .panel-title
-                .tabs-link.collapsed
-                  font-size: 14px
+    .panel-group
+      .panel
+        .panel-heading
+          .panel-title
+            .tabs-link.collapsed
+              font-size: 14px
