@@ -377,13 +377,13 @@ footer
       transition: .5s ease-in-out
       cursor: pointer
     #icon-transition.open span
-      background: #0E6BA2
+      background: #585858
     #icon-transition span
       display: block
       position: absolute
       height: 1px
       width: 100%
-      background: #0E6BA2
+      background: #585858
       border-radius: 5px
       opacity: 1
       left: 0
@@ -429,6 +429,16 @@ footer
   nav
     &.navbar-default
       background-color: #ffffff !important
+      .container-fluid
+        .navbar-right
+          .navbar-list-button
+            float: none
+            margin-left: auto
+            margin-right: auto
+            width: fit-content
+
+
+
 @media (max-width: 568px)
   body
     margin-top: 81px
