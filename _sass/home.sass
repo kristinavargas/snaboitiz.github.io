@@ -455,6 +455,7 @@ nav
 
 @media (max-width: $screen-md-max)
   #cover
+    height: calc(100vh - 91px)
     .section-container
       .section-content
         .intro-top
@@ -495,6 +496,7 @@ nav
       margin-left: 15px
       margin-right: 15px
 
+
 @media (max-width: $screen-xs-max)
   #cover
     .section-container
@@ -514,9 +516,13 @@ nav
           .section-text
             max-width: 100%
 
+@media (max-width: $screen-xs-max) and (orientation: landscape)
+  #cover
+    height: 100vh
+
 @media (max-width: 568px)
   #cover
-    height: auto
+    height: calc(100vh + 80px)
     .section-container
       .section-content
         padding: 150px 0
@@ -543,6 +549,16 @@ nav
             display: block
             width: 100%
             margin: 50px auto
+          .company-list:nth-child(2), .company-list:nth-child(3)
+            display: block
+            width: 100%
+            margin: 50px auto
+            .company-logo
+              max-width: none
+              min-width: initial
+              height: 33px
+
+
 
   #news
     .left-section
@@ -562,6 +578,14 @@ nav
           .section-header
             font-size: 32px
 
+@media (max-width: 568px) and (orientation: landscape)
+  #cover
+    height: 150vh
+    .section-container
+      .section-content
+        .intro-top
+          .intro-header
+            font-size: 28px
 
 
 
