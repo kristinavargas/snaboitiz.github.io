@@ -29,7 +29,7 @@
 {% include navbar.html %}
 {{ content }}
 {% include search-modal.html %}
-{% include footer.html %}
+<!--{% include footer.html %}-->
 
 <script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
@@ -37,11 +37,23 @@
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="/js/jekyll-search.js"></script>
 <script type="text/javascript" src="/js/main.js"></script>
-<script type="text/javascript" src="/js/background.cycle.js"></script>
+
+<script type="text/javascript" src="/js/jquery.easings.min.js"></script>
+<script type="text/javascript" src="/js/scrolloverflow.js"></script>
+<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
+
 {{ layout.javascript }}
 
 {% if page.url == "/" %}
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="/js/home.js"></script>
 <script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+            verticalCentered: true,
+            sectionsColor: ['#000000', '#4BBFC3', '#7BAABE']
+        });
+    });
   //On intro link click
   $(function () {
     var introLink = $('#cover .intro-link ');
@@ -51,18 +63,6 @@
         scrollTop: $(introLink.attr('href')).offset().top - 100
       }, 1500, 'easeInOutExpo');
     });
-  });
-
-
-  $("#image-slider").backgroundCycle({
-      imageUrls: [
-          '/img/slider/slide-1.jpg',
-          '/img/slider/slide-2.jpg',
-          '/img/slider/slide-3.jpg'
-      ],
-      fadeSpeed: 2000,
-      duration: 6000,
-      backgroundSize: SCALING_MODE_COVER
   });
 
 </script>

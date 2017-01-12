@@ -5,26 +5,7 @@ nav
   &.navbar-default
     transition: all 300ms ease-in-out
     .container-fluid
-      .navbar-header
-        .navbar-brand
-          .brand-logo
-            transition: all 300ms ease-in-out
-            filter: brightness(0) invert(1)
-            -webkit-filter: brightness(0) invert(1)
-            -moz-filter: brightness(0) invert(1)
-            -o-filter: brightness(0) invert(1)
-            -ms-filter: brightness(0) invert(1)
-
       .navbar-right
-        .navbar-list-button
-          .navbar-search
-            .search-icon
-              transition: all 300ms ease-in-out
-              filter: brightness(0) invert(1)
-              -webkit-filter: brightness(0) invert(1)
-              -moz-filter: brightness(0) invert(1)
-              -o-filter: brightness(0) invert(1)
-              -ms-filter: brightness(0) invert(1)
         .navbar-list
           overflow: hidden
           &:before, &:after
@@ -99,24 +80,7 @@ nav
 
   &.navbar-shrink
     .container-fluid
-      .navbar-header
-        .navbar-brand
-          .brand-logo
-            filter: none !important
-            -webkit-filter: none !important
-            -moz-filter: none !important
-            -o-filter: none !important
-            -ms-filter: none !important
       .navbar-right
-        .navbar-list-button
-          .navbar-search
-            .search-icon
-              transition: all 300ms ease-in-out
-              filter: none
-              -webkit-filter: none
-              -moz-filter: none
-              -o-filter: none
-              -ms-filter: none
         .navbar-list
           &:before, &:after
             content: ""
@@ -192,67 +156,22 @@ nav
   &.navbar-shrink
     background-color: white
 
-#cover
-  position: relative
-  height: calc(100vh - 120px)
-  #image-slider
-    height: inherit
-  .section-container
+#section0
+  background-image: url("/img/cover-bg.jpg")
+  background-size: cover
+  background-position: center center
+  #canvas
     position: absolute
-    top: 0%
+    top: 0
     left: 0
     right: 0
-    bottom: 0%
+    bottom: 0
     width: 100%
     height: 100%
-    .section-content
-      position: relative
-      top: 50%
-      transform: translateY(-50%)
-      -webkit-transform: translateY(-50%)
-      -moz-transform: translateY(-50%)
-      -ms-transform: translateY(-50%)
-      -o-transform: translateY(-50%)
-      .intro-top
-        color: white
-        text-align: center
-        margin-bottom: 30px
-        .intro-header
-          font-size: 42px
-          font-family: "Segoeui-Bold"
-          letter-spacing: 2px
-        .intro-text
-          font-size: 24px
-          font-family: "Segoeui-Bold"
-          margin-top: 15px
-          margin-bottom: 15px
-          letter-spacing: 2px
-      .intro-middle
-        color: white
-        text-align: center
-        .intro-text
-          font-size: 20px
-          font-family: "Segoeui-Italic"
-          max-width: 65%
-          min-width: 65%
-          margin-left: auto
-          margin-right: auto
-          line-height: 30px
-      .intro-bottom
-        display: table
-        margin-left: auto
-        margin-right: auto
-        margin-top: 50px
-        .intro-link
-          outline: none
-          color: white
-          display: block
-          font-size: 20px
-          font-family: "Segoeui"
-          background-color: #0E6BA2
-          text-decoration: none
-          padding: 20px 70px
-          border-radius: 40px
+    display: flex
+
+
+
 
 #company
   position: relative

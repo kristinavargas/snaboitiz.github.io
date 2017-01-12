@@ -48,20 +48,20 @@ navbar-menu:
   - title: "About Us"
     slugID: "/about-us/"
 
-  - title: "Our Businesses"
+  - title: "Our Services"
     slugID: "/our-business/"
 
   - title: "Csr & Sustainability"
     slugID: "/csr-sustainability/"
 
-  - title: "Newsroom"
+  - title: "News"
+    slugID: "/newsroom/"
+
+  - title: "FAQs"
     slugID: "/newsroom/"
 
   - title: "Careers"
     slugID: "/careers/"
-
-  - title: "Gallery"
-    slugID: "/gallery/"
 
   - title: "Contact"
     slugID: "/contact/"
