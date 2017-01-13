@@ -1,3 +1,8 @@
+*,
+*:before,
+*:after
+  box-sizing: border-box
+
 body
   margin-top: 0
 
@@ -157,6 +162,7 @@ nav
     background-color: white
 
 #cover
+  position: relative
   background-image: url("/img/cover-bg.jpg")
   background-size: cover
   background-position: center center
@@ -170,129 +176,24 @@ nav
     height: 100%
     display: flex
 
-
-
-
-#company
+#our-plant
   position: relative
-  background-color: #f5f5f5
-  .container
-    .section-content
-      padding-top: 25px
-      padding-bottom: 25px
-      ul
-        width: 100%
-        display: table
-        margin-left: auto
-        margin-right: auto
-        .company-list
-          width: 33.33%
-          display: inline-block
-          vertical-align: middle
-          .company-logo
-            -webkit-filter: grayscale(100%)
-            filter: grayscale(100%)
-            opacity: 0.5
-            transition: 300ms all ease-in-out
-            &:hover
-              opacity: 1
-              -webkit-filter: none
-              filter: none
 
 #news
   position: relative
-  padding-top: 30px
-  padding-bottom: 60px
-  .section-header
-    margin: 30px 0
-    .header
-      color: #176294
-  .left-section
-    padding-left: 0
-    .news-container
-      background-color: #fbfbfb
-      padding: 15px
-      .list-divider
-        margin-top: 0
-      .news-list
-        .news-link
-          color: #4a4a4a
-          display: block
-          font-size: 18px
-          text-decoration: none
-          font-family: "Segoeui"
-          text-transform: capitalize
-          line-height: 25px
-          &:hover
-            color: #737373
-            text-decoration: underline
-        .news-date
-          display: block
-          font-size: 11px
-          padding-top: 15px
-          padding-bottom: 15px
-          text-transform: uppercase
-  .right-section
-    padding-right: 0
-    .carousel-container
-      #carousel
-        .carousel-inner
-          .item
-            .image-section
-              .image
-                max-width: 100%
-                width: 100%
-                object-fit: cover
-                object-position: 50% 50%
-                height: 40vh
-            .description-section
-              background-color: #FBFBFB
-              min-height: 270px
-              padding: 30px
-              .title-link
-                display: block
-                &:hover
-                  color: #737373
-                  text-decoration: underline
-                .title-section
-                  font-size: 24px
-                  font-family: "Segoeui-Bold"
-                  color: #737373
-                  font-weight: 400
-              p
-                font-family: "Segoeui"
-                margin-top: 15px
-                margin-bottom: 15px
-                line-height: 30px
-                font-size: 14px
-                overflow: hidden
-                display: -webkit-box
-                -webkit-line-clamp: 3
-                -webkit-box-orient: vertical
-              .date-section
-                display: block
-                margin-top: 30px
-        .carousel-control
-          &.left
-            width: 1%
-            height: 5%
-            background-image: none
-            position: absolute
-            left: initial
-            top: 0
-            right: 40px
-            color: black
-            font-size: 38px
-          &.right
-            width: 1%
-            height: 5%
-            background-image: none
-            position: absolute
-            left: initial
-            top: 0
-            right: 15px
-            color: black
-            font-size: 38px
+  .content-container
+    padding-left: 50px
+    padding-right: 50px
+    .content-row
+      -moz-column-width: 19em
+      -webkit-column-width: 19em
+      /* space between columns */
+      -moz-column-gap: 1em
+      -webkit-column-gap: 1em
+      .content-item
+        width: 100%
+        display: inline-block
+
 #other-site
   position: relative
   background-image: url('/img/home/bottom-image.jpg')
