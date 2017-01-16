@@ -1,20 +1,22 @@
 <div class="section fp-normal-scroll" id="news" data-anchor="section-3">
     <div class="container-fluid content-container">
-        {% assign counter = 0 %}
-        {% for news in site.posts reverse %}
-        {% assign counter = counter | plus:1 %}
-        <div class="content-item">
-            <div class="image-section">
-                <img class="image center-block" src="{{ news.cover }}"/>
+        <div class="content-row">
+            {% assign counter = 0 %}
+            {% for news in site.posts reverse %}
+            {% assign counter = counter | plus:1 %}
+            <div class="content-item">
+                <div class="image-section">
+                    <img class="image center-block" src="{{ news.cover }}"/>
+                </div>
+                <div class="description-section">
+                    <a class="title-link" href="{{ news.url }}">
+                        <h2 class="title-section">{{ news.title }}</h2>
+                    </a>
+                    {{ news.content | truncatewords: 15 }}
+                    <span class="date-section">{{ news.date | timeago }}</span>
+                </div>
             </div>
-            <div class="description-section">
-                <a class="title-link" href="{{ news.url }}">
-                    <h2 class="title-section">{{ news.title }}</h2>
-                </a>
-                {{ news.content | truncatewords: 15 }}
-                <span class="date-section">{{ news.date | timeago }}</span>
-            </div>
+            {% endfor %}
         </div>
-        {% endfor %}
     </div>
 </div>
