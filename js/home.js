@@ -4,8 +4,7 @@ $(document).ready(function() {
         hybrid:true,
         verticalCentered:false,
         fitToSection:false,
-        anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
-        sectionsColor: ['#DAC500', '#1BBC9B']
+        anchors: ['section-1', 'section-2', 'section-3', 'section-4']
 //            navigation: true,
 //            navigationPosition: 'right',
 
