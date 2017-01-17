@@ -3,6 +3,7 @@ $(document).ready(function() {
     $('#fullpage').fullpage({
         hybrid:true,
         verticalCentered:false,
+        slidesNavigation:true,
         fitToSection:false,
         anchors: ['section-1', 'section-2', 'section-3', 'section-4']
 //            navigation: true,
