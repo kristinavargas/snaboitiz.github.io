@@ -2,6 +2,8 @@
 $(document).ready(function() {
     $('#fullpage').fullpage({
         hybrid:true,
+        verticalCentered:false,
+        fitToSection:false,
         anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
         sectionsColor: ['#DAC500', '#1BBC9B']
 //            navigation: true,
@@ -85,8 +87,7 @@ console.log("d3.behaviour", d3);
 createGrid();
 // addDraggableShapes();
 
-//Gris layout
-
+//Grid layout
 $(document).ready(function() {
     $('#pinBoot').pinterest_grid({
         no_columns: 4,
