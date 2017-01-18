@@ -1,14 +1,54 @@
-//one page scroll
-$(document).ready(function() {
+
+$(document).ready(function () {
+    var slideIndex2 = 1, sliding = false;
+
     $('#fullpage').fullpage({
         hybrid:true,
-        verticalCentered:false,
+        navigation: true,
+        menu: '#menu',
+        navigationPosition: 'right',
+        navigationTooltips: ['Home', 'Our Plants', 'News', 'SNAP-RES'],
+        showActiveTooltip: true,
+        controlArrows: false,
+        // verticalCentered:false,
         slidesNavigation:true,
         fitToSection:false,
-        anchors: ['section-1', 'section-2', 'section-3', 'section-4']
-//            navigation: true,
-//            navigationPosition: 'right',
+        anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
 
+
+        //events
+        onLeave: function (index, nextIndex, direction) {
+            if (index == 2 && !sliding) {
+                if (direction == 'down' && slideIndex2 < 3) {
+                    sliding = true;
+                    $.fn.fullpage.moveSlideRight();
+                    return false;
+                } else if (direction == 'up' && slideIndex2 > 1) {
+                    sliding = true;
+                    $.fn.fullpage.moveSlideLeft();
+                    return false;
+                }
+            } else if (sliding) {
+                return false;
+            }
+
+        },
+        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+            sliding = false;
+        },
+        onSlideLeave  : function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+            if (index == 2) {
+                if (direction == 'right') {
+                    sliding = true;
+                    slideIndex2++;
+                }
+
+                if (direction == 'left') {
+                    sliding = true;
+                    slideIndex2--;
+                }
+            }
+        }
     });
 });
 
@@ -122,7 +162,7 @@ $(document).ready(function() {
 
 
  */
-;(function ($, window, document, undefined) {
+(function ($, window, document, undefined) {
     var pluginName = 'pinterest_grid',
         defaults = {
             padding_x: 10,
