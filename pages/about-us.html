@@ -2,6 +2,14 @@
 layout: page-layout/about-us
 permalink: about-us/
 ---
-<div id="about-us">
-    {% include about-us/content.html %}
+
+<div id="fullpage">
+    {% include about-us/cover.html %}
+    <div class="section" id="about" data-anchor="section-2">
+        <div class="container content-container">
+            {% include about-us/snap-group.html %}
+            {% include about-us/strategic-foundation.html %}
+        </div>
+    </div>
 </div>
+
