@@ -10,7 +10,7 @@ $(document).ready(function () {
         navigationTooltips: ['Home', 'Our Plants', 'News', 'SNAP-RES'],
         showActiveTooltip: true,
         controlArrows: false,
-        // verticalCentered:false,
+        verticalCentered:false,
         slidesNavigation:true,
         fitToSection:false,
         anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
