@@ -3,7 +3,7 @@
   background-image: url("/img/cover-bg.jpg")
   background-size: cover
   background-position: center center
-  min-height: 100vh
+  height: 35vh
   #canvas
     position: absolute
     top: 0
@@ -13,7 +13,6 @@
     width: 100%
     height: 100%
     display: flex
-    position: relative
   .section-container
     position: absolute
     top: 0%
@@ -22,7 +21,7 @@
     bottom: 0%
     width: 100%
     height: 100%
-    .section-content
+    .intro-top
       position: relative
       top: 50%
       transform: translateY(-50%)
@@ -30,46 +29,44 @@
       -moz-transform: translateY(-50%)
       -ms-transform: translateY(-50%)
       -o-transform: translateY(-50%)
-      .intro-top
-        color: white
-        text-align: center
-        margin-bottom: 30px
-        .intro-header
-          font-size: 42px
-          font-family: "Segoeui-Bold"
-          letter-spacing: 2px
-        .intro-text
-          font-size: 24px
-          font-family: "Segoeui-Bold"
-          margin-top: 15px
-          margin-bottom: 15px
-          letter-spacing: 2px
-      .intro-middle
-        color: white
-        text-align: center
-        .intro-text
-          font-size: 20px
-          font-family: "Segoeui-Italic"
-          max-width: 65%
-          min-width: 65%
-          margin-left: auto
-          margin-right: auto
-          line-height: 30px
-      .intro-bottom
-        display: table
+      color: white
+      text-align: center
+      .intro-header
+        font-size: 42px
+        font-family: "Segoeui-Bold"
+        letter-spacing: 2px
+      .intro-text
+        font-size: 24px
+        font-family: "Segoeui-Bold"
+        margin-top: 15px
+        margin-bottom: 15px
+        letter-spacing: 2px
+    .intro-middle
+      color: white
+      text-align: center
+      .intro-text
+        font-size: 20px
+        font-family: "Segoeui-Italic"
+        max-width: 65%
+        min-width: 65%
         margin-left: auto
         margin-right: auto
-        margin-top: 50px
-        .intro-link
-          outline: none
-          color: white
-          display: block
-          font-size: 20px
-          font-family: "Segoeui"
-          background-color: #0E6BA2
-          text-decoration: none
-          padding: 20px 70px
-          border-radius: 40px
+        line-height: 30px
+    .intro-bottom
+      display: table
+      margin-left: auto
+      margin-right: auto
+      margin-top: 50px
+      .intro-link
+        outline: none
+        color: white
+        display: block
+        font-size: 20px
+        font-family: "Segoeui"
+        background-color: #0E6BA2
+        text-decoration: none
+        padding: 20px 70px
+        border-radius: 40px
 
 #about
   position: relative
@@ -106,12 +103,14 @@
         .header-section
           font-family: "Segoeui-Bold"
           font-size: 16px
-          margin-top: 30px
+          margin-top: 20px
+          margin-bottom: 20px
         .description-section
           color: #636768
           font-size: 14px
           font-family: "Segoeui"
-          margin: 20px 0
+          line-height: 34px
+
         ul
           .header
             margin: 15px 0
