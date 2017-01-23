@@ -3,11 +3,30 @@ layout: default
 css: about-us.css
 title: about
 javascript: >
-    <script type="text/javascript" src="/js/bootstrap-tabcollapse.js"></script>
     <script type="text/javascript">
-        $('#myTab').tabCollapse({
-            tabsClass: 'hidden-sm hidden-xs',
-            accordionClass: 'visible-sm visible-xs'
+        $(document).ready(function () {
+            var slideIndex2 = 1, sliding = false;
+
+            $('#fullpage').fullpage({
+                hybrid:true,
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
+                showActiveTooltip: true,
+                controlArrows: false,
+                slidesNavigation:true,
+                fitToSection:false,
+                anchors: ['section-2', 'section-3', 'section-4', 'section-5']
+            });
+            var imageContainer = $("#leadership .image-section #image-container .image-list");
+            imageContainer.hover(
+                function () {
+                    $(this).find(".user-info").css("opacity","1")
+                },
+                function() {
+                    $(this).find(".user-info").css("opacity","0")
+                }
+            );
         });
 
     </script>

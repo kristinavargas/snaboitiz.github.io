@@ -1,45 +1,24 @@
-- name: Emmanuel V. Rubio
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/martijn.jpg"
+  name: Joseph S. Yu
   position: "President & Chief Executive Officer"
 
-- name: Joseph S. Yu
-  position: "Executive Vice President & Chief Opearting Officer"
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/laurens.jpg"
+  name: Eleanor P. Blomdahl
+  position: "Vice President/Chief Finance Officer"
 
-- name: Eleanor P. Blomdahl
-  position: "Vice President & Chief Financial Officer"
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/richard.jpg"
+  name: Nemencio B. Cambri
+  position: "Vice President/Chief Market Officer"
 
-- name: Nemencio B. Cambri
-  position: "Vice President & Chief Market Officer"
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/margarida.jpg"
+  name: Michael Bon C. Hosillos
+  position: "Vice President/Chief Corporate Services Officer"
 
-- name: Michael Bon C. Hosillos
-  position: "Vice President & Chief Corporate Services Officer"
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/chris.jpg"
+  name: Emmanuel G. Lopez
+  position: "Vice President/Chief Technology Officer"
 
-- name: Emmanuel G. Lopez
-  position: "Vice President & Chief Technology Officer"
-
-- name: Kjell S. Valdal
-  position: "Vice President & Chief Business Development Officer"
-
-- name: Ma. Theresa G. Cabigon
-  position: "Risk, Systems and Process"
-
-- name: Senen D. Fenomeno
-  position: "Trading and Production Planning"
-
-- name: Wilhelmino R. Ferrer
-  position: "SNAP-Magat Plant Manager"
-
-- name: David B. Ocampo
-  position: "Legal and Compliance"
-
-- name: Nomer A. Reynaldo
-  position: "Safety, Health, Environment, Security and Quality"
-
-- name: Fernan V. Tongco (OIC)
-  position: "SNAP-Benguet Plant Manager"
-
-- name: Hernando B. Zamora
-  position: "Human Resources and Administration"
-
-- name: Rienzi O. Zano
-  position: "Commercial Operations and Sales & Marketing"
+- image: "https://wonderlandindustry.com/wp-content/themes/wonderland/img/rodophe.jpg"
+  name: Kjell S. Valdal
+  position: "Vice President/Chief Business Development Officer"
 

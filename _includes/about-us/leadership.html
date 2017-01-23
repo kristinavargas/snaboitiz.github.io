@@ -1,21 +1,20 @@
 <div class="content-section">
-    <div class="description-section">
-        <p class="description">Our Management Committee is composed of experienced practitioners from various fields and
-            industries, converging into a cohesive unit to pursue SNAP’s vision of being the leading renewable energy
-            provider in the country.</p>
-    </div>
-    <div class="officer-section">
-        <ul class="officer-container">
-            {% for officer in site.data.leadership %}
-            {% assign counter = counter | plus:1 %}
-            <li class="officer-list">
-                <span class="officer-name">{{ officer.name }}</span>
-                <span class="officer-position">{{ officer.position }}</span>
-            </li>
-            {% if counter == 7 %}
-            <span class="divider">A team of Assistant Vice presidents handling various areas of specialization support the MANCOM:</span>
-            {% endif %}
-            {% endfor %}
-        </ul>
-    </div>
+    <header>
+        <span class="section-number">04</span>
+        <h2 class="section-title">Leadership</h2>
+    </header>
+    <p class="section-text">Our Management Committee is composed of experienced practitioners from various fields and industries, converging into a cohesive unit to pursue SNAP’s vision of being the leading renewable energy provider in the country.</p>
+</div>
+<div class="image-section">
+    <ul id="image-container">
+        {% for people in site.data.leadership %}
+        <li class="image-list col-md-4 no-gutter">
+            <img src="{{ people.image }}" class="image"/>
+            <div class="user-info">
+                <span class="user-name">{{ people.name }}</span>
+                <span class="user-position">{{ people.position }}</span>
+            </div>
+        </li>
+        {% endfor %}
+    </ul>
 </div>

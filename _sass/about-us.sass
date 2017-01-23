@@ -3,7 +3,7 @@
   background-image: url("/img/cover-bg.jpg")
   background-size: cover
   background-position: center center
-  height: 35vh
+  height: 35vh !important
   #canvas
     position: absolute
     top: 0
@@ -68,82 +68,234 @@
         padding: 20px 70px
         border-radius: 40px
 
-#about
+#snap-group
   position: relative
-  .content-container
-    .content-section
-      transform: matrix(1, 0, 0, 1, 0, 0)
-      width: 920px
-      margin: 100px auto 0
-      padding-left: 180px
-      &:before
-        height: calc(100% + 120px)
-        top: -100px
-        width: 1px
-        content: ''
-        display: block
-        background-color: #e1e1e1
-        position: absolute
-        left: 9.8%
-        z-index: -1
-      .section-number
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    margin: 100px auto 0
+    padding-left: 180px
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+      
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+      font-size: 16px
+    .section-list
+      .header-section
         font-family: "Segoeui-Bold"
-        font-size: 35px
-        position: absolute
-        top: 0
-        left: 0
-      .section-title
-        font-family: "Segoeui-Bold"
-        font-size: 32px
-        text-transform: uppercase
-      .section-text
-        margin: 20px 0
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 20px
+      .description-section
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
         line-height: 34px
-      .section-list
+
+
+#strategic-foundation
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    padding-left: 180px
+    margin: 100px auto 0
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+      
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+    .section-list
+      .header-section
+        font-family: "Segoeui-Bold"
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 20px
+      .description-section
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
+      ul
+        .header
+          margin: 15px 0
+          font-size: 16px
+          display: inline-block
+          text-transform: uppercase
+          font-family: "Segoeui"
+        .description
+          font-size: 16px
+          display: inline-block
+
+        .image-section
+          .image
+            display: block
+            &.logo-1
+              padding-top: 15px
+              padding-bottom: 30px
+            &.logo-2
+              padding-bottom: 15px
+            &.logo-3
+              padding-top: 15px
+        .image-description-1
+          margin-bottom: 30px
+          .description
+            line-height: 25px
+            font-size: 16px
+            font-family: "Segoeui"
+            color: #636768
+        .image-description-2
+          margin-top: 30px
+          margin-bottom: 30px
+          .description
+            line-height: 25px
+            font-size: 16px
+            font-family: "Segoeui"
+            color: #636768
+
+#shareholder
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    padding-left: 180px
+    margin: 100px auto 0
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+    .section-list
+      .description-section
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
+        margin: 20px 0
         .header-section
           font-family: "Segoeui-Bold"
-          font-size: 16px
+          font-size: 18px
           margin-top: 20px
           margin-bottom: 20px
-        .description-section
-          color: #636768
-          font-size: 14px
-          font-family: "Segoeui"
-          line-height: 34px
 
-        ul
-          .header
-            margin: 15px 0
-            font-size: 14px
-            display: inline-block
-            text-transform: uppercase
-            font-family: "Segoeui"
-          .description
-            font-size: 14px
-            display: inline-block
+#leadership
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    padding-left: 180px
+    margin: 100px auto 0
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+      margin-bottom: 30px
+    .section-text
+      font-size: 16px
+      line-height: 34px
+      margin: 20px auto
+  .image-section
+    #image-container
+      .image-list
+        position: relative
+        box-sizing: border-box
+        border: 1px solid #ffffff
+        .image
+          display: block
+          max-width: 100%
+        .user-info
+          width: 100%
+          height: 100%
+          background-color: rgba(0,0,0,0.75)
+          opacity: 0
+          position: absolute
+          top: 0
+          transition: opacity 0.5s
+          font-size: 16px
+          line-height: 24px
+          .user-name
+            position: absolute
+            color: #ff3333
+            left: 30px
+            bottom: 60px
+          .user-position
+            color: #ffffff
+            position: absolute
+            left: 30px
+            bottom: 80px
+        &:focus,&:active
+          outline: none
 
-          .image-section
-            .image
-              display: block
-              &.logo-1
-                padding-top: 15px
-                padding-bottom: 30px
-              &.logo-2
-                padding-bottom: 15px
-              &.logo-3
-                padding-top: 15px
-          .image-description-1
-            margin-bottom: 30px
-            .description
-              line-height: 25px
-              font-size: 14px
-              font-family: "Segoeui"
-              color: #636768
-          .image-description-2
-            margin-top: 30px
-            margin-bottom: 30px
-            .description
-              line-height: 25px
-              font-size: 14px
-              font-family: "Segoeui"
-              color: #636768
+
+
+
+
