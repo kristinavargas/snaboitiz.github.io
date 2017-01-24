@@ -4,7 +4,7 @@ $(document).ready(function () {
 
     $('#fullpage').fullpage({
         hybrid:true,
-        navigation: true,
+        navigation: false,
         menu: '#menu',
         navigationPosition: 'right',
         navigationTooltips: ['Home', 'Our Plants', 'News', 'SNAP-RES'],
