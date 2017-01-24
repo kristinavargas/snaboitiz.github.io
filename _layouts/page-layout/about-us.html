@@ -5,18 +5,17 @@ title: about
 javascript: >
     <script type="text/javascript">
         $(document).ready(function () {
-            var slideIndex2 = 1, sliding = false;
-
             $('#fullpage').fullpage({
                 hybrid:true,
+                menu: '#menu',
                 navigation: true,
                 navigationPosition: 'right',
-                navigationTooltips: ['SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
+                anchors: ['section-1','section-2', 'section-3', 'section-4', 'section-5'],
+                navigationTooltips: ['Our Plants', 'SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
                 showActiveTooltip: true,
                 controlArrows: false,
                 slidesNavigation:true,
-                fitToSection:false,
-                anchors: ['section-2', 'section-3', 'section-4', 'section-5']
+                fitToSection:false
             });
             var imageContainer = $("#leadership .image-section #image-container .image-list");
             imageContainer.hover(
