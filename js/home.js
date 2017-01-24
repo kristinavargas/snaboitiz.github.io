@@ -1,58 +1,100 @@
+var slideIndex2 = 1, sliding = false;
 
-$(document).ready(function () {
-    var slideIndex2 = 1, sliding = false;
+$('#fullpage').fullpage({
+    hybrid:true,
+    lockAnchors:true,
+    navigation: false,
+    menu: '#menu',
+    navigationPosition: 'right',
+    navigationTooltips: ['Home', 'Our Plants', 'News', 'SNAP-RES'],
+    showActiveTooltip: true,
+    controlArrows: false,
+    verticalCentered:false,
+    slidesNavigation:true,
+    fitToSection:false,
+    recordHistory:false,
+    anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
 
-    $('#fullpage').fullpage({
-        hybrid:true,
-        navigation: false,
-        menu: '#menu',
-        navigationPosition: 'right',
-        navigationTooltips: ['Home', 'Our Plants', 'News', 'SNAP-RES'],
-        showActiveTooltip: true,
-        controlArrows: false,
-        verticalCentered:false,
-        slidesNavigation:true,
-        fitToSection:false,
-        anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
+    //events
+    afterLoad: function(anchorLink, index){
+        var loadedSection = $(this);
 
+        //using index
+        if(index == 1){
+            console.log("Section 1 ended loading");
+        }
+        if(index == 2){
+            console.log("Section 2 ended loading");
+        }
+        if(index == 3){
+            console.log("Section 3 ended loading");
+        }
+        if(index == 4){
+            console.log("Section 4 ended loading");
+        }
+        if(index == 5){
+            console.log("Section 5 ended loading");
+        }
+        if(index == 6){
+            console.log("Section 6 ended loading");
+        }
 
-        //events
-        onLeave: function (index, nextIndex, direction) {
-            if (index == 2 && !sliding) {
-                if (direction == 'down' && slideIndex2 < 3) {
-                    sliding = true;
-                    $.fn.fullpage.moveSlideRight();
-                    return false;
-                } else if (direction == 'up' && slideIndex2 > 1) {
-                    sliding = true;
-                    $.fn.fullpage.moveSlideLeft();
-                    return false;
-                }
-            } else if (sliding) {
+        //using anchorLink
+        if(anchorLink == 'section-1'){
+            console.log("Section 1 ended loading");
+        }
+        if(anchorLink == 'section-2'){
+            console.log("Section 2 ended loading");
+        }
+        if(anchorLink == 'section-3'){
+            console.log("Section 3 ended loading");
+        }
+        if(anchorLink == 'section-4'){
+            console.log("Section 4 ended loading");
+        }
+
+    },
+
+    afterRender: function(){
+        var pluginContainer = $(this);
+        console.log("The resulting DOM structure is ready");
+    },
+
+    onLeave: function (index, nextIndex, direction) {
+        if (index == 2 && !sliding) {
+            if (direction == 'down' && slideIndex2 < 3) {
+                sliding = true;
+                $.fn.fullpage.moveSlideRight();
+                return false;
+            } else if (direction == 'up' && slideIndex2 > 1) {
+                sliding = true;
+                $.fn.fullpage.moveSlideLeft();
                 return false;
             }
+        } else if (sliding) {
+            return false;
+        }
 
-        },
-        afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
-            sliding = false;
-        },
-        onSlideLeave  : function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
-            if (index == 2) {
-                if (direction == 'right') {
-                    sliding = true;
-                    slideIndex2++;
-                }
+    },
 
-                if (direction == 'left') {
-                    sliding = true;
-                    slideIndex2--;
-                }
+    afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
+        sliding = false;
+    },
+
+    onSlideLeave  : function (anchorLink, index, slideIndex, direction, nextSlideIndex) {
+        if (index == 2) {
+            if (direction == 'right') {
+                sliding = true;
+                slideIndex2++;
+            }
+
+            if (direction == 'left') {
+                sliding = true;
+                slideIndex2--;
             }
         }
-    });
+    }
 });
-
-
 
 
 //Grid layout
