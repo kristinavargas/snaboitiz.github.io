@@ -25,22 +25,38 @@
   </script>
 </head>
 <body>
+<div id="loader-wrapper">
+  <div id="loader"></div>
+  <div class="loader-section section-left"></div>
+  <div class="loader-section section-right"></div>
+</div>
 {% include navbar.html %}
 {{ content }}
 {% include search-modal.html %}
 {% include footer.html %}
 
-<script type="text/javascript" src="/js/jquery-3.1.1.min.js"></script>
+<script type="text/javascript"  src="/js/jquery-3.1.1.min.js"></script>
+
 <script type="text/javascript" src="/js/jquery-ui.min.js"></script>
+
+<script type="text/javascript" src="/js/jquery.fullPage.js" ></script>
+<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+
+
 <script type="text/javascript" src="/js/modernizr.min.js"></script>
 <script type="text/javascript" src="/js/bootstrap.min.js"></script>
+
 <script type="text/javascript" src="/js/jekyll-search.js"></script>
-<script type="text/javascript" src="/js/main.js"></script>
 
 <script type="text/javascript" src="/js/jquery.easings.min.js"></script>
-<script type="text/javascript" src="/js/scrolloverflow.js"></script>
-<script type="text/javascript" src="/js/jquery.fullPage.js"></script>
-<script type="text/javascript" src="https://d3js.org/d3.v3.min.js"></script>
+<script type="text/javascript" src="/js/scrolloverflow.js" ></script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+<script type="text/javascript">
+  $(window).on("load", function () {
+      $("body").addClass("loaded");
+  });
+</script>
 
 {{ layout.javascript }}
 
