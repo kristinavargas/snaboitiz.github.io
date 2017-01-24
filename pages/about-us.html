@@ -2,8 +2,14 @@
 layout: page-layout/about-us
 permalink: about-us/
 ---
-{% include about-us/cover.html %}
+
 <div id="fullpage">
+    {% include about-us/cover.html %}
+    <div class="section fp-normal-scroll fp-auto-height" id="our-plant" data-anchor="section-1">
+        <div class="container" >
+            {% include about-us/our-plant.html %}
+        </div>
+    </div>
     <div class="section fp-normal-scroll fp-auto-height" id="snap-group" data-anchor="section-2">
         <div class="container">
             {% include about-us/snap-group.html %}
@@ -26,7 +32,6 @@ permalink: about-us/
         <div class="container">
             {% include about-us/leadership.html %}
         </div>
-        <div class="container-fluid"
     </div>
 </div>
 
