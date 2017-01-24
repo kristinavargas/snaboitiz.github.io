@@ -3,7 +3,7 @@
   background-image: url("/img/cover-bg.jpg")
   background-size: cover
   background-position: center center
-  height: 50vh !important
+  height: 50vh
   #canvas
     position: absolute
     top: 0
@@ -67,6 +67,45 @@
         text-decoration: none
         padding: 20px 70px
         border-radius: 40px
+
+#our-plant
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    margin: 100px auto 0
+    padding-left: 180px
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+    .plant-list
+      .plant-title
+        font-family: "Segoeui-Bold"
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 20px
+      .plant-text
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
+
 
 #snap-group
   position: relative
