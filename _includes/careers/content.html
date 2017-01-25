@@ -9,16 +9,19 @@
             {% assign counter = counter | plus:1 %}
             <div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 career-list-container ">
                 <div class="career-list">
-                    <h4 class="career-title">{{ career.title }}</h4>
+                    <h4 class="career-title">{{ career.title }} ({{ career.vacant }})-{{career.contractType}}</h4>
                     <ul>
-                        <li>COMPANY:
+                        <li>Company:
                             <span class="career-company">{{ career.company }}</span>
                         </li>
-                        <li>LOCATION:
+                        <li>Location:
                             <span class="career-location">{{ career.location }}</span>
                         </li>
+                        <li>Job Description:
+                            <span class="career-description">{{ career.description }}</span>
+                        </li>
                     </ul>
-                    <p class="career-requirement"><strong class="requirement-title">REQUIREMENTS:</strong>{{ career.requirements }}</p>
+                    <!--<p class="career-requirement"><strong class="requirement-title">Requirements:</strong>{{ career.requirement }}</p>-->
 
                     <a class="career-modal" data-toggle="modal" data-target="#{{ counter }}" target="_blank">Learn More</a>
                     <div class="modal-list modal fade" id="{{ counter }}" tabindex="-1" role="dialog">
@@ -30,14 +33,17 @@
                                 <div class="modal-body">
                                     <h4 class="modal-career-title">{{ career.title }}</h4>
                                     <ul>
-                                        <li><b>COMPANY:</b>
+                                        <li>Company:
                                             <span class="modal-career-company">{{ career.company }}</span>
                                         </li>
-                                        <li><b>LOCATION:</b>
+                                        <li>Location:
                                             <span class="modal-career-location">{{ career.location }}</span>
                                         </li>
+                                        <li>Job Description:
+                                            <span class="modal-career-description">{{ career.description }}</span>
+                                        </li>
                                     </ul>
-                                    <p class="modal-career-requirement"><strong class="requirement-title">REQUIREMENTS:</strong><br>{{ career.requirements }}</p>
+                                    <p class="modal-career-requirement"><strong class="requirement-title">Requirements:</strong><br>{{ career.requirement }}</p>
                                 </div>
                             </div>
                         </div>

@@ -1,35 +1,71 @@
-- title: "Account Executive (2) - Probationaryu"
-  vacant: 2
+- title: "Energy Trader"
+  vacant: 1
+  contractType: "Probationary"
   company: MORE
   location: Taguig
-  requirements: "Degree in Engineering, Economics, Statistics, Business or Marketing with at least 3 years relevant experience in marketing and/or sales from the following industries: electronics manufacturing, food, chemicals, petroleum, metals / mining, hospitals, construction / cement, shipbuilding, hotels and malls / commercial establishments"
+  description: "Maximizes revenues from the Company assets through Spot Market offers and ancillary service nomination."
+  requirement: "Degree in Engineering, Economics, Mathematics and Applied Sciences. Master’s Degree equivalent is an advantage. Willing to work on shifting schedules. With at least 1-3 years relevant experience in the power industry. With preference on candidates with working knowledge and understanding of competitive electricity markets, power system operation and analysis. Strong analytical skills with high comprehension abilities. Good communication skills."
 
-- title: "Hydrologist (1) – Probationary"
+- title: "Hydrologist"
+  vacant: 1
+  contractType: "Probationary"
   company: MORE
   location: Taguig
-  requirements: "Degree in hrydrology, hydroinformatics, geophysics, physical geography, meteorology or related courses. Candidate must have at least 7 years of experience in hydropower operations or related field. Necessary skills for the position are: IT fluency, excellent knowledge of statistics and mathematics (modeling). Oral and written communication skills, and ability to present complex matters to wider audiences in the Company, external institutions and stakeholders are also given importance."
+  description: "To provide hydrological analyses to different users to support decision making in market analysis, product optimization, revenue generation and operations."
+  requirement: "Degree in hydrology, hydroinformatics, geophysics, physical geography, meteorology or related courses. Candidate must have at least 7 years of experience in hydropower operations or related field. Necessary skills for the position are: IT fluency, excellent knowledge of statistics and mathematics (modeling). Oral and written communication skills, and ability to present complex matters to wider audiences in the Company, external institutions and stakeholders are also given importance."
 
-- title: "Network Security, Systems & Cloud Infrastructure Administrator (1)- Probationary"
+- title: "Network Security, Systems & Cloud Infrastructure Administrator"
+  vacant: 1
+  contractType: "Probationary"
   company: MORE
   location: Taguig
-  requirements: "Degree in ECE or IT related courses. Candidate must have at least 7 years of experience in IT network, security, applications, systems and cloud infrastructure management. Cisco Certified Network Professional (CCNP), Microsoft Certified Solutions Expert would be preferred."
+  description: "To ensure SNAP’s IT network infrastructure and security are maintained and promptly respond to users needs."
+  requirement: "Degree in ECE or IT related courses. Candidate must have at least 7 years of experience in  IT network, security, applications, systems and cloud infrastructure management. Cisco Certified Network Professional (CCNP), Microsoft Certified Solutions Expert would be preferred."
 
-- title: "Systems Specialist (1)- Probationary"
+- title: "Sr. Specialist, Portfolio Analysis & Accounts Management"
+  vacant: 1
+  contractType: "Probationary"
   company: MORE
   location: Taguig
-  requirements: "Degree in Information Systems, Computer Science or Business related courses. Candidate must have at least 1 year relevant experience in business process documentation and IT support."
+  description: "The Sr. Specialist, Portfolio Analysis & Accounts Management shall manage the profitability and optimization of the contracts portfolio valuation and contracts pricing design."
+  requirement: "Degree in Engineering, Mathematics, Statistics or Applied Sciences. Candidate must have at least 5 years worth of experience in Engineering and/or Technical field, with specific experience in planning, forecasting and market analysis."
 
-- title: "Plant Control Engineer (1)- Probationary"
-  company: SNAPM
+- title: "Head of Market Risk"
+  vacant: 1
+  contractType: "Probationary"
+  company: MORE
+  location: Taguig
+  description: "To ensure that risk management is a key component of on-going and future revenue and profit generation activities of SNAP."
+  requirement: "Bachelor’s Degree on any of the following : Risk Management, Finance or Economics, Science, Statistics, Engineering, Management or Business Studies otherwise equivalent on-the-job experience. Minimum 5 to 7 years work experience in the areas of Risk Management (Enterprise, Market, Financial), Business Assurance, Energy Trading, Market Analysis and Commercial Operations."
+
+- title: "Accounts Payable"
+  vacant: 1
+  contractType: "Probationary"
+  company: MORE
+  location: Taguig
+  description: "The Accounts Payable shall manage timely, complete and accurate recording of payable transactions that are compliant to the financial reporting standards regulatory requirements and company’s policy and procedures."
+  requirement: "Degree BS Accountancy or any Business Course with major in Accounting. Must be a CPA. Minimum of 2 years experience in Accounts Payable processing."
+
+- title: "Watershed Coordinator"
+  vacant: 1
+  contractType: "Contractual"
+  company: SNAP-Benguet
+  location: Binga
+  description: "The Watershed Coordinator will work closely with stakeholders including government agencies, non-profits, host communities, Indigenous People, Peoples Organization, LGUs, Municipalities and individual/household in the community with the watershed area."
+  requirement: "Relevant Bachelor’s degree. With at least 2 to 4 years working experience on environmental or forestry projects on a technical capacity."
+
+- title: "HR Specialist"
+  vacant: 1
+  contractType: "Probationary"
+  company: SNAP-Magat
   location: Magat
-  requirements: "Licensed engineer (Electrical/ Mechanical/ ECE). With at least 3 years of related work experience. Work experience in hydropower is an advantage. Candidate must have working knowledge on hydropower plant operations and maintenance, programmable logic control systems and protection systems."
+  description: "The HR Specialist shall provide support in the areas of staffing and recruitment, benefits, timekeeping, compensation and payroll administration and HR Systems."
+  requirement: "Bachelor’s degree in Psychology, Behavior Sciences, Human Resource Management or equivalent course.  With 3-5 years experience in human resources in the areas of staffing and recruitment, compensation and benefits.  Candidate must have excellent oral and written communication skills, well verse in various interviewing methods."
 
-- title: "HR Specialist (1) – Probationary"
-  company: SNAPM
+- title: "Community Relations Assistant"
+  vacant: 1
+  contractType: "Project"
+  company: SNAP-Magat
   location: Magat
-  requirements: "Degree in Psychology, Behavioral Sciences, Human Resource Management or equivalent. With at least 3 years of work experience in human resources and administrative work. Minimum required skills are proficiency in MS Office applications and excellent communication. Candidate must be a team player with passion in providing service."
-
-- title: "Community Relations Assistant (2) – Project"
-  company: SNAPM
-  location: Magat
-  requirements: "The Community Relations Assistant (CRA) shall provide administrative and clerical assistance to the CSR Teams of SNAP to help enhance its operational functions and performance in undertaking CSR 2.0. <br/> A bachelor’s degree holder with at least 3 years of work experience in community development work in private sector, NGO or government service. Previous commendable experience is SNAP is an advantage. Candidate must have good speaking and writing skills, including fluency in Ilocano."
+  description: "The Community Relations Assistant (CRA) shall provide administrative and clerical assistance to the CSR Teams of SNAP to help enhance its operational functions and performance in undertaking CSR 2.0."
+  requirement: "A bachelor’s degree holder with at least 3 years of work experience in community development work in private sector, NGO or government service. Previous commendable experience is SNAP is an advantage.  Candidate must have good speaking and writing skills, including fluency in Ilocano."

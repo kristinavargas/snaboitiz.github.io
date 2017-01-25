@@ -36,19 +36,35 @@
         margin-bottom: 50px
         .career-title
           font-family: "Segoeui-Bold"
-          font-size: 16px
+          font-size: 17px
           margin-bottom: 20px
         ul
           margin-bottom: 10px
           li
             margin-bottom: 10px
             font-family: "Segoeui"
+            &:nth-child(3)
+              margin-top: 20px
+              margin-bottom: 20px
             .career-company
               display: inline-block
-              text-transform: uppercase
+              font-family: "Segoeui-Bold"
             .career-location
-              text-transform: uppercase
+              font-family: "Segoeui-Bold"
               display: inline-block
+            .career-description
+              margin-top: 5px
+              display: block
+              line-height: 25px
+              display: -webkit-box
+              max-width: 400px
+              height: calc(14px*25px*3px) /* Fallback for non-webkit */
+              margin: 0 auto
+              -webkit-line-clamp: 3
+              -webkit-box-orient: vertical
+              overflow: hidden
+              text-overflow: ellipsis
+
         .career-requirement
           font-family: "Segoeui"
           line-height: 25px
@@ -85,45 +101,20 @@
           li
             margin-bottom: 10px
             font-family: "Segoeui"
+            &:nth-child(3)
+              margin-top: 20px
+              margin-bottom: 20px
             .modal-career-company
               display: inline-block
-              text-transform: uppercase
+              font-family: "Segoeui-Bold"
             .modal-career-location
+              font-family: "Segoeui-Bold"
               display: inline-block
-              text-transform: uppercase
+            .modal-career-description
+              margin-top: 10px
+              display: block
+              line-height: 25px
         .modal-career-requirement
           font-family: "Segoeui"
           line-height: 25px
-
-
-
-
-@media (max-width: $screen-md-max)
-  #careers
-    .container-section
-      .career-section
-        .career-list
-          min-height: 500px
-
-@media (max-width: $screen-xs-max)
-  #careers
-    .container-section
-      .career-section
-        .career-list
-          min-height: 0
-
-@media (max-width: 568px)
-  #careers
-    padding: 30px 0
-    .container-section
-      .header-section
-        margin-bottom: 15px
-      .career-section
-        .career-list-container
-          padding-left: 0
-          padding-right: 0
-          .career-list
-            padding-left: 15px
-            padding-right: 15px
-            padding-bottom: 50px
 
