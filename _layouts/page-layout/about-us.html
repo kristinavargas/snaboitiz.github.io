@@ -3,6 +3,7 @@ layout: default
 css: about-us.css
 title: about
 javascript: >
+    <script type="text/javascript" src="/js/scrollreveal.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -27,6 +28,11 @@ javascript: >
                     $(this).find(".user-info").css("opacity","0")
                 }
             );
+        });
+        $(window).on("load", function () {
+            //Scroll Reveal
+            window.sr = ScrollReveal();
+
         });
 
     </script>

@@ -2,8 +2,23 @@ var sn = sn || {};
 sn.init = function () {
     sn.initCanvasGrid();
     sn.iconTransition();
+    // sn.hideNavbarOnScroll();
     sn.onNavbarScroll();
     sn.initJekyllSearch();
+};
+
+sn.hideNavbarOnScroll = function () {
+    var myElement = document.querySelector("header");
+    var headroom = new Headroom(myElement,{
+        "offset": 205,
+        "tolerance": 5,
+        "classes": {
+            "initial": "animated",
+            "pinned": "slideDown",
+            "unpinned": "slideUp"
+        }
+    });
+    headroom.init();
 };
 
 sn.iconTransition = function () {

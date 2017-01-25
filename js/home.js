@@ -15,46 +15,6 @@ $('#fullpage').fullpage({
     recordHistory:false,
     anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
 
-    //events
-    afterLoad: function(anchorLink, index){
-        var loadedSection = $(this);
-
-        //using index
-        if(index == 1){
-            console.log("Section 1 ended loading");
-        }
-        if(index == 2){
-            console.log("Section 2 ended loading");
-        }
-        if(index == 3){
-            console.log("Section 3 ended loading");
-        }
-        if(index == 4){
-            console.log("Section 4 ended loading");
-        }
-        if(index == 5){
-            console.log("Section 5 ended loading");
-        }
-        if(index == 6){
-            console.log("Section 6 ended loading");
-        }
-
-        //using anchorLink
-        if(anchorLink == 'section-1'){
-            console.log("Section 1 ended loading");
-        }
-        if(anchorLink == 'section-2'){
-            console.log("Section 2 ended loading");
-        }
-        if(anchorLink == 'section-3'){
-            console.log("Section 3 ended loading");
-        }
-        if(anchorLink == 'section-4'){
-            console.log("Section 4 ended loading");
-        }
-
-    },
-
     afterRender: function(){
         var pluginContainer = $(this);
         console.log("The resulting DOM structure is ready");
