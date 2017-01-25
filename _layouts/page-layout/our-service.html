@@ -1,0 +1,28 @@
+---
+layout: default
+css: our-service.css
+title: Our Services
+javascript: >
+    <script type="text/javascript" src="/js/scrollreveal.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                lockAnchors:true,
+                hybrid:true,
+                menu: '#menu',
+                navigation: true,
+                navigationPosition: 'right',
+                anchors: ['section-1','section-2', 'section-3'],
+                navigationTooltips: ['Our Services','Wholesale Services', 'Retail Services'],
+                showActiveTooltip: true,
+                fitToSection:false,
+                autoScrolling:false,
+                recordHistory:false
+            });
+        });
+    </script>
+
+---
+
+
+{{ content }}

@@ -49,7 +49,7 @@ navbar-menu:
     slugID: "/about-us/"
 
   - title: "Our Services"
-    slugID: "/our-business/"
+    slugID: "/our-service/"
 
   - title: "Csr & Sustainability"
     slugID: "/csr-sustainability/"
