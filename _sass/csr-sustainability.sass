@@ -1,198 +1,162 @@
-#csr-sustainability
+#cover
   position: relative
-  background-color: #FBFBFB
-  padding: 50px 0px
-  font-family: "Segoeui"
-  .container-section
-    .left-section
-      .nav-tabs
-        display: table
-        border-bottom: 2px solid #b5b5b5
+  background-image: url("/img/cover-bg.jpg")
+  background-size: cover
+  background-position: center center
+  height: 50vh!important
+  #canvas
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    display: flex
+  .section-container
+    position: absolute
+    top: 0%
+    left: 0
+    right: 0
+    bottom: 0%
+    width: 100%
+    height: 100%
+    .intro-top
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      color: white
+      text-align: center
+      .intro-header
+        font-size: 42px
+        font-family: "Segoeui-Bold"
+        letter-spacing: 2px
+      .intro-text
+        font-size: 24px
+        font-family: "Segoeui-Bold"
+        margin-top: 15px
+        margin-bottom: 15px
+        letter-spacing: 2px
+    .intro-middle
+      color: white
+      text-align: center
+      .intro-text
+        font-size: 20px
+        font-family: "Segoeui-Italic"
+        max-width: 65%
+        min-width: 65%
         margin-left: auto
         margin-right: auto
-        .tabs-list
-          .tabs-link
-            margin: 0
-            border: none
-            outline: none
-            color: #636768
-            border-radius: 0
-            font-family: "Segoeui-Bold"
-            text-transform: uppercase
-            padding-left: 30px
-            padding-right: 30px
-          &.active, &:hover
-            .tabs-link
-              color: white
-              background-color: #0E6BA2
-      .tab-content
-        min-height: 50vh
-        .content-list
-          padding-top: 30px
-          padding-bottom: 30px
-          &#csr
-            .content-section
-              .banner-section
-                display: block
-                padding-bottom: 30px
-              .header-section
-                margin-bottom: 15px
-                font-size: 20px
-                font-family: "Segoeui-Bold"
-                color: #636768
-              .description-section
-                font-size: 14px
-                line-height: 25px
-                margin-bottom: 15px
-                font-family: "Segoeui"
-                color: #636768
-              .text-divider
-                display: block
-                margin-top: 25px
-                margin-bottom: 25px
-                font-size: 14px
-                font-family: "Segoeui"
-                color: #636768
-              .pillars-section
-                .pillars-list
-                  .pillars-title
-                    font-size: 16px
-                    font-family: "Segoeui-Bold"
-                    margin-bottom: 15px
-                    color: #636768
-                  .pillars-description
-                    font-size: 14px
-                    font-family: "Segoeui"
-                    color: #636768
-                    margin-bottom: 30px
-                    line-height: 25px
-          &#sustainability
-            .content-section
-              .banner-section
-                display: block
-                padding-bottom: 30px
-              .header-section
-                margin-bottom: 15px
-                font-size: 20px
-                font-family: "Segoeui-Bold"
-                color: #636768
-              .description-section
-                color: #636768
-                font-family: "Segoeui"
-                font-size: 14px
-                line-height: 25px
-                margin-bottom: 30px
-              .project-section
-                .project-list
-                  margin-bottom: 30px
-                  .project-title
-                    font-size: 16px
-                    color: #636768
-                    font-family: "Segoeui-Bold"
-                    margin-bottom: 15px
-                  .project-description
-                    color: #636768
-                    font-family: "Segoeui"
-                    font-size: 14px
-                    margin-bottom: 30px
-                    line-height: 25px
+        line-height: 30px
+    .intro-bottom
+      display: table
+      margin-left: auto
+      margin-right: auto
+      margin-top: 50px
+      .intro-link
+        outline: none
+        color: white
+        display: block
+        font-size: 20px
+        font-family: "Segoeui"
+        background-color: #0E6BA2
+        text-decoration: none
+        padding: 20px 70px
+        border-radius: 40px
 
-@media (max-width: $screen-sm-max)
-  #csr-sustainability
-    padding-left: 0
-    padding-right: 0
-    .container-section
-      .left-section
-        padding-left: 0
-        padding-right: 0
-        .panel-group
-          .panel
-            border-radius: 0
-            .panel-heading
-              padding: 0
-              .panel-title
-                .tabs-link
-                  padding: 15px
-                  display: block
-                  color: #ffffff
-                  background-color: #0E6BA2
-                  font-family: "Segoeui-Bold"
-                  text-transform: uppercase
-                  text-decoration: none
-                  &.collapsed
-                    color: #636768
-                    background-color: #f5f5f5
-            .panel-collapse
-              .panel-body
-                .content-text
-                  margin-top: 15px
-                  margin-bottom: 15px
-                  line-height: 25px
-                  font-size: 14px
-                  font-family: "Segoeui"
-                  color: #636768
-                .content-section
-                  margin-bottom: 30px
-                  //csr section
-                  .header-section
-                    margin-bottom: 15px
-                    font-size: 20px
-                    font-family: "Segoeui-Bold"
-                    color: #636768
-                  .description-section
-                    font-size: 14px
-                    line-height: 25px
-                    margin-bottom: 15px
-                    font-family: "Segoeui"
-                    color: #636768
-                  .text-divider
-                    display: block
-                    margin-top: 25px
-                    margin-bottom: 25px
-                    font-size: 14px
-                    font-family: "Segoeui"
-                    color: #636768
-                  .pillars-section
-                    .pillars-list
-                      .pillars-title
-                        font-size: 16px
-                        font-family: "Segoeui-Bold"
-                        margin-bottom: 15px
-                        color: #636768
-                      .pillars-description
-                        font-size: 14px
-                        font-family: "Segoeui"
-                        color: #636768
-                        margin-bottom: 30px
-                        line-height: 25px
-                  .project-section
-                    .project-list
-                      margin-bottom: 30px
-                      .project-title
-                        font-size: 16px
-                        color: #636768
-                        font-family: "Segoeui-Bold"
-                        margin-bottom: 15px
-                      .project-description
-                        color: #636768
-                        font-family: "Segoeui"
-                        font-size: 14px
-                        margin-bottom: 30px
-                        line-height: 25px
+#csr
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    margin: 100px auto 0
+    padding-left: 180px
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+      font-size: 16px
+    .service-list
+      .service-title
+        font-family: "Segoeui-Bold"
+        font-size: 18px
+        margin-top: 50px
+        margin-bottom: 20px
+      .service-text
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
 
 
-      .right-section
-        padding-left: 0
-        padding-right: 0
+#sustainability
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    margin: 100px auto 100px
+    padding-left: 180px
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .section-number
+      font-family: "Segoeui-Bold"
+      font-size: 35px
+      position: absolute
+      top: 0
+      left: 0
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+      font-size: 16px
 
-@media (max-width: 568px)
-  #csr-sustainability
-    padding-top: 30px
-    .container-section
-      .left-section
-        .panel-group
-          .panel
-            .panel-heading
-              .panel-title
-                .tabs-link.collapsed
-                  font-size: 14px
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+      font-size: 16px
+    .section-list
+      .header-section
+        font-family: "Segoeui-Bold"
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 20px
+      .description-section
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
+
+
+

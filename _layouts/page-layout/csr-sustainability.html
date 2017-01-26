@@ -3,13 +3,23 @@ layout: default
 css: csr-sustainability.css
 title: csr-sustainability
 javascript: >
-    <script type="text/javascript" src="/js/bootstrap-tabcollapse.js"></script>
+    <script type="text/javascript" src="/js/scrollreveal.js"></script>
     <script type="text/javascript">
-        $('#myTab').tabCollapse({
-            tabsClass: 'hidden-sm hidden-xs',
-            accordionClass: 'visible-sm visible-xs'
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                lockAnchors:true,
+                hybrid:true,
+                menu: '#menu',
+                navigation: true,
+                navigationPosition: 'right',
+                anchors: ['section-1','section-2', 'section-3'],
+                navigationTooltips: ['CSR & Sustainability','CSR', 'Sustainability'],
+                showActiveTooltip: true,
+                fitToSection:false,
+                autoScrolling:false,
+                recordHistory:false
+            });
         });
-
     </script>
 
 ---
