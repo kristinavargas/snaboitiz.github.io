@@ -15,11 +15,11 @@ markdown: kramdown
 highlight: rouge
 
 paginate: 3
-paginate_path: "newsroom/page:num/"
+paginate_path: "news/page:num/"
 
 collections:
   posts:
-    permalink: /newsroom/:path/
+    permalink: /news/:path/
 
 jekyll_timeago:
   today: 'today'
@@ -55,10 +55,10 @@ navbar-menu:
     slugID: "/csr-sustainability/"
 
   - title: "News"
-    slugID: "/newsroom/"
+    slugID: "/news/"
 
   - title: "FAQs"
-    slugID: "/news/"
+    slugID: "/faqs/"
 
   - title: "Careers"
     slugID: "/careers/"
