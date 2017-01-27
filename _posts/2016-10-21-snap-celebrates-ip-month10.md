@@ -1,9 +1,9 @@
 ---
-slugID: 8
+slugID: 10
 layout: post
 title:  "SNAP, Benguet province settle real property tax dispute"
 date:   2016-10-25 23:47:32
-cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/IMG_2218.jpg"
+cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/SNAP-PLGU-Benguet-RPT-CA.jpg"
 
 ---
 

@@ -10,27 +10,14 @@ javascript: >
                 lockAnchors:true,
                 hybrid:true,
                 menu: '#menu',
-                navigation: true,
+                navigation: false,
                 navigationPosition: 'right',
-                anchors: ['section-1','section-2', 'section-3', 'section-4', 'section-5' ,'section-6'],
-                navigationTooltips: ['About','Our Plants', 'SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
-                showActiveTooltip: true,
                 fitToSection:false,
                 autoScrolling:false,
                 recordHistory:false
             });
-            var imageContainer = $("#leadership .image-section #image-container .image-list");
-            imageContainer.hover(
-                function () {
-                    $(this).find(".user-info").css("opacity","1")
-                },
-                function() {
-                    $(this).find(".user-info").css("opacity","0")
-                }
-            );
         });
     </script>
 ---
-
 
 {{ content }}

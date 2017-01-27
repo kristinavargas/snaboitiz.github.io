@@ -1,8 +1,9 @@
 ---
+slugID: 6
 layout: post
 title:  "SNAP, IPs Steadfast in partnership on cultural heritage"
 date:   2016-10-21 23:47:32 
-cover: "http://www.snaboitiz.com/wp-content/uploads/2016/07/SMUP-signing.jpg"
+cover: "http://www.snaboitiz.com/wp-content/uploads/2016/10/IMG_2218.jpg"
 
 ---
 (L-R) Brgy. Tinongdan Chairman Ruben Cunanan, NCIP representative Atty. Severino Manual, NPC’s Mr. Onofre Castro, PLGU-Benguet officer Camilo Alumit, SNAP Chief Corporate Services Officer Mike Hosillos, Itogon Mayor Victorio Palangdan, and Councilor and Tinongdan IP Chieftain Norberto Pacio at the signing of the Site Management and Use Plan of the Binga Indigenous Peoples Cultural Heritage Site.

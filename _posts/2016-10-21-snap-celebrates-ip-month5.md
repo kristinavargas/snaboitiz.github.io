@@ -1,4 +1,5 @@
 ---
+slugID: 5
 layout: post
 title:  "SNAP-BENGUET bags three Gawad Kaligtasan at Kalusugan Awards"
 date:   2016-10-21 23:47:32 
