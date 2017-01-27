@@ -68,46 +68,49 @@
         padding: 20px 70px
         border-radius: 40px
 #faq
-  #accordion
-    padding-left: 15px
-    padding-right: 15px
-    .faq-item
-      border: none
-      margin: 30px 0
-      border-radius: 0
-      transition: all 100ms ease
-      .faq-link
-        background-color: #EAEAEA
-        display: block
-        color: #636768
-        text-decoration: none
-        padding: 15px 20px
-        .faq-header
-          font-family: "Segoeui"
-          display: inline-block
-          color: #636768
-          max-width: 95%
-        .faq-button
-          display: inline-block
-          float: right
-          height: 14px
-      .package-content
-        background-color: #EAEAEA
-      .panel-heading
-        margin: 0
-        padding-left: 0
-        padding-right: 0
-      .panel-body
-        padding: 0 0 15px
-        .faq-description
-          color: #636768
-          font-family: "Segoeui"
-          font-size: 14px
-          line-height: 25px
-          padding: 15px 20px
-      &.active-item
+  .container
+    width: 970px
+    #accordion
+      padding-left: 15px
+      padding-right: 15px
+      .faq-item
+        border: none
+        margin: 30px 0
+        border-radius: 0
+        transition: all 100ms ease
         .faq-link
-          border-bottom: 1px solid #bbbbbb
+          outline: none
+          background-color: #EAEAEA
+          display: block
+          color: #636768
+          text-decoration: none
+          padding: 15px 20px
+          .faq-header
+            font-family: "Segoeui"
+            display: inline-block
+            color: #636768
+            max-width: 95%
+          .faq-button
+            display: inline-block
+            float: right
+            height: 14px
+        .package-content
+          background-color: #EAEAEA
+        .panel-heading
+          margin: 0
+          padding-left: 0
+          padding-right: 0
+        .panel-body
+          padding: 0 0 15px
+          .faq-description
+            color: #636768
+            font-family: "Segoeui"
+            font-size: 14px
+            line-height: 25px
+            padding: 15px 20px
+        &.active-item
+          .faq-link
+            border-bottom: 1px solid #bbbbbb
 
 
 
