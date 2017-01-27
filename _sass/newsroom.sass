@@ -1,63 +1,120 @@
-#newsroom
+#cover
   position: relative
-  background-color: #FBFBFB
-  padding: 50px 15px
-  font-family: "Segoeui"
-  .left-section
-    .header-section
-      .header
-        color: #585858
-        padding-left: 10px
+  background-image: url("/img/cover-bg.jpg")
+  background-size: cover
+  background-position: center center
+  height: 50vh!important
+  //min-height:  50vh
+  #canvas
+    position: absolute
+    top: 0
+    left: 0
+    right: 0
+    bottom: 0
+    width: 100%
+    height: 100%
+    display: flex
+  .section-container
+    position: absolute
+    top: 0%
+    left: 0
+    right: 0
+    bottom: 0%
+    width: 100%
+    height: 100%
+    .intro-top
+      position: relative
+      top: 50%
+      transform: translateY(-50%)
+      -webkit-transform: translateY(-50%)
+      -moz-transform: translateY(-50%)
+      -ms-transform: translateY(-50%)
+      -o-transform: translateY(-50%)
+      color: white
+      text-align: center
+      .intro-header
+        font-size: 42px
         font-family: "Segoeui-Bold"
-        text-transform: uppercase
-        padding-top: 15px
-        padding-bottom: 15px
-    .content-section
-      padding: 30px
-      margin-bottom: 30px
-      background-color: white
-      margin-bottom: 50px
-      .news-link
+        letter-spacing: 2px
+      .intro-text
+        font-size: 24px
+        font-family: "Segoeui-Bold"
+        margin-top: 15px
+        margin-bottom: 15px
+        letter-spacing: 2px
+    .intro-middle
+      color: white
+      text-align: center
+      .intro-text
+        font-size: 20px
+        font-family: "Segoeui-Italic"
+        max-width: 65%
+        min-width: 65%
+        margin-left: auto
+        margin-right: auto
+        line-height: 30px
+    .intro-bottom
+      display: table
+      margin-left: auto
+      margin-right: auto
+      margin-top: 50px
+      .intro-link
+        outline: none
+        color: white
         display: block
-        &:hover
-          color: #636768
-        .news-title
-          line-height: 25px
-          color: #585858
-          font-size: 20px
-          font-family: "Segoeui-Bold"
-          text-transform: uppercase
-          padding-bottom: 15px
-      .news-description
+        font-size: 20px
+        font-family: "Segoeui"
+        background-color: #0E6BA2
+        text-decoration: none
+        padding: 20px 70px
+        border-radius: 40px
+
+#news
+  position: relative
+  background-color: #f5f5f5
+  padding-top: 100px
+  padding-bottom: 100px
+  .section-header
+    font-family: "Segoeui-Bold"
+    font-size: 32px
+    text-align: left
+    margin-top: 30px
+    margin-bottom: 30px
+  #pinBoot
+    position: relative
+    max-width: 100%
+    width: 100%
+    .white-panel
+      position: absolute
+      //box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3)
+      padding: 10px
+      outline: none
+      text-decoration: none
+      .news-image
+        width: 100%
+        max-width: 100%
+        height: auto
+        display: block
+        border-radius: 10px
+      .news-title
+        max-width: 180px
+        font-family: "Segoeui-Bold"
+        display: block
+        color: #585858
+        font-size: 16px
+        margin-top: 15px
+        margin-bottom: 15px
+      p
+        max-width: 180px
+        display: block
+        color: #585858
         font-size: 14px
         line-height: 25px
-        overflow: hidden
-        display: -webkit-box
-        -webkit-line-clamp: 3
-        -webkit-box-orient: vertical
-        font-family: "Segoeui"
-      .news-date-posted
-        font-family: "Segoeui"
-        display: block
-        padding-top: 30px
-        padding-bottom: 15px
-
-@media (max-width: $screen-sm-max)
-  #newsroom
-    padding-left: 0
-    padding-right: 0
-    .left-section
-      padding-left: 0
-      padding-right: 0
-    .right-section
-      padding-left: 0
-      padding-right: 0
-
-@media (max-width: 568px)
-  #newsroom
-    padding-top: 30px
-    .left-section
-      .content-section
-        .news-link
-          .news-title
-            font-size: 16px
+        margin-bottom: 15px
+      &:hover
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5)
+        margin-top: -5px
+        -webkit-transition: all 0.3s ease-in-out
+        -moz-transition: all 0.3s ease-in-out
+        -o-transition: all 0.3s ease-in-out
+        transition: all 0.3s ease-in-out

@@ -1,35 +1,29 @@
 ---
 layout: page-layout/news
 ---
-<div id="newsroom">
-    <div class="container">
-        <div class="left-section col-lg-8 col-md-8">
-            <div class="header-section">
-                <h2 class="header">Newsroom</h2>
-            </div>
-            {% for post in paginator.posts %}
-            <div class="content-section">
-                <a class="news-link" href="{{ post.url }}">
-                    <h2 class="news-title">{{ post.title }}</h2>
-                </a>
-                <p class="news-description">{{ post.content | remove:'<p>' | remove:'</p>' }}</p>
-                <span class="news-date-posted">Posted on {{ post.date | timeago }}</span>
-            </div>
-            {% endfor %}
+<div id="cover" class="section fp-normal-scroll fp-auto-height fp-auto-height-responsive">
+    <div id="canvas"></div>
+    <div class="section-container"> 
+        <div class="intro-top">  <h2 class="intro-header">NEWS</h2> </div>
+    </div>
+</div>
 
-            <div class="pagination">
-                {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
-                {% else %}
-                <span class="previous">Previous</span>
-                {% endif %}
-                <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-                {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-                {% else %}
-                <span class="next ">Next</span>
-                {% endif %}
-            </div>
+<div class="section fp-normal-scroll fp-auto-height" id="news">
+    <div class="container">
+        <div class="row">
+            <section id="pinBoot">
+                {% assign counter = 0 %}
+                {% assign sortedPost = site.posts | sort: 'slugID' %}
+                {% for news in sortedPost reversed %}
+                {% assign counter = counter | plus:1 %}
+                <a data-slug="{{ news.slugID }}" href="{{ news.url }}" target="_blank" class="white-panel news-link">
+                    <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}">
+                    <h4 class="news-title">{{ news.title }} </h4>
+                    <p>{{ news.content | truncatewords: 15 }}</p>
+                </a>
+                {% endfor %}
+
+            </section>
         </div>
     </div>
 </div>

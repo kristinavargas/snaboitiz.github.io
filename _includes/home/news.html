@@ -10,7 +10,7 @@
                 {% for news in sortedPost reversed limit: 8 offset: 4 %}
                 {% assign counter = counter | plus:1 %}
                 <a data-slug="{{ news.slugID }}" href="{{ news.url }}" target="_blank" class="white-panel news-link">
-                    <img class="news-image img-responsive center-block" data-src="{{ news.cover }}" alt="{{ news.title }}">
+                    <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}">
                     <h4 class="news-title">{{ news.title }} </h4>
                     <p>{{ news.content | truncatewords: 15 }}</p>
                 </a>
