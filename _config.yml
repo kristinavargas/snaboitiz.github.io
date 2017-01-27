@@ -58,7 +58,7 @@ navbar-menu:
     slugID: "/news/"
 
   - title: "FAQs"
-    slugID: "#"
+    slugID: "/faq/"
 
   - title: "Careers"
     slugID: "/careers/"

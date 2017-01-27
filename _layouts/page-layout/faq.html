@@ -1,0 +1,36 @@
+---
+layout: default
+css: faq.css
+title: FAQs
+javascript: >
+    <script type="text/javascript" src="/js/scrollreveal.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                lockAnchors:true,
+                hybrid:true,
+                menu: '#menu',
+                navigation: true,
+                navigationPosition: 'right',
+                anchors: ['section-1','section-2', 'section-3', 'section-4', 'section-5' ,'section-6'],
+                navigationTooltips: ['About','Our Plants', 'SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
+                showActiveTooltip: true,
+                fitToSection:false,
+                autoScrolling:false,
+                recordHistory:false
+            });
+            var imageContainer = $("#leadership .image-section #image-container .image-list");
+            imageContainer.hover(
+                function () {
+                    $(this).find(".user-info").css("opacity","1")
+                },
+                function() {
+                    $(this).find(".user-info").css("opacity","0")
+                }
+            );
+        });
+    </script>
+---
+
+
+{{ content }}
