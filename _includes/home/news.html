@@ -4,7 +4,7 @@
             <header>
                 <h2 class="section-header">News</h2>
             </header>
-            <section id="pinBoot">
+            <section class="pinBoot">
                 {% assign counter = 0 %}
                 {% assign sortedPost = site.posts | sort: 'slugID' %}
                 {% for news in sortedPost reversed limit: 8 offset: 4 %}
@@ -15,7 +15,6 @@
                     <p>{{ news.content | truncatewords: 15 }}</p>
                 </a>
                 {% endfor %}
-
             </section>
         </div>
     </div>

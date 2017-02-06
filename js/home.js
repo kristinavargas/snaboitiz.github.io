@@ -55,12 +55,24 @@ $('#fullpage').fullpage({
 
 
 //Grid layout
-
-$('#pinBoot').pinterest_grid({
-    no_columns: 4,
-    padding_x: 10,
-    padding_y: 10,
-    margin_bottom: 50
+$(function () {
+    if ($(document).width() >= 1024) {
+        $('.pinBoot').pinterest_grid({
+            no_columns: 4,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50
+        });
+    }
+    if($(document).width() < 1024 ){
+        $('.pinBoot').pinterest_grid({
+            no_columns: 2,
+            padding_x: 10,
+            padding_y: 10,
+            margin_bottom: 50,
+            single_column_breakpoint: 568
+        });
+    }
 });
 
 
