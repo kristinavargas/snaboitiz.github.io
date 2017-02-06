@@ -177,11 +177,12 @@ nav
           height: auto
           margin-left: 0
           .brand-logo
+            margin-left: 15px
             transition: all 300ms ease-in-out
             height: 40px
       .navbar-right
         padding: 0
-        margin-right: 0
+        margin-right: 15px
         .navbar-list
           margin: 0 3px
           overflow: hidden
@@ -452,6 +453,8 @@ footer
     &.navbar-default
       background-color: #ffffff !important
       .container-fluid
+        .navbar-header
+          float: none
         .navbar-right
           margin: 15px auto
           float: none !important
@@ -469,6 +472,8 @@ footer
               font-size: 14px
               padding-top: 10px
               padding-bottom: 10px
+    &.navbar-shrink
+      border-bottom: 1px solid #e7e7e7
 
     .navbar-toggle
       display: block
@@ -479,12 +484,14 @@ footer
       top: 0
       margin: 25px 30px
     .navbar-collapse
-      border-top: 1px solid transparent
-      box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1)
+      border-bottom: transparent
+      margin-top: 16px
+      background-color: white
       max-height: none !important
     .navbar-collapse.collapse
       display: none !important
     .collapse.in
+      border: none
       display: block !important
       overflow-x: hidden !important
 
@@ -540,6 +547,14 @@ footer
       top: 18px
       width: 0%
       left: 50%
+
+  nav
+    &.navbar-default
+      .container-fluid
+        .navbar-right
+          .navbar-list
+            .navbar-link
+              color: #000
 
   #searchModal
     .modal-content
