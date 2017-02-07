@@ -10,9 +10,9 @@ $('#fullpage').fullpage({
     fitToSection:false,
     recordHistory:false,
     keyboardScrolling: true,
-    anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
     slidesNavigation: true,
-    slidesNavPosition: 'bottom'
+    slidesNavPosition: 'bottom',
+    scrollingSpeed: 1000
 
     // afterRender: function(){
     //     var pluginContainer = $(this);
