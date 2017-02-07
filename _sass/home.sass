@@ -8,8 +8,10 @@ body
 
 nav
   &.navbar-default
-    transition: all 300ms ease-in-out
+    padding-top: 22px
+    transition: all 100ms ease-in-out
     .container-fluid
+      transition: all 300ms ease-in-out
       .navbar-header
         .navbar-brand
           .brand-logo
@@ -92,6 +94,7 @@ nav
               border-color: white
 
   &.navbar-shrink
+    padding-top: 0
     .container-fluid
       .navbar-header
         .navbar-brand
@@ -233,31 +236,16 @@ nav
       -moz-transform: translateY(-50%)
       -ms-transform: translateY(-50%)
       -o-transform: translateY(-50%)
-      .intro-top
-        color: white
-        text-align: center
-        margin-bottom: 30px
-        .intro-header
-          font-size: 42px
-          font-family: "Segoeui-Bold"
-          letter-spacing: 2px
-        .intro-text
-          font-size: 24px
-          font-family: "Segoeui-Bold"
-          margin-top: 15px
-          margin-bottom: 15px
-          letter-spacing: 2px
       .intro-middle
         color: white
-        text-align: center
+        display: table
+        margin-left: auto
+        margin-right: auto
         .intro-text
-          font-size: 20px
-          font-family: "Segoeui-Italic"
-          max-width: 65%
-          min-width: 65%
-          margin-left: auto
-          margin-right: auto
-          line-height: 30px
+          font-size: 48px
+          display: block
+          font-family: "Bodoni-Book"
+          line-height: 50px
       .intro-bottom
         display: table
         margin-left: auto
@@ -408,8 +396,8 @@ nav
 @media (max-width: $screen-md-max)
   nav
     &.navbar-default
+      padding-top: 0
       .container-fluid
-        padding
         .navbar-header
           .navbar-brand
             .brand-logo
