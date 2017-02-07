@@ -191,7 +191,7 @@ nav
     width: 100%
     height: 100%
     position: absolute
-    background-color: rgba(0, 43, 55, 0.5)
+    background-color: rgba(12, 40, 65, 0.6)
     z-index: 3
   #video-header
     z-index: 1
@@ -242,25 +242,79 @@ nav
         margin-left: auto
         margin-right: auto
         .intro-text
-          font-size: 48px
+          font-size: 68px
           display: block
-          font-family: "Bodoni-Book"
-          line-height: 50px
+          font-family: "Cambria"
+          line-height: 60px
       .intro-bottom
         display: table
         margin-left: auto
         margin-right: auto
         margin-top: 50px
+        overflow: hidden
+        position: relative
         .intro-link
+          border: 1px solid rgba(255,255,255,0.3)
+          text-transform: uppercase
           outline: none
-          color: white
+          color: #ffffff
           display: block
-          font-size: 20px
+          font-size: 16px
           font-family: "Segoeui"
-          background-color: #0E6BA2
           text-decoration: none
-          padding: 20px 70px
-          border-radius: 40px
+          padding: 20px 50px
+          margin: -14px 0px
+          &:before, &:after
+            content: ""
+            display: block
+            background: transparent
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            position: absolute
+            width: 100%
+            height: 100%
+            -webkit-transition: all 0.3s ease
+            -o-transition: all 0.3s ease
+            transition: all 0.3s ease
+          &:before
+            -webkit-transform: translate(0, 0)
+            -ms-transform: translate(0, 0)
+            -o-transform: translate(0, 0)
+            transform: translate(0, 0)
+            border-top: 1px solid #ffffff
+            border-bottom: 1px solid #ffffff
+            left: -101%
+
+          &:after
+            -webkit-transform: translate(0, 0)
+            -ms-transform: translate(0, 0)
+            -o-transform: translate(0, 0)
+            transform: translate(0, 0)
+            border-left: 1px solid #ffffff
+            border-right: 1px solid #ffffff
+            top: -101%
+
+          &:hover
+            &:before
+              -webkit-transform: translate(101%, 0)
+              -ms-transform: translate(101%, 0)
+              -o-transform: translate(101%, 0)
+              transform: translate(101%, 0)
+
+            &:after
+              -webkit-transform: translate(0, 101%)
+              -ms-transform: translate(0, 101%)
+              -o-transform: translate(0, 101%)
+              transform: translate(0, 101%)
+
+            &:after
+              -webkit-transform: translate(0, 101%)
+              -ms-transform: translate(0, 101%)
+              -o-transform: translate(0, 101%)
+              transform: translate(0, 101%)
+
 
 #news
   position: relative
