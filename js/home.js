@@ -10,7 +10,9 @@ $('#fullpage').fullpage({
     fitToSection:false,
     recordHistory:false,
     keyboardScrolling: true,
-    anchors: ['section-1', 'section-2', 'section-3']
+    anchors: ['section-1', 'section-2', 'section-3', 'section-4'],
+    slidesNavigation: true,
+    slidesNavPosition: 'bottom'
 
     // afterRender: function(){
     //     var pluginContainer = $(this);
@@ -33,7 +35,7 @@ $('#fullpage').fullpage({
     //     }
     //
     // },
-    //
+
     // afterSlideLoad: function (anchorLink, index, slideAnchor, slideIndex) {
     //     sliding = false;
     // },
