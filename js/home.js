@@ -55,26 +55,20 @@ $('#fullpage').fullpage({
     // }
 });
 
-
-// Grid layout
-$(function () {
-    if ($(document).width() >= 1024) {
-        $('.pinBoot').pinterest_grid({
-            no_columns: 4,
-            padding_x: 10,
-            padding_y: 10,
-            margin_bottom: 50
-        });
-    }
-    if($(document).width() < 1024 ){
-        $('.pinBoot').pinterest_grid({
-            no_columns: 2,
-            padding_x: 10,
-            padding_y: 10,
-            margin_bottom: 50,
-            single_column_breakpoint: 568
-        });
-    }
+$(window).on("load",function () {
+    $('.grid').isotope({
+        resizable: true,
+        itemSelector: '.grid-item',
+        percentPosition: true,
+        masonry: {
+            columnWidth: '.grid-sizer'
+        }
+    });
 });
+
+
+
+
+
 
 
