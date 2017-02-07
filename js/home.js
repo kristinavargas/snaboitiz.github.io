@@ -54,7 +54,7 @@ $('#fullpage').fullpage({
 });
 
 
-//Grid layout
+// Grid layout
 $(function () {
     if ($(document).width() >= 1024) {
         $('.pinBoot').pinterest_grid({
