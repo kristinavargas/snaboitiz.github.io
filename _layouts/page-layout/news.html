@@ -4,7 +4,7 @@ css: newsroom.css
 title: News
 javascript: >
     <script type="text/javascript" src="/js/scrollreveal.js"></script>
-    <script type="text/javascript" src="/js/pinterest-grid.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
@@ -19,12 +19,17 @@ javascript: >
             });
         });
 
-        $('#pinBoot').pinterest_grid({
-            no_columns: 4,
-            padding_x: 10,
-            padding_y: 10,
-            margin_bottom: 50
+        $(window).on("load",function () {
+            $('.grid').isotope({
+                resizable: true,
+                itemSelector: '.grid-item',
+                percentPosition: true,
+                masonry: {
+                    columnWidth: '.grid-sizer'
+                }
+            });
         });
+
     </script>
 
 ---

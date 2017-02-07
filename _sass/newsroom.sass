@@ -80,41 +80,63 @@
     text-align: left
     margin-top: 30px
     margin-bottom: 30px
-  #pinBoot
-    position: relative
-    max-width: 100%
-    width: 100%
-    .white-panel
-      position: absolute
-      //box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3)
-      padding: 10px
-      outline: none
-      text-decoration: none
-      .news-image
-        width: 100%
-        max-width: 100%
-        height: auto
+  .content-container
+    max-width: 1600px
+    margin-left: auto
+    margin-right: auto
+    padding-left: 80px
+    padding-right: 80px
+    .grid
+      position: relative
+      margin: 0 auto
+      .grid-item
+        float: left
         display: block
-        border-radius: 10px
-      .news-title
-        max-width: 180px
-        font-family: "Segoeui-Bold"
+        width: 23%
+        border: 1px solid #e8e8e8
+        outline: none
+        padding: 10px
+        margin: 1%
+      .grid-sizer
+        width: 23%
+        margin: 1%
+      .news-link
+        text-decoration: none
         display: block
-        color: #585858
-        font-size: 16px
-        margin-top: 15px
-        margin-bottom: 15px
-      p
-        max-width: 180px
-        display: block
-        color: #585858
-        font-size: 14px
-        line-height: 25px
-        margin-bottom: 15px
-      &:hover
-        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5)
-        margin-top: -5px
-        -webkit-transition: all 0.3s ease-in-out
-        -moz-transition: all 0.3s ease-in-out
-        -o-transition: all 0.3s ease-in-out
-        transition: all 0.3s ease-in-out
+        outline: none
+        .news-image
+          width: 100%
+          max-width: 100%
+          height: auto
+          display: block
+        //border-radius: 10px
+        .news-title
+          font-family: "Segoeui"
+          display: block
+          color: #585858
+          font-size: 16px
+          margin-top: 15px
+          margin-bottom: 15px
+          font-weight: bold
+        .news-date
+          top: -18px
+          display: table
+          margin-left: auto
+          margin-right: auto
+          position: relative
+          .date
+            text-decoration: none
+            outline: none
+            color: #585858
+            font-size: 12px
+            text-align: center
+            display: inline-block
+            background-color: #f5f5f5
+            padding-left: 10px
+            padding-right: 10px
+        p
+          display: block
+          color: #585858
+          font-size: 14px
+          line-height: 1.9
+          margin-bottom: 15px

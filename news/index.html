@@ -2,28 +2,32 @@
 layout: page-layout/news
 ---
 <div id="cover" class="section fp-normal-scroll fp-auto-height fp-auto-height-responsive">
-    <div id="canvas"></div>
     <div class="section-container"> 
         <div class="intro-top">  <h2 class="intro-header">NEWS</h2> </div>
     </div>
 </div>
 
 <div class="section fp-normal-scroll fp-auto-height" id="news">
-    <div class="container">
-        <div class="row">
-            <section id="pinBoot">
-                {% assign counter = 0 %}
-                {% assign sortedPost = site.posts | sort: 'slugID' %}
-                {% for news in sortedPost reversed %}
-                {% assign counter = counter | plus:1 %}
-                <a data-slug="{{ news.slugID }}" href="{{ news.url }}" target="_blank" class="white-panel news-link">
-                    <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}">
-                    <h4 class="news-title">{{ news.title }} </h4>
-                    <p>{{ news.content | truncatewords: 15 }}</p>
-                </a>
-                {% endfor %}
+    <div class="container-fluid content-container">
+        <div class="grid">
+            <div class="grid-sizer"></div>
+            {% assign sortedPost = site.posts | sort: 'slugID' %}
+            {% for news in sortedPost reversed limit: 8 offset: 4 %}
+            {% assign counter = counter | plus:1 %}
 
-            </section>
+            <div data-slug="{{ news.slugID }}" class="grid-item">
+                <a href="{{ news.url }}" target="_blank" class="news-link">
+                    <div class="news-content">
+                        <div class="news-date">
+                            <span class="date">{{ news.date | date: '%B %d, %Y' }}</span>
+                        </div>
+                        <h4 class="news-title">{{ news.title }} </h4>
+                        <p>{{ news.content | truncatewords: 20 }}</p>
+                        <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}"/>
+                    </div>
+                </a>
+            </div>
+            {% endfor %}
         </div>
     </div>
 </div>
