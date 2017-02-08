@@ -439,9 +439,51 @@ nav
       text-align: left
       margin-top: 30px
       margin-bottom: 30px
+    .swiper-container
+      position: relative
+      .swiper-slide
+        .image-container
+          height: 35vh
+          display: block
+          overflow: hidden
+          position: relative
+          cursor: pointer
+          .slide-image
+            object-fit: cover
+            width: 100%
+            height: 100%
+        .slide-content
+          display: block
+          position: relative
+          margin-top: 30px
+          margin-bottom: 50px
+          .slide-date
+            display: table
+            margin-left: auto
+            margin-right: auto
+            position: relative
+            .date
+              text-decoration: none
+              outline: none
+              color: #585858
+              font-size: 12px
+              text-align: center
+              display: inline-block
+              background-color: white
+              padding-left: 10px
+              padding-right: 10px
+          p
+            display: block
+            color: #585858
+            font-size: 14px
+            line-height: 1.9
+
+      .swiper-pagination
+        position: relative
+
     .grid
       position: relative
-      margin: 0 auto
+      margin: 100px auto 0
       .grid-item
         float: left
         display: block

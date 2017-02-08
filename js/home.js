@@ -66,6 +66,14 @@ $(window).on("load",function () {
     });
 });
 
+var swiper = new Swiper('.swiper-container', {
+    pagination: '.swiper-pagination',
+    slidesPerView: 4,
+    paginationClickable: true,
+    spaceBetween: 30,
+    speed: 1000
+});
+
 
 
 

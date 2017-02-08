@@ -1,5 +1,28 @@
 <div class="section fp-normal-scroll fp-auto-height" id="news" data-anchor="section-3">
     <div class="container-fluid content-container">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                {% assign sortedPost = site.posts | sort: 'slugID' %}
+                {% for slide in sortedPost reversed limit: 8 offset: 4 %}
+                {% assign counter = counter | plus:1 %}
+                <div class="swiper-slide">
+                    <div class="image-container">
+                        <img class="slide-image center-block" src="{{ slide.cover }}"/>
+                    </div>
+                    <div class="slide-content">
+                        <div class="slide-date">
+                            <span class="date">{{ slide.date | date: '%B %d, %Y' }}</span>
+                        </div>
+                        <h4 class="slide-title">{{ slide.title }} </h4>
+                        <p>{{ slide.content | truncatewords: 10 }}</p>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+            <!-- Add Pagination -->
+            <div class="swiper-pagination"></div>
+        </div>
+
         <div class="grid">
             <div class="grid-sizer"></div>
             {% assign sortedPost = site.posts | sort: 'slugID' %}
