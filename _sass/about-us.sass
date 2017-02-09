@@ -1,3 +1,10 @@
+.fp-viewing-section-1-0,
+.fp-viewing-section-1-1,
+.fp-viewing-section-1-2,
+.fp-viewing-section-1-3
+  #fp-nav.right
+    display: none
+
 #cover
   position: relative
   background-image: url("/img/cover-bg.jpg")
@@ -71,48 +78,107 @@
 
 #our-plant
   position: relative
-  .content-section
-    transform: matrix(1, 0, 0, 1, 0, 0)
-    width: 920px
-    margin: 100px auto 0
-    padding-left: 180px
-    &:before
-      height: calc(100% + 120px)
-      top: -100px
-      width: 1px
-      content: ''
-      display: block
-      background-color: #e1e1e1
-      position: absolute
-      left: 9.8%
-      z-index: -1
-    .section-number
-      font-family: "Segoeui-Bold"
-      font-size: 35px
-      position: absolute
-      top: 0
-      left: 0
-    .section-title
-      font-family: "Segoeui-Bold"
-      font-size: 32px
-    .plant-list
-      .plant-title
-        font-family: "Segoeui-Bold"
-        font-size: 18px
-        margin-top: 50px
-        margin-bottom: 20px
-      .plant-spec
-        display: block
-        color: #636768
-        font-size: 16px
-        font-family: "Segoeui"
-        line-height: 34px
-      .plant-text
-        margin-top: 20px
-        color: #636768
-        font-size: 16px
-        font-family: "Segoeui"
-        line-height: 34px
+  background-color: #f5f5f5
+  .slide-container
+    position: relative
+    .slide
+      height: 100vh
+      background-size: cover
+      background-position: top center
+      &.slide-ambuklao
+        background-image: url("/img/slider/ambuklao.jpg")
+      &.slide-magat
+        background-image: url("/img/slider/magat.jpg")
+      &.slide-binga
+        background-image: url("/img/slider/binga.jpg")
+      .bg-overlay
+        position: absolute
+        background-color: rgba(88, 88, 88, 0.5)
+        height: 100%
+        width: 100%
+      .slide-section
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        -webkit-transform: translateY(-50%)
+        -moz-transform: translateY(-50%)
+        -o-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        color: white
+        .top-section
+          position: relative
+          .left-section
+            float: left
+            width: 60%
+            .section-header
+              font-size: 68px
+              margin-bottom: 24px
+            .section-location
+              font-size: 28px
+          .right-section
+            float: left
+            width: 40%
+            .section-content
+              .section-number
+                display: inline-block
+                font-size: 9em
+                margin-right: 15px
+                vertical-align: middle
+              .section-capacity
+                vertical-align: middle
+                font-size: 24px
+                display: inline-block
+
+      .middle-section
+        float: left
+        position: relative
+        width: 100%
+        margin: 6vh 0
+        padding: 3vh 0
+        &:before
+          top: 0
+          transform-origin: 0 0
+          position: absolute
+          content: ''
+          width: 100%
+          height: 1px
+          left: 0
+          background-color: rgba(255,255,255,.2)
+          transform: scaleX(1) translateZ(0)
+        &:after
+          transform: scaleX(1) translateZ(0)
+          bottom: 0
+          transform-origin: 100% 0
+          position: absolute
+          content: ''
+          width: 100%
+          height: 1px
+          left: 0
+          background-color: rgba(255,255,255,.2)
+        .section-description
+          font-size: 16px
+          max-width: 70%
+          min-width: 70%
+          padding-right: 8%
+          line-height: 1.9
+
+      .bottom-section
+        float: left
+        position: relative
+        .intro-bottom
+          display: table
+          overflow: hidden
+          position: relative
+        .intro-link
+          border: 1px solid rgba(255,255,255,0.3)
+          text-transform: uppercase
+          outline: none
+          color: white
+          display: block
+          font-size: 14px
+          font-family: "Segoeui"
+          text-decoration: none
+          padding: 18px 28px
 
 #new-project
   position: relative

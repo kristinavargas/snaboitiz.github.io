@@ -7,13 +7,18 @@ javascript: >
     <script type="text/javascript">
         $(document).ready(function () {
             $('#fullpage').fullpage({
+                verticalCentered:false,
+                keyboardScrolling: true,
+                slidesNavigation: true,
+                slidesNavPosition: 'bottom',
+                scrollingSpeed: 1000,
                 lockAnchors:true,
                 hybrid:true,
                 menu: '#menu',
                 navigation: true,
                 navigationPosition: 'right',
-                anchors: ['section-1','section-2', 'section-4', 'section-5' ,'section-6','section-7'],
-                navigationTooltips: ['About','Our Plants', 'SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
+                anchors: ['section-1','section-2','section-3', 'section-4', 'section-5' ,'section-6','section-7'],
+                navigationTooltips: ['Our Plants', 'SNAP Group', 'Strategic Foundation', 'Shareholders', 'Leadership'],
                 showActiveTooltip: true,
                 fitToSection:false,
                 autoScrolling:false,

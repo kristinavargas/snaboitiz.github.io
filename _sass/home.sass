@@ -6,10 +6,14 @@
 body
   margin-top: 0
 
+#fp-nav ul li a span, .fp-slidesNav ul li a span
+  color: white
+
 nav
   &.navbar-default
     padding-top: 22px
     transition: all 100ms ease-in-out
+    border-color: transparent
     .container-fluid
       transition: all 300ms ease-in-out
       .navbar-header
@@ -191,7 +195,7 @@ nav
     width: 100%
     height: 100%
     position: absolute
-    background-color: rgba(12, 40, 65, 0.6)
+    background-color: rgba( 5, 36, 58, 0.8 )
     z-index: 3
   #video-header
     z-index: 1
@@ -242,10 +246,16 @@ nav
         margin-left: auto
         margin-right: auto
         .intro-text
-          font-size: 68px
+          font-size: 48px
           display: block
           font-family: "Cambria"
-          line-height: 60px
+          line-height: 42px
+          text-align: center
+          b
+            color: #4badea
+            font-style: normal
+            font-weight: normal
+
       .intro-bottom
         display: table
         margin-left: auto
@@ -262,7 +272,7 @@ nav
           font-size: 16px
           font-family: "Segoeui"
           text-decoration: none
-          padding: 20px 50px
+          padding: 14px 40px
           margin: -14px 0px
           &:before, &:after
             content: ""
