@@ -55,6 +55,18 @@ $('#fullpage').fullpage({
     // }
 });
 
+$(function() {
+    var $grid = $('.grid2').isotope({
+        layoutMode: 'packery',
+        itemSelector: '.grid-item2'
+    });
+    $grid.imagesLoaded().progress( function() {
+        $grid.isotope('layout');
+    });
+
+
+});
+
 $(window).on("load",function () {
     $('.grid').isotope({
         resizable: true,
