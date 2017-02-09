@@ -456,25 +456,27 @@ nav
       text-align: left
       margin-top: 30px
       margin-bottom: 30px
-    .swiper-container
+    .feature-section
       position: relative
-      .swiper-slide
+      .feature-list
+        padding-left: 30px
+        padding-right: 30px
         .image-container
           height: 35vh
           display: block
           overflow: hidden
           position: relative
           cursor: pointer
-          .slide-image
+          .image
             object-fit: cover
             width: 100%
             height: 100%
-        .slide-content
+        .feature-content
           display: block
           position: relative
           margin-top: 30px
           margin-bottom: 50px
-          .slide-date
+          .feature-date
             display: table
             margin-left: auto
             margin-right: auto
@@ -494,9 +496,6 @@ nav
             color: #585858
             font-size: 14px
             line-height: 1.9
-
-      .swiper-pagination
-        position: relative
 
     .grid
       position: relative
@@ -623,6 +622,13 @@ nav
             min-width: 35%
 
 @media (max-width: 1440px)
+  #cover
+    .intro-container
+      .section-content
+        .intro-middle
+          .intro-text
+            font-size: 58px
+
   #news
     .right-section
       .carousel-container
@@ -646,12 +652,6 @@ nav
               -moz-filter: none
               -o-filter: none
               -ms-filter: none
-  #cover
-    .intro-container
-      .section-content
-        .intro-middle
-          .intro-text
-            font-size: 58px
 
   #our-plant
     .slide-container
@@ -689,8 +689,18 @@ nav
         .slide-section
           .container
             width: 100% !important
-            padding-left: 65px
-            padding-right: 65px
+            padding-left: 60px
+            padding-right: 60px
+            .middle-section
+              .section-description
+                min-width: 0
+                max-width: none
+                padding-right: 0
+  .fp-controlArrow.fp-prev
+    display: none
+  .fp-controlArrow.fp-next
+    display: none
+
 
 @media (max-width: $screen-xs-max)
   #cover
@@ -700,6 +710,28 @@ nav
           .intro-text
             font-size: 48px
             line-height: normal
+
+  #our-plant
+    .slide-container
+      .slide
+        .slide-section
+          .container
+            padding-left: 30px
+            padding-right: 30px
+            .top-section
+              .left-section
+                .section-header
+                  font-size: 38px
+                  margin-bottom: 15px
+                .section-location
+                  font-size: 18px
+              .right-section
+                .section-content
+                  .section-number
+                    font-size: 48px
+                  .section-capacity
+                    font-size: 12px
+
 
 @media (max-width: 568px)
   #cover
