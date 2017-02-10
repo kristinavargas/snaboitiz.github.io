@@ -1,10 +1,10 @@
 <div class="section fp-normal-scroll fp-auto-height" id="news" data-anchor="section-3">
-    <div class="section-header">
-        <div class="header-container">
-            <h4 class="header">Feature</h4>
-        </div>
-    </div>
     <div class="container-fluid content-container">
+        <div class="section-header">
+            <div class="header-container">
+                <h4 class="header">Featured</h4>
+            </div>
+        </div>
         <div class="feature-section clearfix">
             {% assign sortedPost = site.posts | sort: 'slugID' %}
             {% for feature in sortedPost limit: 3 %}
@@ -18,18 +18,19 @@
                         <span class="date">{{ feature.date | date: '%B %d, %Y' }}</span>
                     </div>
                     <h4 class="feature-title">{{ feature.title }} </h4>
-                    <p>{{ feature.content | truncatewords: 15 }}</p>
+                    <p>{{ feature.content | truncatewords: 30 }}</p>
                 </div>
             </div>
             {% endfor %}
         </div>
     </div>
-    <div class="section-header">
-        <div class="header-container">
-            <h4 class="header">News</h4>
-        </div>
-    </div>
+
     <div class="container-fluid content-container">
+        <div class="section-header">
+            <div class="header-container">
+                <h4 class="header">News</h4>
+            </div>
+        </div>
         <div class="grid">
             <div class="grid-sizer"></div>
             {% assign sortedPost = site.posts | sort: 'slugID' %}

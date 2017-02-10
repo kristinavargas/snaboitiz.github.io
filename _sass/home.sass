@@ -6,8 +6,12 @@
 body
   margin-top: 0
 
-#fp-nav ul li a span, .fp-slidesNav ul li a span
-  color: white
+//#fp-nav ul li a span, .fp-slidesNav ul li a span
+//  color: #585858
+.fp-controlArrow.fp-next
+  border-color: transparent transparent transparent #D8D8D8 !important
+.fp-controlArrow.fp-prev
+  border-color: transparent #D8D8D8 transparent transparent !important
 
 nav
   &.navbar-default
@@ -324,25 +328,26 @@ nav
 
 #our-plant
   position: relative
-  background-color: #f5f5f5
+  background-color: #FBFBFB
   .slide-container
     position: relative
     .slide
       height: 100vh
       background-size: cover
       background-position: top center
-      &.slide-ambuklao
-        background-image: url("/img/slider/ambuklao.jpg")
-      &.slide-magat
-        background-image: url("/img/slider/magat.jpg")
-      &.slide-binga
-        background-image: url("/img/slider/binga.jpg")
-      .bg-overlay
-        position: absolute
-        background-color: rgba(14, 44, 82, 0.4)
-        height: 100%
-        width: 100%
+      //&.slide-ambuklao
+      //  background-image: url("/img/slider/ambuklao.jpg")
+      //&.slide-magat
+      //  background-image: url("/img/slider/magat.jpg")
+      //&.slide-binga
+      //  background-image: url("/img/slider/binga.jpg")
+      //.bg-overlay
+      //  position: absolute
+      //  background-color: rgba(14, 44, 82, 0.8)
+      //  height: 100%
+      //  width: 100%
       .slide-section
+        color: #585858
         position: relative
         top: 50%
         transform: translateY(-50%)
@@ -350,7 +355,6 @@ nav
         -moz-transform: translateY(-50%)
         -o-transform: translateY(-50%)
         -ms-transform: translateY(-50%)
-        color: white
         .top-section
           position: relative
           .left-section
@@ -389,7 +393,7 @@ nav
           width: 100%
           height: 1px
           left: 0
-          background-color: rgba(255,255,255,.2)
+          background-color: rgba(0,0,0,.2)
           transform: scaleX(1) translateZ(0)
         &:after
           transform: scaleX(1) translateZ(0)
@@ -400,7 +404,7 @@ nav
           width: 100%
           height: 1px
           left: 0
-          background-color: rgba(255,255,255,.2)
+          background-color: rgba(0,0,0,.2)
         .section-description
           font-size: 18px
           max-width: 70%
@@ -415,10 +419,10 @@ nav
           overflow: hidden
           position: relative
         .intro-link
-          border: 1px solid rgba(255,255,255,0.3)
+          border: 1px solid rgba(0,0,0,0.3)
           text-transform: uppercase
           outline: none
-          color: white
+          color: #585858
           display: block
           font-size: 14px
           font-family: "Segoeui"
@@ -473,36 +477,6 @@ nav
 
 #news
   position: relative
-  .section-header
-    position: relative
-    margin-top: 60px
-    margin-bottom: 60px
-    .header-container
-      &:before
-        content: ""
-        display: block
-        width: 80%
-        margin-left: auto
-        margin-right: auto
-        border-bottom: 1px solid #e1e1e1
-        position: relative
-        top: 16px
-        z-index: 2
-      .header
-        font-size: 28px
-        font-weight: bold
-        font-family: "Cambria"
-        text-align: center
-        background-color: white
-        z-index: 5
-        padding-left: 30px
-        padding-right: 30px
-        position: relative
-        display: table
-        margin-left: auto
-        margin-right: auto
-        text-transform: uppercase
-
   .content-container
     max-width: 1600px
     margin-left: auto
@@ -510,18 +484,42 @@ nav
     padding-left: 80px
     padding-right: 80px
     .section-header
-      font-family: "Segoeui-Bold"
-      font-size: 32px
-      text-align: left
-      margin-top: 30px
-      margin-bottom: 30px
+      position: relative
+      margin-top: 60px
+      margin-bottom: 60px
+      .header-container
+        padding-left: 30px
+        padding-right: 30px
+        &:before
+          content: ""
+          display: block
+          width: 100%
+          border-bottom: 1px solid #e1e1e1
+          position: relative
+          top: 16px
+          z-index: 2
+        .header
+          font-size: 28px
+          font-weight: bold
+          font-family: "Cambria"
+          text-align: center
+          background-color: white
+          z-index: 5
+          padding-left: 30px
+          padding-right: 30px
+          position: relative
+          display: table
+          margin-left: auto
+          margin-right: auto
+          text-transform: uppercase
+
     .feature-section
       position: relative
       .feature-list
         padding-left: 30px
         padding-right: 30px
         .image-container
-          height: 35vh
+          height: 30vh
           display: block
           overflow: hidden
           position: relative
@@ -546,6 +544,8 @@ nav
               display: inline-block
               background-color: white
               margin-bottom: 15px
+              text-transform: uppercase
+
           .feature-title
             font-family: "Cambria"
             display: block
@@ -613,6 +613,7 @@ nav
             background-color: white
             padding-left: 10px
             padding-right: 10px
+            text-transform: uppercase
         p
           display: block
           color: #585858
