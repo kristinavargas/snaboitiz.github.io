@@ -1,19 +1,92 @@
 <div class="container-fluid no-gutter container-section">
-    <div class="col-lg-6 col-md-6 ">
-        <div class="left-section">
-            <div class="tab-content">
-                <div role="tabpanel" class="content-list tab-pane fade in active" id="message">
-                    {% include contact/message.html %}
-                </div>
-                <div role="tabpanel" class="content-list tab-pane fade" id="office-location">
-                    {% include contact/location.html %}
-                </div>
-            </div>
+    <div class="section-header">
+        <div class="header-container">
+            <h4 class="header">How can we help you?</h4>
         </div>
     </div>
-    <div class="col-lg-6 col-md-6">
-        <div class="map-section">
-            <div id="map"></div>
+    <div class="left-section col-md-7 clearfix">
+
+        <div class="col-md-6 input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Name</span>
+                </label>
+            </span>
+        </div>
+        <div class="col-md-6 input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Company</span>
+                </label>
+            </span>
+        </div>
+        <div class="col-md-6 input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Email Address</span>
+                </label>
+            </span>
+        </div>
+        <div class="col-md-6 input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Contact Number</span>
+                </label>
+            </span>
+        </div>
+
+        <div class="col-md-12 input-container">
+            <span class="input input--hoshi">
+                <input class="input__field input__field--hoshi" type="text" id="input-4"/>
+                <label class="input__label input__label--hoshi input__label--hoshi-color-1" for="input-4">
+                    <span class="input__label-content input__label-content--hoshi">Message</span>
+                </label>
+            </span>
+        </div>
+
+        <div class="intro-bottom"> 
+            <a href="/news/" class="intro-link">SEND</a> 
+        </div>
+    </div>
+
+    <div class="right-section col-md-5 clearfix">
+        <div class="location-list">
+            <h2 class="title">Executive Office</h2>
+            <address class="location">c/o Manila-Oslo Renewable Enterprise, Inc.</address>
+            <address class="location">10F NAC Tower, 32nd Street</address>
+            <address class="location">Bonifacio Global City 1634, Taguig City</address>
+            <address class="location">Metro Manila, Philippines</address>
+
+        </div>
+        <div class="location-list">
+            <h2 class="title">SN ABOITIZ POWER-MAGAT</h2>
+            <address class="location">Magat Hydroelectric Power Plant</address>
+            <address class="location">Gen. Aguinaldo, Ramon, Isabela</address>
+        </div>
+        <div class="location-list">
+            <h2 class="title">SN ABOITIZ POWER-BENGUET</h2>
+            <address class="location">Binga Hydroelectric Power Plant</address>
+            <address class="location">Brgy. Tinongdan, Itogon, Benguet</address>
+        </div>
+        <div class="location-list">
+            <h2 class="title">AMBUKLAO HYDROELECTRIC POWER PLANT</h2>
+            <address class="location">Brgy. Ambuklao, Bokod, Benguet</address>
+        </div>
+        <span class="email">info@snaboitiz.com</span>
+    </div>
+
+</div>
+
+<div class="modal fade" id="modal-message" tabindex="-1" role="dialog" aria-labelledby="myModalLabel-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h2 class="text-alert">You successfully submitted your response.</h2>
+            </div>
         </div>
     </div>
 </div>

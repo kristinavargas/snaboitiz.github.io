@@ -1,101 +1,228 @@
+body
+  margin-top: 0
 #contact
   position: relative
   background-color: #FBFBFB
-  padding: 50px 15px
+  padding: 60px 15px
   font-family: "Segoeui"
+  min-height: 95vh
   .container-section
-    .left-section
-      padding-left: 100px
-      .tab-content
-        min-height: 50vh
-        .content-list
-          padding-bottom: 30px
-          &#message
-            max-width: 80%
-            min-width: 80%
-            .form-item
-              position: relative
-              .caret
-                position: absolute
-                right: 0px
-                bottom: 35px
-              .content-title
-                color: #636768
-                display: block
-                margin: 10px 0
-                font-size: 14px
-                text-transform: capitalize
-                font-family: "Segoeui-Bold"
-              .content-input
-                font-size: 14px
-                margin-bottom: 20px
-                padding: 15px
-                background-color: transparent
-                outline: none
-                border: 1px solid #979797
-                box-shadow: none
-                -webkit-border-radius: 15px
-                -moz-border-radius: 15px
-                -ms-border-radius: 15px
-                -o-border-radius: 15px
-              .menu-select
-                -webkit-border-radius: 30px
-                height: 46px
-
-              .text-area
-                resize: none
-            .content-button-container
-              margin: 30px 0 10px
-              #ss-submit
-                border-radius: 0
-                background-color: #0E6BA2
-                color: #ffffff
-                text-transform: uppercase
-                margin-top: 30px
-                border: none
-          &#office-location
-            .location-container
-              .location-list
-                .header
-                  font-family: "Segoeui-Bold"
-                  margin-top: 30px
-                  margin-bottom: 30px
-                .address
-                  font-family: "Segoeui"
-                  line-height: 25px
-                .map-link
-                  font-size: 14px
-                  display: block
-                  font-family: "Segoeui-Bold"
-                  color: #636768
-                  margin-top: 30px
-                  &:hover
-                    color: #636768
-                    text-decoration: underline
-                .company-list
-                  margin-bottom: 30px
-                  .header
-                    font-family: "Segoeui"
-    .map-section
+    max-width: 1600px
+    margin-left: auto
+    margin-right: auto
+    .section-header
       position: relative
-      #map
-        height: 100vh
-        #info-window-container
-          padding: 10px
-          .info-window-content
-            #info-address
-              h2
-                font-family: "Segoeui-Bold"
-                text-transform: uppercase
-                margin-bottom: 15px
-              .address
-                font-size: 14px
-                font-family: "Segoeui"
-                margin-bottom: 25px
-          .info-window-footer
-            .get-direction
-              display: block
-              font-family: "Segoeui-Bold"
+      margin-top: 60px
+      margin-bottom: 60px
+      .header-container
+        padding-left: 30px
+        padding-right: 30px
+        &:before
+          content: ""
+          display: block
+          width: 100%
+          border-bottom: 1px solid #e1e1e1
+          position: relative
+          top: 17px
+          z-index: 2
+        .header
+          font-size: 28px
+          font-weight: bold
+          font-family: "Segoeui-Bold"
+          text-align: center
+          background-color: white
+          z-index: 5
+          padding-right: 30px
+          position: relative
+          display: inline-block
+
+    .left-section
+      font-size: 1.05em
+      position: relative
+      .input-container
+        font-size: 120%
+        margin-top: 20px
+        margin-bottom: 20px
+    .right-section
+      position: relative
+      .location-list
+        margin-top: 20px
+        margin-bottom: 20px
+        .title
+          margin-bottom: 5px
+          font-family: "Segoeui-Bold"
+          font-size: 16px
+          text-transform: uppercase
+
+    .intro-bottom
+      position: relative
+      float: right
+      margin: 20px auto
+      display: inline-block
+      .intro-link
+        //border: 1px solid rgba(0,0,0,0.3)
+        background-color: #0E6BA2
+        text-transform: uppercase
+        outline: none
+        color: white
+        display: block
+        font-size: 14px
+        font-family: "Segoeui"
+        text-decoration: none
+        padding: 18px 50px
+
+
+.input
+  position: relative
+  z-index: 1
+  display: inline-block
+  width: 100%
+  vertical-align: top
+
+.input__field
+  position: relative
+  display: block
+  float: right
+  padding: 0.8em
+  width: 60%
+  border: none
+  border-radius: 0
+  background: #f0f0f0
+  color: #aaa
+  font-weight: bold
+  font-family: "Segoeui"
+  -webkit-appearance: none
+  /* for box shadows to show on iOS
+  &:focus
+    outline: none
+
+.input__label
+  display: inline-block
+  float: right
+  padding: 0 1em
+  width: 40%
+  color: #6a7989
+  font-weight: bold
+  font-size: 70.25%
+  -webkit-font-smoothing: antialiased
+  -moz-osx-font-smoothing: grayscale
+  -webkit-touch-callout: none
+  -webkit-user-select: none
+  -khtml-user-select: none
+  -moz-user-select: none
+  -ms-user-select: none
+  user-select: none
+
+.input__label-content
+  position: relative
+  display: block
+  padding: 1.6em 0
+  width: 100%
+
+.graphic
+  position: absolute
+  top: 0
+  left: 0
+  fill: none
+
+.icon
+  color: #ddd
+  font-size: 150%
+/* Hoshi input animation
+.input--hoshi
+  overflow: hidden
+
+.input__field--hoshi
+  margin-top: 1em
+  padding: 0.85em 0.15em
+  width: 100%
+  background: transparent
+  color: #595F6E
+
+.input__label--hoshi
+  position: absolute
+  bottom: 0
+  left: 0
+  padding: 0 0.25em
+  width: 100%
+  height: calc(100% - 1em)
+  text-align: left
+  pointer-events: none
+
+.input__label-content--hoshi
+  position: absolute
+
+.input__label--hoshi
+  &::before
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: calc(100% - 10px)
+    border-bottom: 1px solid #B9C1CA
+  &::after
+    content: ''
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: calc(100% - 10px)
+    border-bottom: 1px solid #B9C1CA
+    margin-top: 2px
+    border-bottom: 4px solid red
+    -webkit-transform: translate3d(-100%, 0, 0)
+    transform: translate3d(-100%, 0, 0)
+    -webkit-transition: -webkit-transform 0.3s
+    transition: transform 0.3s
+
+.input__label--hoshi-color-1::after
+  border-color: #0E6BA2
+
+.input__field--hoshi:focus + .input__label--hoshi::after, .input--filled .input__label--hoshi::after
+  -webkit-transform: translate3d(0, 0, 0)
+  transform: translate3d(0, 0, 0)
+
+.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi, .input--filled .input__label-content--hoshi
+  -webkit-animation: anim-1 0.3s forwards
+  animation: anim-1 0.3s forwards
+
+@-webkit-keyframes anim-1
+  50%
+    opacity: 0
+    -webkit-transform: translate3d(1em, 0, 0)
+    transform: translate3d(1em, 0, 0)
+
+  51%
+    opacity: 0
+    -webkit-transform: translate3d(-1em, -40%, 0)
+    transform: translate3d(-1em, -40%, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: translate3d(0, -40%, 0)
+    transform: translate3d(0, -40%, 0)
+
+
+@keyframes anim-1
+  50%
+    opacity: 0
+    -webkit-transform: translate3d(1em, 0, 0)
+    transform: translate3d(1em, 0, 0)
+
+  51%
+    opacity: 0
+    -webkit-transform: translate3d(-1em, -40%, 0)
+    transform: translate3d(-1em, -40%, 0)
+
+  100%
+    opacity: 1
+    -webkit-transform: translate3d(0, -40%, 0)
+    transform: translate3d(0, -40%, 0)
+
+
+
+
 
 #modal-message
   z-index: 1051
