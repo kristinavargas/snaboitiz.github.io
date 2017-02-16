@@ -1,5 +1,6 @@
 body
   margin-top: 0
+
 #contact
   position: relative
   background-color: #FBFBFB
@@ -21,7 +22,7 @@ body
           content: ""
           display: block
           width: 100%
-          border-bottom: 1px solid #e1e1e1
+          border-bottom: 1px solid #979797
           position: relative
           top: 17px
           z-index: 2
@@ -37,12 +38,57 @@ body
           display: inline-block
 
     .left-section
-      font-size: 1.05em
       position: relative
-      .input-container
-        font-size: 120%
-        margin-top: 20px
-        margin-bottom: 20px
+      .form-content
+        .form-item
+          margin-top: 20px
+          margin-bottom: 20px
+          .content-input
+            font-size: 14px
+            background: none
+            outline: none
+            border-top: 1px solid transparent
+            border-left: 1px solid transparent
+            border-right: 1px solid transparent
+            border-bottom: 1px solid #979797
+            box-shadow: none
+            transition: 300ms ease-in-out
+            -webkit-transition: 300ms ease-in-out
+            -ms-transition: 300ms ease-in-out
+            -o-transition: 300ms ease-in-out
+            -moz-transition: 300ms ease-in-out
+            border-radius: 0
+            &:focus
+              border-left: 1px solid #979797
+              border-top: 1px solid #979797
+              border-right: 1px solid #979797
+        .form-message
+          margin-top: 40px
+          margin-bottom: 40px
+          .text-area
+            font-size: 14px
+            background: none
+            outline: none
+            box-shadow: none
+            border: 1px solid #979797
+            resize: none
+        .content-button-container
+          width: fit-content
+          float: right
+          #ss-submit
+            background-color: #0E6BA2
+            color: white
+            font-family: "Segoeui"
+            outline: none
+            box-shadow: none
+            display: inline-block
+            text-decoration: none
+            text-transform: uppercase
+            font-size: 14px
+            padding: 0 50px
+            border-radius: 0
+            border: none
+
     .right-section
       position: relative
       .location-list
@@ -70,158 +116,6 @@ body
         font-family: "Segoeui"
         text-decoration: none
         padding: 18px 50px
-
-
-.input
-  position: relative
-  z-index: 1
-  display: inline-block
-  width: 100%
-  vertical-align: top
-
-.input__field
-  position: relative
-  display: block
-  float: right
-  padding: 0.8em
-  width: 60%
-  border: none
-  border-radius: 0
-  background: #f0f0f0
-  color: #aaa
-  font-weight: bold
-  font-family: "Segoeui"
-  -webkit-appearance: none
-  /* for box shadows to show on iOS
-  &:focus
-    outline: none
-
-.input__label
-  display: inline-block
-  float: right
-  padding: 0 1em
-  width: 40%
-  color: #6a7989
-  font-weight: bold
-  font-size: 70.25%
-  -webkit-font-smoothing: antialiased
-  -moz-osx-font-smoothing: grayscale
-  -webkit-touch-callout: none
-  -webkit-user-select: none
-  -khtml-user-select: none
-  -moz-user-select: none
-  -ms-user-select: none
-  user-select: none
-
-.input__label-content
-  position: relative
-  display: block
-  padding: 1.6em 0
-  width: 100%
-
-.graphic
-  position: absolute
-  top: 0
-  left: 0
-  fill: none
-
-.icon
-  color: #ddd
-  font-size: 150%
-/* Hoshi input animation
-.input--hoshi
-  overflow: hidden
-
-.input__field--hoshi
-  margin-top: 1em
-  padding: 0.85em 0.15em
-  width: 100%
-  background: transparent
-  color: #595F6E
-
-.input__label--hoshi
-  position: absolute
-  bottom: 0
-  left: 0
-  padding: 0 0.25em
-  width: 100%
-  height: calc(100% - 1em)
-  text-align: left
-  pointer-events: none
-
-.input__label-content--hoshi
-  position: absolute
-
-.input__label--hoshi
-  &::before
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: calc(100% - 10px)
-    border-bottom: 1px solid #B9C1CA
-  &::after
-    content: ''
-    position: absolute
-    top: 0
-    left: 0
-    width: 100%
-    height: calc(100% - 10px)
-    border-bottom: 1px solid #B9C1CA
-    margin-top: 2px
-    border-bottom: 4px solid red
-    -webkit-transform: translate3d(-100%, 0, 0)
-    transform: translate3d(-100%, 0, 0)
-    -webkit-transition: -webkit-transform 0.3s
-    transition: transform 0.3s
-
-.input__label--hoshi-color-1::after
-  border-color: #0E6BA2
-
-.input__field--hoshi:focus + .input__label--hoshi::after, .input--filled .input__label--hoshi::after
-  -webkit-transform: translate3d(0, 0, 0)
-  transform: translate3d(0, 0, 0)
-
-.input__field--hoshi:focus + .input__label--hoshi .input__label-content--hoshi, .input--filled .input__label-content--hoshi
-  -webkit-animation: anim-1 0.3s forwards
-  animation: anim-1 0.3s forwards
-
-@-webkit-keyframes anim-1
-  50%
-    opacity: 0
-    -webkit-transform: translate3d(1em, 0, 0)
-    transform: translate3d(1em, 0, 0)
-
-  51%
-    opacity: 0
-    -webkit-transform: translate3d(-1em, -40%, 0)
-    transform: translate3d(-1em, -40%, 0)
-
-  100%
-    opacity: 1
-    -webkit-transform: translate3d(0, -40%, 0)
-    transform: translate3d(0, -40%, 0)
-
-
-@keyframes anim-1
-  50%
-    opacity: 0
-    -webkit-transform: translate3d(1em, 0, 0)
-    transform: translate3d(1em, 0, 0)
-
-  51%
-    opacity: 0
-    -webkit-transform: translate3d(-1em, -40%, 0)
-    transform: translate3d(-1em, -40%, 0)
-
-  100%
-    opacity: 1
-    -webkit-transform: translate3d(0, -40%, 0)
-    transform: translate3d(0, -40%, 0)
-
-
-
 
 
 #modal-message
