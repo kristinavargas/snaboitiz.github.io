@@ -5,10 +5,23 @@
             <h2 class="banner-text">Career Opportunities</h2>
         </div>
     </div>
-    <div class="container">
-        <div class="header-section">
-            <h2 class="header">Open Positions</h2>
+
+    <div class="image-container">
+        <div class="col-md-3 image-list">
+            <img src="http://lorempixel.com/600/400/" class="center-block img-responsive image"/>
         </div>
+        <div class="col-md-3 image-list">
+            <img src="http://lorempixel.com/600/400/" class="center-block img-responsive image"/>
+        </div>
+        <div class="col-md-3 image-list">
+            <img src="http://lorempixel.com/600/400/" class="center-block img-responsive image"/>
+        </div>
+        <div class="col-md-3 image-list">
+            <img src="http://lorempixel.com/600/400/" class="center-block img-responsive image"/>
+        </div>
+    </div>
+
+    <div class="container">
         <div class="career-section clearfix">
             {% for career in site.data.careers %}
             {% assign counter = counter | plus:1 %}
