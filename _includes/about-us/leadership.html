@@ -14,8 +14,10 @@
         <li class="image-list col-md-4 no-gutter">
             <img src="/img/leader/{{ people.image }}.jpg" class="image center-block"/>
             <div class="user-info">
-                <span class="user-name">{{ people.name }}</span>
-                <span class="user-position">{{ people.position }}</span>
+                <div class="info-container">
+                    <span class="user-name">{{ people.name }}</span>
+                    <span class="user-position">{{ people.position }}</span>
+                </div>
             </div>
         </li>
         {% endfor %}
