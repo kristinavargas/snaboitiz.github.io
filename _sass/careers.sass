@@ -5,14 +5,30 @@
   font-family: "Segoeui"
   .container-section
     .banner-section
+      position: relative
       background-image: url("/img/banner/career-banner.jpg")
       background-size: cover
       background-position: center center
       height: 500px
-      .banner
-        display: block
+      .banner-overlay
+        position: absolute
         width: 100%
-        height: auto
+        height: 100%
+        background-color: rgba(3,16,40,.5)
+      .banner-text-container
+        position: relative
+        top: 50%
+        transform: translateY(-50%)
+        -webkit-transform: translateY(-50%)
+        -moz-transform: translateY(-50%)
+        -ms-transform: translateY(-50%)
+        -o-transform: translateY(-50%)
+        .banner-text
+          color: white
+          font-family: "Segoeui"
+          font-size: 68px
+          text-align: center
+
     .header-section
       margin-top: 30px
       .header
@@ -29,7 +45,7 @@
     .career-section
       margin-top: 30px
       .career-list
-        background-color: white
+        //background-color: white
         padding: 30px 30px 0 30px
         color: #636768
         min-height: 350px
