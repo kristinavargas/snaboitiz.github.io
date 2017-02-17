@@ -78,6 +78,12 @@ $(window).on("load",function () {
     });
 });
 
+$(function () {
+    if ($(document).width() <= 568) {
+        $("#our-plant").addClass('fp-normal-scroll fp-auto-height')
+    }
+});
+
 
 
 

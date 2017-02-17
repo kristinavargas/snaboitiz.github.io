@@ -779,6 +779,15 @@ nav
 
 
 @media (max-width: $screen-sm-max)
+  #cover
+    .intro-container
+      .section-content
+        .intro-middle
+          .intro-text
+            display: inline
+            line-height: normal
+
+
   #our-plant
     .slide-container
       .slide
@@ -813,19 +822,15 @@ nav
 
   #news
     .content-container
-      .grid
-        .grid-item
-          width: 48%
-
-  #news
-    .content-container
       .feature-section
         .feature-list
           .feature-content
             p
               font-size: 14px
 
-
+      .grid
+        .grid-item
+          width: 48%
 
 @media (max-width: $screen-xs-max)
   #cover
@@ -833,13 +838,8 @@ nav
       .section-content
         .intro-middle
           .intro-text
-            font-size: 48px
-            line-height: normal
+            font-size: 38px
 
-  #our-plant
-    .slide-container
-      .slide
-        .slide-section
           .container
             padding-left: 30px
             padding-right: 30px
@@ -857,6 +857,14 @@ nav
                   .section-capacity
                     font-size: 12px
 
+  #other-site
+    .section-container
+      .section-content
+        .site-middle
+          .section-text
+            max-width: 95%
+
+
 
 @media (max-width: 568px)
   #cover
@@ -872,5 +880,61 @@ nav
           .intro-link
             font-size: 12px
             padding: 15px 20px
+
+  #our-plant
+    .slide-container
+      .slide
+        .slide-section
+          top: 0
+          transform: none
+          -webkit-transform: none
+          -moz-transform: none
+          -ms-transform: none
+          -o-transform: none
+          .container
+            margin-top: 60px
+            margin-bottom: 60px
+            padding-left: 15px
+            padding-right: 15px
+            .top-section
+              &:before
+                content: " "
+                display: table
+              &:after
+                content: " "
+                display: table
+                clear: both
+              .left-section
+                width: 100%
+                .section-header
+                  font-size: 38px
+                  margin-bottom: 15px
+                .section-location
+                  display: block
+                  height: 50px
+                  font-size: 18px
+                  line-height: 25px
+                  margin-bottom: 15px
+              .right-section
+                float: left
+                width: 100%
+                .section-content
+                  .section-number
+                    font-size: 78px
+
+            .middle-section
+              display: none
+
+            .bottom-section
+              float: none
+              margin-top: 30px
+              .intro-link
+                padding: 18px 24px
+
+  #news
+    .content-container
+      .grid
+        .grid-item
+          width: 98%
 
 @media (max-width: $screen-xs)
