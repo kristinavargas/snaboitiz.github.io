@@ -446,24 +446,28 @@
           transition: opacity 0.5s
           font-size: 16px
           line-height: 24px
-          .user-name
+          .info-container
             position: absolute
-            color: #4badea
-            bottom: 80px
-            text-align: center
             left: 0
             right: 0
-            margin-left: auto
-            margin-right: auto
-          .user-position
-            color: #ffffff
-            position: absolute
-            text-align: center
-            bottom: 50px
-            left: 0
-            right: 0
-            margin-left: auto
-            margin-right: auto
+            bottom: 5%
+            .user-name
+              display: block
+              color: #4badea
+              margin-bottom: 8px
+              text-align: center
+              left: 0
+              right: 0
+              margin-left: auto
+              margin-right: auto
+            .user-position
+              display: block
+              color: #ffffff
+              text-align: center
+              left: 0
+              right: 0
+              margin-left: auto
+              margin-right: auto
         &:focus,&:active
           outline: none
 
