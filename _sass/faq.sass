@@ -1,8 +1,37 @@
 #faq
-  padding-top: 100px
+  padding-top: 70px
   padding-bottom: 100px
   position: relative
-  .container
+  .banner-section
+    position: relative
+    width: 100%
+    height: 500px
+    background-image: url("/img/banner/faq-banner.jpg")
+    background-size: cover
+    background-position: 50% 25%
+    .banner-overlay
+      position: absolute
+      width: 100%
+      height: 100%
+      background-color: rgba(3,16,40,.5)
+    .banner-text-container
+      position: relative
+      top: 40%
+      transform: translateY(-40%)
+      -webkit-transform: translateY(-40%)
+      -moz-transform: translateY(-40%)
+      -ms-transform: translateY(-40%)
+      -o-transform: translateY(-40%)
+      .banner-text
+        color: white
+        font-family: "Segoeui"
+        font-size: 68px
+        text-align: center
+
+  .content-section
+    margin-top: 30px
+    margin-left: auto
+    margin-right: auto
     width: 970px
     #accordion
       padding-left: 15px
