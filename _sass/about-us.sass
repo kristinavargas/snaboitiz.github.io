@@ -496,6 +496,7 @@
 @media (max-width: $screen-sm-max)
   #strategic-foundation
     .content-section
+      margin-top: 50px
       width: 100%
       padding-left: 15px
       padding-right: 15px
@@ -503,6 +504,7 @@
         display: none
   #shareholder
     .content-section
+      margin-top: 50px
       width: 100%
       padding-left: 15px
       padding-right: 15px
@@ -510,6 +512,7 @@
         display: none
   #leadership
     .content-section
+      margin-top: 50px
       width: 100%
       padding-left: 15px
       padding-right: 15px
@@ -525,10 +528,17 @@
     .slide-container
       .slide
         .slide-section
+          top: 0
+          transform: none
+          -webkit-transform: none
+          -moz-transform: none
+          -o-transform: none
+          -ms-transform: none
           .container
             padding-left: 30px
             padding-right: 30px
             .top-section
+              margin-top: 30px
               .left-section
                 .section-header
                   font-size: 38px
@@ -550,4 +560,29 @@
   .fp-controlArrow.fp-prev,
   .fp-controlArrow.fp-next
     display: none
+
+  #leadership
+    .image-section
+      #image-container
+        .image-list
+          .user-info
+            height: 35%
+            .info-container
+              .user-position
+                padding-left: 5px
+                padding-right: 5px
+
+@media (max-width: 568px)
+  #our-plant
+    .slide-container
+      .slide
+        min-height: 1250px
+        .slide-section
+          .container
+            .top-section
+              .left-section
+                width: 100%
+              .right-section
+                margin-top: 15px
+                width: 100%
 
