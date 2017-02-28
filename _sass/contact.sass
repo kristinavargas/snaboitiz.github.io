@@ -4,7 +4,7 @@ body
 #contact
   position: relative
   background-color: #FBFBFB
-  padding: 60px 15px
+  padding: 71px 15px
   font-family: "Segoeui"
   min-height: 95vh
   .container-section
@@ -160,26 +160,27 @@ body
       color: #ffffff
       text-align: center
 
-
-@media (max-width: $screen-md-max)
+@media (max-width: $screen-sm-max)
   #contact
     .container-section
+      .section-header
+        margin-bottom: 30px
+        .header-container
+          &:before
+            display: none
+          .header
+            padding-right: 0
       .left-section
-        padding-left: 15px
-        padding-right: 15px
-        .tab-content
-          .content-list#message
-            max-width: 100%
-
-@media (max-width: 568px)
-  #contact
-    padding-top: 30px
-    padding-left: 0
-    padding-right: 0
-    .container-section
-      .left-section
-        .nav-tabs
-          .tabs-list
-            .tabs-link
-              padding-left: 15px
-              padding-right: 15px
+        .form-content
+          .form-item
+            padding-left: 0
+            padding-right: 0
+          .form-message
+            padding-left: 0
+            padding-right: 0
+        .content-button-container
+          float: none
+          margin-left: auto
+          margin-right: auto
+      .right-section
+        margin-top: 30px
