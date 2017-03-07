@@ -5,7 +5,7 @@ layout: page-layout/news
     <div class="container-fluid content-container">
         <div class="grid">
             <div class="grid-sizer"></div>
-            {% assign sortedPost = site.posts | sort: 'slugID' %}
+            {% assign sortedPost = paginator.posts | sort: 'slugID' %}
             {% for news in sortedPost reversed %}
             {% assign counter = counter | plus:1 %}
 
@@ -22,6 +22,19 @@ layout: page-layout/news
                 </a>
             </div>
             {% endfor %}
+        </div>
+        <div class="pagination">
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+            {% else %}
+            <span class="previous">Previous</span>
+            {% endif %}
+            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+            {% else %}
+            <span class="next ">Next</span>
+            {% endif %}
         </div>
     </div>
 </div>
