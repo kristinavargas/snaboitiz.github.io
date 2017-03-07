@@ -33,9 +33,8 @@
         </div>
         <div class="grid">
             <div class="grid-sizer"></div>
-            {% assign sortedPost = site.posts | sort: 'slugID' %}
-            {% for news in sortedPost reversed limit: 8 offset: 4 %}
-            {% assign counter = counter | plus:1 %}
+            {% assign sortedPost = site.posts | sort: 'slugID' | reverse %}
+            {% for news in sortedPost limit: 8 %}
 
             <div data-slug="{{ news.slugID }}" class="grid-item">
                 <a href="{{ news.url }}" target="_blank" class="news-link">

@@ -6,7 +6,7 @@ layout: page-layout/news
         <div class="grid">
             <div class="grid-sizer"></div>
             {% assign sortedPost = site.posts | sort: 'slugID' %}
-            {% for news in sortedPost reversed limit: 8 offset: 4 %}
+            {% for news in sortedPost reversed %}
             {% assign counter = counter | plus:1 %}
 
             <div data-slug="{{ news.slugID }}" class="grid-item">
