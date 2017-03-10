@@ -29,17 +29,21 @@
                 <div class="career-list">
                     <h4 class="career-title">{{ career.title }} ({{ career.vacant }})-{{career.contractType}}</h4>
                     <ul>
-                        <li>Company:
-                            <span class="career-company">{{ career.company }}</span>
+                        <li>
+                            <span class="career-company">{{ career.company }}, {{ career.location }}</span>
                         </li>
-                        <li>Location:
-                            <span class="career-location">{{ career.location }}</span>
-                        </li>
-                        <li>Job Description:
+                        <li>
                             <span class="career-description">{{ career.description }}</span>
                         </li>
+                        <li>
+                            <span class="career-requirement-title">Requirements</span>
+                            <p class="career-requirement">
+                            {% for requirement in career.requirement-list %}
+                                <span class="career-requirement-list">{{ requirement.requirement }}</span>
+                            {% endfor %}
+                            </p>
+                        </li>
                     </ul>
-                    <!--<p class="career-requirement"><strong class="requirement-title">Requirements:</strong>{{ career.requirement }}</p>-->
 
                     <a class="career-modal" data-toggle="modal" data-target="#{{ counter }}" target="_blank">Learn More</a>
                     <div class="modal-list modal fade" id="{{ counter }}" tabindex="-1" role="dialog">
@@ -49,19 +53,23 @@
                                     <img class="modal-close" src="https://res.cloudinary.com/snapcloud/image/upload/close.png"/>
                                 </button>
                                 <div class="modal-body">
-                                    <h4 class="modal-career-title">{{ career.title }}</h4>
+                                    <h4 class="modal-career-title">{{ career.title }} ({{ career.vacant }})-{{career.contractType}}</h4>
                                     <ul>
-                                        <li>Company:
-                                            <span class="modal-career-company">{{ career.company }}</span>
+                                        <li>
+                                            <span class="modal-career-company">{{ career.company }}, {{ career.location }}</span>
                                         </li>
-                                        <li>Location:
-                                            <span class="modal-career-location">{{ career.location }}</span>
-                                        </li>
-                                        <li>Job Description:
+                                        <li>
                                             <span class="modal-career-description">{{ career.description }}</span>
                                         </li>
+                                        <li>
+                                            <span class="modal-career-requirement-title">Requirements</span>
+                                            <ul class="modal-career-list-container">
+                                                {% for requirement in career.requirement-list %}
+                                                <li class="modal-career-requirement-list">{{ requirement.requirement }}</li>
+                                                {% endfor %}
+                                            </ul>
+                                        </li>
                                     </ul>
-                                    <p class="modal-career-requirement"><strong class="requirement-title">Requirements:</strong><br>{{ career.requirement }}</p>
                                 </div>
                             </div>
                         </div>
