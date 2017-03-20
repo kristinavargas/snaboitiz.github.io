@@ -5,6 +5,12 @@
   #fp-nav.right
     display: none
 
+
+#fp-nav
+  ul
+    li:nth-child(2)
+      display: none
+
 #our-plant
   position: relative
   background-color: #f5f5f5
@@ -112,48 +118,8 @@
   .content-section
     transform: matrix(1, 0, 0, 1, 0, 0)
     width: 920px
-    margin: 100px auto 0
     padding-left: 180px
-    &:before
-      height: calc(100% + 120px)
-      top: -100px
-      width: 1px
-      content: ''
-      display: block
-      background-color: #e1e1e1
-      position: absolute
-      left: 9.8%
-      z-index: -1
-    .section-number
-      font-family: "Segoeui-Bold"
-      font-size: 35px
-      position: absolute
-      top: 0
-      left: 0
-    .section-title
-      font-family: "Segoeui-Bold"
-      font-size: 32px
-    .plant-list
-      .plant-title
-        font-family: "Segoeui-Bold"
-        font-size: 18px
-        margin-top: 50px
-        margin-bottom: 20px
-      .plant-text
-        margin-top: 20px
-        color: #636768
-        font-size: 16px
-        font-family: "Segoeui"
-        line-height: 34px
-
-
-#snap-group
-  position: relative
-  .content-section
-    transform: matrix(1, 0, 0, 1, 0, 0)
-    width: 920px
     margin: 100px auto 0
-    padding-left: 180px
     &:before
       height: calc(100% + 120px)
       top: -100px
@@ -188,7 +154,68 @@
         left: 30px
         position: relative
         display: inline-block
+    .section-title
+      font-family: "Segoeui-Bold"
+      font-size: 32px
+      margin-bottom: 20px
 
+    .section-text
+      margin: 20px 0
+      line-height: 34px
+    .section-list
+      .header-section
+        font-family: "Segoeui-Bold"
+        font-size: 18px
+        margin-top: 20px
+        margin-bottom: 20px
+      .description-section
+        color: #636768
+        font-size: 16px
+        font-family: "Segoeui"
+        line-height: 34px
+
+
+#snap-group
+  position: relative
+  .content-section
+    transform: matrix(1, 0, 0, 1, 0, 0)
+    width: 920px
+    padding-left: 180px
+    margin: 100px auto 0
+    &:before
+      height: calc(100% + 120px)
+      top: -100px
+      width: 1px
+      content: ''
+      display: block
+      background-color: #e1e1e1
+      position: absolute
+      left: 9.8%
+      z-index: -1
+    .line-pipe
+      position: absolute
+      left: -9px
+      top: 44px
+      border-bottom: 2px solid #e1e1e1
+      width: 100px
+      z-index: 4
+    .circle
+      position: absolute
+      top: 0
+      left: -45px
+      height: 90px
+      width: 90px
+      border: 5px solid #e1e1e1
+      border-radius: 50%
+      z-index: 5
+      background-color: #e1e1e1
+      .section-number
+        font-family: "Segoeui-Bold"
+        font-size: 35px
+        top: 20px
+        left: 30px
+        position: relative
+        display: inline-block
     .section-title
       font-family: "Segoeui-Bold"
       font-size: 32px
@@ -196,7 +223,6 @@
     .section-text
       margin: 20px 0
       line-height: 34px
-      font-size: 16px
     .section-list
       .header-section
         font-family: "Segoeui-Bold"
