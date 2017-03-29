@@ -2,32 +2,6 @@
     <div class="container-fluid content-container">
         <div class="section-header">
             <div class="header-container">
-                <h4 class="header">Featured</h4>
-            </div>
-        </div>
-        <div class="feature-section clearfix">
-            {% assign sortedPost = site.posts | sort: 'slugID' %}
-            {% for feature in sortedPost limit: 3 %}
-            {% assign counter = counter | plus:1 %}
-            <div class="feature-list col-md-4 ">
-                <div class="image-container">
-                    <img class="image center-block" src="{{ feature.cover }}"/>
-                </div>
-                <div class="feature-content">
-                    <div class="feature-date">
-                        <span class="date">{{ feature.date | date: '%B %d, %Y' }}</span>
-                    </div>
-                    <h4 class="feature-title">{{ feature.title }} </h4>
-                    <p>{{ feature.content | truncatewords: 30 }}</p>
-                </div>
-            </div>
-            {% endfor %}
-        </div>
-    </div>
-
-    <div class="container-fluid content-container">
-        <div class="section-header">
-            <div class="header-container">
                 <h4 class="header">News</h4>
             </div>
         </div>
