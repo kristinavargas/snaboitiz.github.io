@@ -29,44 +29,23 @@
 
     <div class="section-list" data-scrollreveal="enter bottom after 0.2s">
         <h2 class="header-section">Values</h2>
-        <ul>
-            <li>
-                <ul>
-                    <li class="header">Integrity</li>
-                    <!--<li class="description">Do what is right.</li>-->
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li class="header">Safety</li>
-                    <!--<li class="description">Avoid harm.</li>-->
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li class="header">Social Responsibility</li>
-                    <!--<li class="description">Care for people and planet.</li>-->
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li class="header">Innovation</li>
-                    <!--<li class="description">Think creatively.</li>-->
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li class="header">Teamwork</li>
-                    <!--<li class="description">Work well with others.</li>-->
-                </ul>
-            </li>
-            <li>
-                <ul>
-                    <li class="header">Excellence</li>
-                    <!--<li class="description">Exceed expectations.</li>-->
-                </ul>
-            </li>
-        </ul>
+
+        <div class="values-container clearfix">
+            {% for values in site.data.values %}
+            <div class="values-list col-md-4 col-sm-6 col-xs-12">
+                <div class="image-section">
+                    <img src="http://res.cloudinary.com/snapcloud/image/upload/values/{{ values.image }}" class="values-image center-block"/>
+                    <div class="values-info">
+                        <div class="info-container">
+                            <span class="values-description">{{ values.description }}</span>
+                        </div>
+                    </div>
+                </div>
+                <span class="values-title">{{ values.title }}</span>
+                <span class="values-description">{{ values.description }}</span>
+            </div>
+            {% endfor %}
+        </div>
     </div>
 
 </section>

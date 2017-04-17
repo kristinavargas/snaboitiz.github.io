@@ -24,6 +24,18 @@ javascript: >
                 autoScrolling:false,
                 recordHistory:false
             });
+            //Values image script
+            var valuesImage = $("#strategic-foundation .content-section .section-list .values-container .values-list");
+            valuesImage.hover(
+                function () {
+                    $(this).find(".values-info").css("opacity","1")
+                },
+                function() {
+                    $(this).find(".values-info").css("opacity","0")
+                }
+            );
+
+            //Leadership image script
             var imageContainer = $("#leadership .image-section #image-container .image-list");
             imageContainer.hover(
                 function () {

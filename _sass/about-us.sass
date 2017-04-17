@@ -52,7 +52,6 @@
               font-size: 18px
               margin-top: 15px
 
-
           .right-section
             float: left
             width: 40%
@@ -290,48 +289,64 @@
         font-family: "Segoeui-Bold"
         font-size: 18px
         margin-top: 20px
-        margin-bottom: 20px
+        margin-bottom: 30px
       .description-section
         color: #636768
         font-size: 16px
         font-family: "Segoeui"
         line-height: 34px
-      ul
-        .header
-          margin: 15px 0
-          font-size: 16px
-          display: inline-block
-          text-transform: uppercase
-          font-family: "Segoeui"
-        .description
-          font-size: 16px
-          display: inline-block
+      .values-container
+        .values-list
+          .image-section
+            margin-bottom: 15px
+            .values-image
+              max-width: 217px
+              border-radius: 50%
+              border: 5px solid #0E6BA2
+            .values-info
+              border-radius: 50%
+              top: 0
+              max-width: 100%
+              max-height: 100%
+              width: 217px
+              height: 217px
+              margin-left: auto
+              margin-right: auto
+              left: 0
+              right: 0
+              background-color: rgba(14,107,162,0.75)
+              opacity: 0
+              position: absolute
+              bottom: 0
+              transition: opacity 0.5s
+              font-size: 16px
+              line-height: 24px
+              .info-container
+                top: 50%
+                transform: translateY(-50%)
+                -webkit-transform: translateY(-50%)
+                -moz-transform: translateY(-50%)
+                -o-transform: translateY(-50%)
+                -ms-transform: translateY(-50%)
+                position: absolute
+                left: 0
+                right: 0
+                .values-description
+                  display: block
+                  color: #ffffff
+                  text-align: center
+                  left: 0
+                  right: 0
+                  margin-left: auto
+                  margin-right: auto
 
-        .image-section
-          .image
+          .values-title
             display: block
-            &.logo-1
-              padding-top: 15px
-              padding-bottom: 30px
-            &.logo-2
-              padding-bottom: 15px
-            &.logo-3
-              padding-top: 15px
-        .image-description-1
-          margin-bottom: 30px
-          .description
-            line-height: 25px
-            font-size: 16px
-            font-family: "Segoeui"
-            color: #636768
-        .image-description-2
-          margin-top: 30px
-          margin-bottom: 30px
-          .description
-            line-height: 25px
-            font-size: 16px
-            font-family: "Segoeui"
-            color: #636768
+            text-align: center
+            margin-bottom: 60px
+          .values-description
+            display: none
+            text-align: center
 
 #shareholder
   position: relative
@@ -534,6 +549,15 @@
                     font-size: 18px
 
 @media (max-width: $screen-sm-max)
+  #new-project
+    .content-section
+      margin-top: 50px
+      width: 100%
+      padding-left: 15px
+      padding-right: 15px
+      &:before
+        display: none
+
   #strategic-foundation
     .content-section
       margin-top: 50px
@@ -542,6 +566,16 @@
       padding-right: 15px
       &:before
         display: none
+      .section-list
+        .values-container
+          .values-list
+            .image-section
+              .values-image
+                max-width: 250px
+              .values-info
+                width: 250px
+                height: 250px
+
   #shareholder
     .content-section
       margin-top: 50px
@@ -558,6 +592,7 @@
       padding-right: 15px
       &:before
         display: none
+
 
 @media (max-width: $screen-xs-max)
   html.fp-enabled
@@ -623,18 +658,39 @@
               .left-section
                 width: 100%
               .right-section
-                margin-top: 15px
                 width: 100%
 
   #strategic-foundation
     .content-section
       .section-title
         font-size: 24px
+      .section-list
+        .values-container
+          .values-list
+            margin-bottom: 30px
+            .image-section
+              .values-image
+                max-width: 100%
+                width: 100%
+                height: auto
+              .values-info
+                display: none
+            .values-title
+              margin-bottom: 10px
+              font-family: "Segoeui-Bold"
+              font-size: 16px
+            .values-description
+              display: block
+
   #shareholder
     .content-section
       .section-title
         font-size: 24px
   #leadership
+    .content-section
+      .section-title
+        font-size: 24px
+  #new-project
     .content-section
       .section-title
         font-size: 24px
