@@ -526,29 +526,52 @@
         &:focus,&:active
           outline: none
 
+@media (max-width: 1366px)
+  #our-plant
+    .slide-container
+      .slide
+        .slide-section
+          .top-section
+            .left-section
+              .section-header
+                font-size: 48px
+                margin-bottom: 15px
+              .section-location
+                font-size: 24px
+            .right-section
+              .section-content
+                .section-number
+                  font-size: 7em
+
+          .middle-section
+            margin: 4vh 0
+            padding: 2vh 0
+
+
 @media (max-width: $screen-md-max)
   #our-plant
     .slide-container
       .slide
         .slide-section
           .container
+            margin-top: 7%
             padding-left: 40px
             padding-right: 40px
             .top-section
-              .left-section
-                .section-header
-                  font-size: 58px
-                .section-location
-                  font-size: 24px
               .right-section
                 .section-content
                   .section-number
-                    font-size: 7em
                     margin-right: 5px
                   .section-capacity
                     font-size: 18px
 
 @media (max-width: $screen-sm-max)
+  #our-plant
+    .slide-container
+      .slide
+        .slide-section
+          .container
+            margin-top: 0
   #new-project
     .content-section
       margin-top: 50px
