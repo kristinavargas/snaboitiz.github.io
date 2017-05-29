@@ -66,3 +66,19 @@ navbar-menu:
   - title: "Contact Us"
     slugID: "/contact/"
 
+
+prose:
+  rooturl: ""
+  siteurl: "https://snaboitiz.github.io/"
+  metadata:
+    _posts:
+      - name: "published"
+        field:
+          element: 'hidden'
+          value: true
+
+      - name: "title"
+        field:
+          element: "text"
+          label: "title"
+
