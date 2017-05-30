@@ -1,4 +1,5 @@
-- title: "Energy Trader"
+- active: true
+  title: "Energy Trader"
   vacant: 1
   contractType: "Probationary"
   company: MORE
@@ -14,7 +15,8 @@
     - requirement: "Good communication skills."
 
 
-- title: "Network Security, Systems & Cloud Infrastructure Administrator"
+- active: true
+  title: "Network Security, Systems & Cloud Infrastructure Administrator"
   vacant: 1
   contractType: "Probationary"
   company: MORE
@@ -26,7 +28,8 @@
     - requirement: "Cisco Certified Network Professional (CCNP), Microsoft Certified Solutions Expert would be preferred."
 
 
-- title: "Sr. Specialist, Portfolio Analysis & Accounts Management"
+- active: true
+  title: "Sr. Specialist, Portfolio Analysis & Accounts Management"
   vacant: 1
   contractType: "Probationary"
   company: MORE
@@ -37,7 +40,8 @@
     - requirement: "Candidate must have at least 5 years worth of experience in Engineering and/or Technical field, with specific experience in planning, forecasting and market analysis."
 
 
-- title: "Watershed Coordinator"
+- active: true
+  title: "Watershed Coordinator"
   vacant: 1
   contractType: "Contractual"
   company: SNAP-Benguet
@@ -49,7 +53,8 @@
 
 
 
-- title: "HR Specialist"
+- active: true
+  title: "HR Specialist"
   vacant: 1
   contractType: "Probationary"
   company: SNAP-Magat
