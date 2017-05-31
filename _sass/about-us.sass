@@ -90,10 +90,12 @@
             font-family: "Cambria"
             font-size: 42px
             margin-bottom: 15px
+            margin-left: 15px
+            margin-right: 15px
           .section-description
             font-size: 16px
             line-height: 1.9
-            margin: 15px 0 30px
+            margin: 15px 15px 30px
 
         //3 slides style
         .top-section
@@ -592,6 +594,14 @@
     .slide-container
       .slide
         .slide-section
+          .upper-section
+            .section-header
+              font-size: 48px
+              margin-bottom: 15px
+          .lower-section
+            .section-header
+              font-size: 36px
+
           .top-section
             .left-section
               .section-header
@@ -603,10 +613,24 @@
               .section-content
                 .section-number
                   font-size: 7em
-
           .middle-section
             margin: 4vh 0
             padding: 2vh 0
+
+
+
+.fp-controlArrow.fp-prev
+  background-size: 60px
+  height: 89px
+  width: 32px !important
+
+.fp-controlArrow.fp-next
+  background-size: 60px
+  height: 89px
+  width: 32px !important
+  background-position-x: -28px
+  right: 30px !important
+
 
 
 @media (max-width: $screen-md-max)
@@ -626,13 +650,28 @@
                   .section-capacity
                     font-size: 18px
 
+
 @media (max-width: $screen-sm-max)
   #our-plant
     .slide-container
       .slide
+        min-height: 720px
         .slide-section
           .container
             margin-top: 0
+            .upper-section
+              margin-top: 30px
+              .section-header
+                font-size: 38px
+            .lower-section
+              .section-header
+                font-size: 28px
+                margin-left: 0
+                margin-right: 0
+              .section-description
+                margin-left: 0
+                margin-right: 0
+
   #new-project
     .content-section
       margin-top: 50px
@@ -677,6 +716,10 @@
       &:before
         display: none
 
+.fp-controlArrow.fp-prev
+  display: none
+.fp-controlArrow.fp-next
+  display: none
 
 @media (max-width: $screen-xs-max)
   html.fp-enabled
@@ -686,6 +729,7 @@
   #our-plant
     .slide-container
       .slide
+        min-height: 0
         .slide-section
           top: 0
           transform: none
