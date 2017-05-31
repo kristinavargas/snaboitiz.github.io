@@ -712,16 +712,30 @@ nav
             .top-section
               .left-section
                 .section-header
-                  font-size: 58px
+                  font-size: 8em
+                .section-text
+                  font-size: 26px
                 .section-location
                   font-size: 24px
+
+                .section-content
+                  .section-description
+                    font-size: 20px
               .right-section
+                padding-left: 0
+                padding-right: 0
+                .section-header
+                  font-size: 8em
+                .section-text
+                  font-size: 26px
                 .section-content
                   .section-number
                     font-size: 7em
                     margin-right: 5px
                   .section-capacity
                     font-size: 18px
+                  .section-description
+                    font-size: 20px
 
   #news
     .section-header
@@ -736,6 +750,17 @@ nav
           padding-left: 15px
           padding-right: 15px
 
+.fp-controlArrow.fp-prev
+  background-size: 60px
+  height: 89px
+  width: 32px !important
+
+.fp-controlArrow.fp-next
+  background-size: 60px
+  height: 89px
+  width: 32px !important
+  background-position-x: -28px
+  right: 30px !important
 
 
 @media (max-width: $screen-sm-max)
@@ -744,14 +769,22 @@ nav
       .section-content
         .intro-middle
           .intro-text
-            display: inline-block
+            display: block
             line-height: normal
 
   #our-plant
     .slide-container
       .slide
         .slide-section
+          top: 50%
+          transform: translateY(-50%)
+          -webkit-transform: translateY(-50%)
+          -moz-transform: translateY(-50%)
+          -o-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
+          height: auto
           .container
+            height: auto
             width: 100% !important
             padding-left: 60px
             padding-right: 60px
@@ -760,6 +793,35 @@ nav
                 min-width: 0
                 max-width: none
                 padding-right: 0
+            .top-section
+              .left-section
+                margin-bottom: 30px
+                top: 0
+                transform: none
+                -webkit-transform: none
+                -moz-transform: none
+                -o-transform: none
+                -ms-transform: none
+                width: auto
+                display: table
+                float: none
+                margin-left: auto
+                margin-right: auto
+                .section-header
+                  font-size: 10em
+                .section-text
+                  font-size: 36px
+              .right-section
+                top: 0
+                transform: none
+                -webkit-transform: none
+                -moz-transform: none
+                -o-transform: none
+                -ms-transform: none
+                width: 100%
+
+
+
   .fp-controlArrow.fp-prev
     display: none
   .fp-controlArrow.fp-next
@@ -803,7 +865,6 @@ nav
           .intro-text
             display: block
             font-size: 38px
-
           .container
             padding-left: 30px
             padding-right: 30px
@@ -820,6 +881,24 @@ nav
                     font-size: 48px
                   .section-capacity
                     font-size: 12px
+
+  #our-plant
+    .slide-container
+      .slide
+        .slide-section
+          .container
+            .top-section
+              .left-section
+                .section-header
+                  font-size: 7em
+                .section-text
+                  font-size: 28px
+              .right-section
+                .section-content
+                  .section-description
+                    font-size: 18px
+
+
 
   #other-site
     .section-container
@@ -841,7 +920,6 @@ nav
           .intro-text
             font-size: 28px
             line-height: normal
-
         .intro-bottom
           .intro-link
             font-size: 12px
@@ -850,54 +928,26 @@ nav
   #our-plant
     .slide-container
       .slide
+        height: 100vh !important
         .slide-section
-          height: 450px
-          top: 0
-          transform: none
-          -webkit-transform: none
-          -moz-transform: none
-          -ms-transform: none
-          -o-transform: none
+          min-height: 450px
           .container
             margin-top: 60px
             margin-bottom: 60px
             padding-left: 15px
             padding-right: 15px
             .top-section
-              &:before
-                content: " "
-                display: table
-              &:after
-                content: " "
-                display: table
-                clear: both
               .left-section
-                width: 100%
                 .section-header
-                  font-size: 28px
-                  margin-bottom: 15px
-                .section-location
-                  display: block
-                  height: 50px
-                  font-size: 16px
-                  line-height: 25px
-                  margin-bottom: 15px
+                  font-size: 5em
+                .section-text
+                  font-size: 18px
+
               .right-section
-                float: left
-                width: 100%
                 .section-content
-                  .section-number
-                    font-size: 78px
+                  .section-description
+                    text-align: center
 
-            .middle-section
-              .section-description
-                font-size: 18px
-
-            .bottom-section
-              float: none
-              margin-top: 30px
-              .intro-link
-                padding: 18px 24px
 
   #fp-nav ul li a span, .fp-slidesNav ul li a span
     background: white !important
@@ -919,3 +969,28 @@ nav
           .header
             padding-left: 15px
             padding-right: 15px
+
+@media (max-width: 480px)
+
+  #our-plant
+    .slide-container
+      .slide
+        height: 450px !important
+        .slide-section
+          .container
+            margin-top: 60px
+            margin-bottom: 60px
+            padding-left: 15px
+            padding-right: 15px
+            .top-section
+              .left-section
+                .section-header
+                  font-size: 4.5em
+                .section-text
+                  font-size: 18px
+
+              .right-section
+                .section-content
+                  .section-description
+                    text-align: center
+                    font-size: 16px
