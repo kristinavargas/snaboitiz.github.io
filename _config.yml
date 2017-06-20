@@ -4,7 +4,7 @@ title: SN ABOITIZ
 description: > # this means to ignore newlines until "baseurl:"
   SN Power is a hydropower development company, operating exclusively in emerging markets. The company is a joint venture between Statkraft and Norfund and has projects and operations in Asia, Latin America and Africa.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "/" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  jekyll
 

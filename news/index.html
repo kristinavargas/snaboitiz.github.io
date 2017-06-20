@@ -17,24 +17,43 @@ layout: page-layout/news
                         </div>
                         <h4 class="news-title">{{ news.title }} </h4>
                         <p>{{ news.content | truncatewords: 20 }}</p>
+                        {% if news.cover != null %}
                         <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}"/>
+                        {% else %}
+                        <img class="news-image img-responsive center-block" src="https://res.cloudinary.com/snapcloud/image/upload/news/default-news.jpg" alt="{{ news.title }}"/>
+                        {% endif %}
                     </div>
                 </a>
             </div>
             {% endfor %}
         </div>
+
+
+
+        {% if paginator.total_pages > 1 %}
         <div class="pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+            <!--{% if paginator.previous_page %}-->
+            <!--<a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>-->
+            <!--{% else %}-->
+            <!--<span>&laquo; Prev</span>-->
+            <!--{% endif %}-->
+            <span>Page: </span>
+            {% for page in (1..paginator.total_pages) %}
+            {% if page == paginator.page %}
+            <span>{{ page }}</span>
+            {% elsif page == 1 %}
+            <a href="{{ paginator.previous_page_path | prepend: site.url | replace: '//', '/'}}">{{ page }}</a>
             {% else %}
-            <span class="previous">Previous</span>
+            <a href="{{ site.paginate_path | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
             {% endif %}
-            <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path }}" class="next">Next</a>
-            {% else %}
-            <span class="next ">Next</span>
-            {% endif %}
+            {% endfor %}
+
+            <!--{% if paginator.next_page %}-->
+            <!--<a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a>-->
+            <!--{% else %}-->
+            <!--<span>Next &raquo;</span>-->
+            <!--{% endif %}-->
         </div>
+        {% endif %}
     </div>
 </div>
