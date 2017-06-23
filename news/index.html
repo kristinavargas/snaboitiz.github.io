@@ -6,6 +6,7 @@ layout: page-layout/news
         <div class="grid">
             <div class="grid-sizer"></div>
             {% assign sortedPost = paginator.posts | sort: 'slugID' %}
+            <!--{% assign sortedPost = site.posts | sort: 'slugID' %}-->
             {% for news in sortedPost reversed %}
             {% assign counter = counter | plus:1 %}
 
@@ -29,14 +30,13 @@ layout: page-layout/news
         </div>
 
 
-
         {% if paginator.total_pages > 1 %}
         <div class="pagination">
-            <!--{% if paginator.previous_page %}-->
-            <!--<a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>-->
-            <!--{% else %}-->
-            <!--<span>&laquo; Prev</span>-->
-            <!--{% endif %}-->
+            {% if paginator.previous_page %}
+            <a href="{{ paginator.previous_page_path | replace: '//', '/' }}">&laquo; Prev</a>
+            {% else %}
+            <span>&laquo; Prev</span>
+            {% endif %}
             <span>Page: </span>
             {% for page in (1..paginator.total_pages) %}
             {% if page == paginator.page %}
@@ -48,11 +48,11 @@ layout: page-layout/news
             {% endif %}
             {% endfor %}
 
-            <!--{% if paginator.next_page %}-->
-            <!--<a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a>-->
-            <!--{% else %}-->
-            <!--<span>Next &raquo;</span>-->
-            <!--{% endif %}-->
+            {% if paginator.next_page %}
+            <a href="{{ paginator.next_page_path | prepend: site.url | replace: '//', '/' }}">Next &raquo;</a>
+            {% else %}
+            <span>Next &raquo;</span>
+            {% endif %}
         </div>
         {% endif %}
     </div>
