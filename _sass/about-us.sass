@@ -5,7 +5,6 @@
   #fp-nav.right
     display: none
 
-
 #fp-nav
   ul
     li:nth-child(2)
@@ -67,7 +66,7 @@
         .upper-section
           .section-header
             font-family: "Cambria"
-            font-size: 68px
+            font-size: 48px
             margin-bottom: 15px
           .section-description
             font-size: 16px
@@ -108,36 +107,38 @@
             width: 60%
             .section-header
               font-family: "Cambria"
-              font-size: 68px
-              margin-bottom: 24px
+              font-size: 48px
+              margin-bottom: 15px
             .section-location
-              font-size: 28px
+              font-size: 16px
               display: block
             .section-operation
               display: block
-              font-size: 18px
-              margin-top: 15px
+              font-size: 16px
+              margin-top: 10px
 
           .right-section
             float: left
             width: 40%
             .section-content
+              margin-bottom: 8px
               .section-number
                 display: inline-block
-                font-size: 9em
+                font-size: 38px
                 margin-right: 15px
                 vertical-align: middle
               .section-capacity
+                font-family: "Segoeui-Light"
                 vertical-align: middle
-                font-size: 24px
+                font-size: 18px
                 display: inline-block
 
       .middle-section
         float: left
         position: relative
         width: 100%
-        margin: 6vh 0
-        padding: 3vh 0
+        margin: 15px 0
+        padding: 0
         &:before
           top: 0
           transform-origin: 0 0
@@ -158,88 +159,47 @@
           height: 1px
           left: 0
           background-color: rgba(255,255,255,.2)
-        .section-description
-          font-size: 16px
-          line-height: 1.9
-          margin: 15px
-      .bottom-section
-        float: right
-        position: relative
-        .intro-bottom
-          display: table
-          overflow: hidden
-          position: relative
-        .intro-link
-          border: 1px solid rgba(255,255,255,0.3)
-          text-transform: uppercase
-          outline: none
-          color: white
-          display: block
-          font-size: 14px
-          font-family: "Segoeui"
-          text-decoration: none
-          padding: 18px 28px
+        .left-section
+          float: left
+          width: 60%
+          padding-right: 15px
+          .section-description
+            font-size: 16px
+            line-height: 1.9
+            margin-top: 15px
+            margin-bottom: 15px
+        .right-section
+          padding-left: 15px
+          width: 40%
+          margin-top: 15px
+          margin-bottom: 15px
+          float: left
+          .section-header
+            font-size: 16px
+            font-family: "Segoeui"
+            margin-bottom: 10px
+          .list-container
+            border-collapse: separate
+            border-spacing: 0 2px
+            .list-header-container
+              margin-bottom: 10px
+              .list-header
+                display: block
+                font-size: 14px
+                font-family: "Segoeui-Bold"
+                margin-top: 5px
+                margin-bottom: 5px
+            .list-content
+              .light-text
+                font-family: "Segoeui-Light"
+                font-size: 14px
+                margin-bottom: 5px
+              .bold-text
+                font-family: "Segoeui"
+                font-size: 14px
+                margin-bottom: 5px
 
-//#new-project
-//  position: relative
-//  .content-section
-//    transform: matrix(1, 0, 0, 1, 0, 0)
-//    width: 920px
-//    padding-left: 180px
-//    margin: 100px auto 0
-//    &:before
-//      height: calc(100% + 120px)
-//      top: -100px
-//      width: 1px
-//      content: ''
-//      display: block
-//      background-color: #e1e1e1
-//      position: absolute
-//      left: 9.8%
-//      z-index: -1
-//    .line-pipe
-//      position: absolute
-//      left: -9px
-//      top: 44px
-//      border-bottom: 2px solid #e1e1e1
-//      width: 100px
-//      z-index: 4
-//    .circle
-//      position: absolute
-//      top: 0
-//      left: -45px
-//      height: 90px
-//      width: 90px
-//      border: 5px solid #e1e1e1
-//      border-radius: 50%
-//      z-index: 5
-//      background-color: #e1e1e1
-//      .section-number
-//        font-family: "Segoeui-Bold"
-//        font-size: 35px
-//        top: 20px
-//        left: 30px
-//        position: relative
-//        display: inline-block
-//    .section-title
-//      font-family: "Segoeui-Bold"
-//      font-size: 32px
-//      margin-bottom: 20px
-//
-//    .section-text
-//      margin: 20px 0
-//      line-height: 34px
-//    .section-list
-//      .header-section
-//        font-family: "Segoeui-Bold"
-//        font-size: 18px
-//        margin-top: 20px
-//        margin-bottom: 20px
-//      .description-section
-//        color: #636768
-//        font-size: 16px
-//        font-family: "Segoeui"
-//        line-height: 34px
+
 
 #snap-group
   position: relative
@@ -597,29 +557,23 @@
     .slide-container
       .slide
         .slide-section
-          .upper-section
-            .section-header
-              font-size: 48px
-              margin-bottom: 15px
-          .lower-section
-            .section-header
-              font-size: 36px
-
-          .top-section
-            .left-section
-              .section-header
-                font-size: 48px
-                margin-bottom: 15px
-              .section-location
-                font-size: 24px
-            .right-section
-              .section-content
-                .section-number
-                  font-size: 7em
-          .middle-section
-            margin: 4vh 0
-            padding: 2vh 0
-
+          .container
+            .top-section
+              .left-section
+                .section-header
+                  font-size: 38px
+                  margin-bottom: 5px
+                .section-operation
+                  margin-top: 5px
+              .right-section
+                .section-content
+                  margin-bottom: 20px
+                  .section-number
+                    font-size: 28px
+                  .section-capacity
+                    font-size: 14px
+            .middle-section
+              margin: 5px 0
 
 
 .fp-controlArrow.fp-prev
@@ -642,16 +596,24 @@
       .slide
         .slide-section
           .container
-            margin-top: 7%
+            margin-top: 8%
             padding-left: 40px
             padding-right: 40px
             .top-section
+              margin-bottom: 10px
+              .left-section
+                .section-header
+                  font-size: 32px
               .right-section
                 .section-content
+                  margin-bottom: 10px
                   .section-number
                     margin-right: 5px
-                  .section-capacity
-                    font-size: 18px
+            .middle-section
+              .left-section
+                .section-description
+                  font-size: 14px
+
 
 
 @media (max-width: $screen-sm-max)
@@ -674,6 +636,13 @@
               .section-description
                 margin-left: 0
                 margin-right: 0
+            .middle-section
+              .left-section
+                width: 100%
+                .section-description
+                  font-size: 16px
+              .right-section
+                display: none
 
   #new-project
     .content-section
@@ -732,7 +701,6 @@
   #our-plant
     .slide-container
       .slide
-        min-height: 0
         .slide-section
           top: 0
           transform: none
@@ -745,23 +713,13 @@
             padding-right: 30px
             .top-section
               margin-top: 30px
-              .left-section
-                .section-header
-                  font-size: 38px
-                  margin-bottom: 15px
-                .section-location
-                  font-size: 18px
-                  padding-right: 15px
-              .right-section
-                .section-content
-                  .section-number
-                    font-size: 78px
             .middle-section
               margin: 15px 0
               padding: 0
-              .section-description
-                margin-left: 0
-                margin-right: 0
+              .left-section
+                .section-description
+                  margin-left: 0
+                  margin-right: 0
 
   .fp-controlArrow.fp-prev,
   .fp-controlArrow.fp-next
@@ -789,6 +747,7 @@
               .left-section
                 width: 100%
               .right-section
+                margin-top: 20px
                 width: 100%
 
   #strategic-foundation
