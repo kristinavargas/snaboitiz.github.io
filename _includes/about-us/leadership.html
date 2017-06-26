@@ -7,11 +7,17 @@
         <h2 class="section-title" data-scrollreveal="enter bottom after 0.2s">Leadership</h2>
     </header>
     <p class="section-text" data-scrollreveal="enter bottom after 0.2s">Our Management Committee is composed of practitioners with diverse experiences and training from various fields and industries, unified in their passion to deliver value to our customers, our host communities, and our shareholders.</p>
+
+    <div id="leader-container" class="clearfix">
+        {% for leader in site.data.leadership %}
+        <div class="col-md-6 col-sm-6 col-xs-12 leader-list">
+            <h2 class="leader-name">{{ leader.name }}</h2>
+            <span class="leader-position">{{ leader.position }}</span>
+        </div>
+        {% endfor %}
+    </div>
+
 </div>
-<br/>
-<br/>
-<br/>
-<br/>
 <!--<div class="image-section clearfix">-->
     <!--<ul id="image-container" data-scrollreveal="enter bottom after 0.2s">-->
         <!--{% for people in site.data.leadership %}-->
