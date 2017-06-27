@@ -4,32 +4,28 @@ css: newsroom.css
 title: News
 javascript: >
     <script type="text/javascript" src="/js/scrollreveal.js"></script>
-    <script src="/js/isotope.pkgd.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
+    <script type="text/javascript" src="https://afarkas.github.io/lazysizes/lazysizes.min.js"></script>
+    <script type="text/javascript" src="/js/handlebars.js"></script>
     <script type="text/javascript">
-        $(document).ready(function () {
-            $('#fullpage').fullpage({
-                lockAnchors: true,
-                hybrid: true,
-                menu: '#menu',
-                navigation: false,
-                navigationPosition: 'right',
-                fitToSection: false,
-                autoScrolling: false,
-                recordHistory: false
-            });
-        });
+
+        // On document ready, initialise our code.
+            $(function(){
+                var $filterSelect = $('#filter-btn');
+                var $container = $('#Container');
+                // Instantiate MixItUp
+                $container.mixItUp({
+                    load:{
+                        filter: '.2017',
+                    }
+                });
+
+                $filterSelect.on('change', function(){
+                    $container.mixItUp('filter', this.value);
+                });
 
 
-        $(window).on("load",function () {
-            $('.grid').isotope({
-                resizable: true,
-                itemSelector: '.grid-item',
-                percentPosition: true,
-                masonry: {
-                    columnWidth: '.grid-sizer'
-                }
             });
-        });
 
     </script>
 

@@ -16,6 +16,25 @@
     margin-right: auto
     padding-left: 80px
     padding-right: 80px
+    .filter-section
+      padding-left: 15px
+      padding-right: 15px
+      .filters-button-group
+        float: left
+        .section-title
+          font-family: "Segoeui-Bold"
+          font-size: 16px
+          display: inline-block
+          margin-right: 10px
+          vertical-align: middle
+        .section-filter
+          display: inline-block
+          vertical-align: middle
+          #filter-btn
+            font-size: 16px
+    .divider
+      margin-left: 15px
+      margin-right: 15px
     #Container
       position: relative
       margin: 0 auto
@@ -28,7 +47,7 @@
         padding: 10px
         margin: 1%
         //transition: all 1s ease-out
-        min-height: 312px
+        min-height: 325px
         &:hover
           border: 1px solid #585858
       .news-link
@@ -40,6 +59,14 @@
           max-width: 100%
           height: 150px
           display: block
+          &.lazyload
+            opacity: 0
+          &.lazyloading
+            opacity: 1
+            transition: 300ms opacity
+            background: #f7f7f7 url("https://afarkas.github.io/lazysizes/assets/imgs/loader.gif") no-repeat center
+            min-height: 60px
+
         //border-radius: 10px
         .news-title
           font-family: "Cambria"
@@ -86,9 +113,16 @@
     .content-container
       padding-left: 15px
       padding-right: 15px
+      .filter-section
+        padding-left: 5px
+        padding-right: 5px
       #Container
         .grid-item
           width: 48%
+      .divider
+        margin-left: 5px
+        margin-right: 5px
+
 
 @media (max-width: 568px)
   #news

@@ -1,25 +1,38 @@
 ---
 layout: page-layout/news
 ---
-<div class="section fp-normal-scroll fp-auto-height" id="news">
+<div class="section" id="news">
     <div class="container-fluid content-container">
-        <div class="grid">
-            <div class="grid-sizer"></div>
+        <div class="filter-section clearfix">
+            <div class="filters-button-group section-content">
+                <h5 class="section-title">FILTER BY YEAR</h5>
+                <fieldset class="section-filter">
+                    <select id="filter-btn" class="btn btn-default">
+                        {% for year in site.data.newsFilter reversed %}
+                        <option value=".{{ year.year }}">{{ year.year }}</option>
+                        {% endfor %}
+                        <option value="all">Show All</option>
+                    </select>
+                </fieldset>
+            </div>
+        </div>
+        <hr class="divider"/>
+        <div id="Container" class="clearfix">
             {% assign sortedPost = site.posts | sort: 'slugID' %}
             {% for news in sortedPost reversed %}
             {% assign counter = counter | plus:1 %}
-            <div data-slug="{{ news.slugID }}" class="grid-item">
+            <div data-rank="{{ news.slugID }}" data-date="{{ news.date }}" class="grid-item mix {{ news.year }}">
                 <a href="{{ news.url }}" target="_blank" class="news-link">
                     <div class="news-content">
                         <div class="news-date">
                             <span class="date">{{ news.date | date: '%B %d, %Y' }}</span>
                         </div>
                         <h4 class="news-title">{{ news.title }} </h4>
-                        <p>{{ news.content | truncatewords: 20 }}</p>
+                        <p>{{ news.content | truncatewords: 10 }}</p>
                         {% if news.cover != null %}
-                        <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}"/>
+                        <img class="news-image img-responsive center-block lazyload" data-src="{{ news.cover }}" alt="{{ news.title }}"/>
                         {% else %}
-                        <img class="news-image img-responsive center-block" src="https://res.cloudinary.com/snapcloud/image/upload/news/default-news.jpg" alt="{{ news.title }}"/>
+                        <img class="news-image img-responsive center-block lazyload" data-src="https://res.cloudinary.com/snapcloud/image/upload/news/default-news.jpg" alt="{{ news.title }}"/>
                         {% endif %}
                     </div>
                 </a>
