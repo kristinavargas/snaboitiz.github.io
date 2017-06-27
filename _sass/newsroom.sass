@@ -3,6 +3,7 @@
   background-color: white
   padding-top: 50px
   padding-bottom: 50px
+  min-height: 100vh
   .section-header
     font-family: "Segoeui-Bold"
     font-size: 32px
@@ -15,32 +16,29 @@
     margin-right: auto
     padding-left: 80px
     padding-right: 80px
-    .grid
+    #Container
       position: relative
       margin: 0 auto
-      min-height: 820px
       .grid-item
+        display: none
         float: left
-        display: block
         width: 23%
         border: 1px solid #e8e8e8
         outline: none
         padding: 10px
         margin: 1%
-        transition: all 1s ease-out
+        //transition: all 1s ease-out
+        min-height: 312px
         &:hover
           border: 1px solid #585858
-      .grid-sizer
-        width: 23%
-        margin: 1%
       .news-link
         text-decoration: none
         display: block
         outline: none
         .news-image
-          width: 100%
+          width: auto
           max-width: 100%
-          height: auto
+          height: 150px
           display: block
         //border-radius: 10px
         .news-title
@@ -88,13 +86,13 @@
     .content-container
       padding-left: 15px
       padding-right: 15px
-      .grid
+      #Container
         .grid-item
           width: 48%
 
 @media (max-width: 568px)
   #news
     .content-container
-      .grid
+      #Container
         .grid-item
           width: 98%
