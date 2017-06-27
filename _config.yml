@@ -12,9 +12,6 @@ github_username:  jekyll
 markdown: kramdown
 highlight: rouge
 
-paginate: 8
-paginate_path: "news/page:num/"
-
 collections:
   posts:
     permalink: /news/:path/
@@ -40,7 +37,7 @@ jekyll_timeago:
 sass:
   style: compressed
 
-gems: [jekyll-paginate,jekyll-timeago]
+gems: [jekyll-timeago]
 
 navbar-menu:
   - title: "About Us"

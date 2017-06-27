@@ -5,7 +5,7 @@ layout: page-layout/news
     <div class="container-fluid content-container">
         <div class="grid">
             <div class="grid-sizer"></div>
-            {% assign sortedPost = paginator.posts | sort: 'slugID' %}
+            {% assign sortedPost = site.posts | sort: 'slugID' %}
             {% for news in sortedPost reversed %}
             {% assign counter = counter | plus:1 %}
             <div data-slug="{{ news.slugID }}" class="grid-item">
@@ -27,30 +27,5 @@ layout: page-layout/news
             {% endfor %}
         </div>
 
-        {% if paginator.total_pages > 1 %}
-        <div class="pagination">
-            {% if paginator.previous_page %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: 'news','/news' | replace: '//', '/' }}">&laquo; Prev</a>
-            {% else %}
-            <span>&laquo; Prev</span>
-            {% endif %}
-
-            {% for page in (1..paginator.total_pages) %}
-            {% if page == paginator.page %}
-            <span>{{ page }}</span>
-            {% elsif page == 1 %}
-            <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: 'news', '/news' | replace: '//', '/' }}">{{ page }}</a>
-            {% else %}
-            <a href="{{ site.paginate_path | prepend: site.baseurl | replace: 'news','/news' | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
-            {% endif %}
-            {% endfor %}
-
-            {% if paginator.next_page %}
-            <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: 'news','/news'| replace: '//', '/' }}">Next &raquo;</a>
-            {% else %}
-            <span>Next &raquo;</span>
-            {% endif %}
-        </div>
-        {% endif %}
     </div>
 </div>
