@@ -64,3 +64,18 @@
       - requirement: "Bachelor’s degree in Psychology, Behavior Sciences, Human Resource Management or equivalent course."
       - requirement: "With 3-5 years experience in human resources in the areas of staffing and recruitment, compensation and benefits."
       - requirement: "Candidate must have excellent oral and written communication skills, well verse in various interviewing methods."
+      
+    
+- active: true
+  title: "TEST"
+  vacant: 1
+  contractType: "TEST"
+  company: SNAP-Magat
+  location: Magat
+  description: "The HR Specialist shall provide support in the areas of staffing and recruitment, benefits, timekeeping, compensation and payroll administration and HR Systems."
+  requirement-list:
+      - requirement: "Bachelor’s degree in Psychology, Behavior Sciences, Human Resource Management or equivalent course."
+      - requirement: "With 3-5 years experience in human resources in the areas of staffing and recruitment, compensation and benefits."
+      - requirement: "Candidate must have excellent oral and written communication skills, well verse in various interviewing methods."
+
+      
