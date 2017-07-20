@@ -5,7 +5,7 @@
                 <h4 class="header">News</h4>
             </div>
         </div>
-        <div class="news-container">
+        <div class="news-container clearfix">
             {% assign sortedPost = site.posts | sort: 'slugID' | reverse %}
             {% for news in sortedPost limit: 3 %}
             <div data-slug="{{ news.slugID }}" class="grid-item">
@@ -16,7 +16,12 @@
                         </div>
                         <h4 class="news-title">{{ news.title }} </h4>
                         <p>{{ news.content | truncatewords: 25 }}</p>
-                        <img alt="News image" class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}"/>
+
+                        {% if news.cover != null %}
+                        <img class="news-image img-responsive center-block" src="{{ news.cover }}" alt="{{ news.title }}"/>
+                        {% else %}
+                        <img class="news-image img-responsive center-block" src="https://res.cloudinary.com/snapcloud/image/upload/news/default-news.jpg" alt="{{ news.title }}"/>
+                        {% endif %}
                     </div>
                 </a>
             </div>
