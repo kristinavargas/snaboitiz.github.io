@@ -623,11 +623,22 @@
 
 @media (max-width: $screen-md-max)
   #our-plant
+    height: 700px!important
     .slide-container
+      .fp-slides
+        height: 700px
       .slide
+        min-height: 100vh
+        height: 700px
         .slide-section
+          top: 0
+          transform: none
+          -webkit-transform: none
+          -moz-transform: none
+          -o-transform: none
+          -ms-transform: none
           .container
-            margin-top: 8%
+            margin-top: 110px
             padding-left: 40px
             padding-right: 40px
             .top-section
@@ -656,6 +667,12 @@
       .slide
         min-height: 720px
         .slide-section
+          top: 50%
+          transform: translateY(-50%)
+          -webkit-transform: translateY(-50%)
+          -moz-transform: translateY(-50%)
+          -o-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
           .container
             margin-top: 0
             .upper-section
