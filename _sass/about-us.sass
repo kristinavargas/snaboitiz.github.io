@@ -53,6 +53,8 @@
         background-image: linear-gradient(rgba(14, 44, 82, 0.5), rgba(14, 44, 82, 0.5)),url("https://res.cloudinary.com/snapcloud/image/upload/slider/magat.jpg")
       &.slide-binga
         background-image: linear-gradient(rgba(14, 44, 82, 0.5), rgba(14, 44, 82, 0.5)),url("http://res.cloudinary.com/snapcloud/image/upload/slider/binga.jpg")
+	  &.slide-maris
+        background-image: linear-gradient(rgba(14, 44, 82, 0.5), rgba(14, 44, 82, 0.5)),url("http://res.cloudinary.com/snapcloud/image/upload/slider/maris.jpg")
       .slide-section
         position: relative
         top: 50%
@@ -161,7 +163,7 @@
           background-color: rgba(255,255,255,.2)
         .left-section
           float: left
-          width: 60%
+          width: 70%
           padding-right: 15px
           .section-description
             font-size: 16px
@@ -170,7 +172,7 @@
             margin-bottom: 15px
         .right-section
           padding-left: 15px
-          width: 40%
+          width: 30%
           margin-top: 15px
           margin-bottom: 15px
           float: left
@@ -197,6 +199,7 @@
               .bold-text
                 font-family: "Segoeui"
                 font-size: 14px
+                margin-left: 5px
                 margin-bottom: 5px
 
 
@@ -582,10 +585,20 @@
   //      &:focus,&:active
   //        outline: none
 
-@media (max-width: 1366px)
+@media (max-width: 1500px)
   #our-plant
+    height: 800px!important
     .slide-container
       .slide
+        min-height: 800px
+
+
+@media (max-width: 1366px)
+  #our-plant
+    height: 768px!important
+    .slide-container
+      .slide
+        min-height: 768px
         .slide-section
           .container
             .top-section
@@ -622,11 +635,22 @@
 
 @media (max-width: $screen-md-max)
   #our-plant
+    height: 700px!important
     .slide-container
+      .fp-slides
+        height: 700px
       .slide
+        min-height: 100vh
+        height: 700px
         .slide-section
+          top: 0
+          transform: none
+          -webkit-transform: none
+          -moz-transform: none
+          -o-transform: none
+          -ms-transform: none
           .container
-            margin-top: 8%
+            margin-top: 110px
             padding-left: 40px
             padding-right: 40px
             .top-section
@@ -641,8 +665,11 @@
                     margin-right: 5px
             .middle-section
               .left-section
+                width: 60%
                 .section-description
                   font-size: 14px
+              .right-section
+                width: 40%
 
 
 
@@ -652,6 +679,12 @@
       .slide
         min-height: 720px
         .slide-section
+          top: 50%
+          transform: translateY(-50%)
+          -webkit-transform: translateY(-50%)
+          -moz-transform: translateY(-50%)
+          -o-transform: translateY(-50%)
+          -ms-transform: translateY(-50%)
           .container
             margin-top: 0
             .upper-section
